@@ -24,27 +24,25 @@ export default function Hero() {
               Meta Business Partner · Google Partner
             </span>
             <h1 className="mt-6 text-5xl font-extrabold leading-[1.05] tracking-tight text-ink-900 sm:text-6xl lg:text-7xl">
-              Turn every chat into a{" "}
-              <span className="gradient-text">closed deal.</span>
+              Turning Every Conversation{" "}
+              <span className="gradient-text">Into Sales.</span>
             </h1>
-            <p className="mt-5 text-lg font-semibold text-ink-900/80">
-              Turning Every Conversation Into Sales.
-            </p>
-            <p className="mt-3 max-w-xl text-lg text-ink-900/65">
+            <p className="mt-5 max-w-xl text-lg text-ink-900/70">
               AI Chatbot for WhatsApp, Facebook, Instagram, Website, Telegram &amp;
-              more — Chat2Sales replies to customers, follows up leads, and books
-              appointments, just like your best staff but works non-stop.
+              more. Hire your first AI employee for a fraction of the cost —
+              Chat2Sales replies to customers, follows up leads, and books
+              appointments, just like your best staff, but works non-stop.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <a href="/contact" className="btn-primary text-base">
-                Book a demo
+                Let&apos;s Try It Out
                 <svg className="ml-2 h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M7.22 14.78a.75.75 0 010-1.06L10.94 10 7.22 6.28a.75.75 0 111.06-1.06l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0z" clipRule="evenodd" />
                 </svg>
               </a>
               <a href="#features" className="btn-secondary text-base">
-                Let&apos;s Try It Out
+                See what it does
               </a>
             </div>
 

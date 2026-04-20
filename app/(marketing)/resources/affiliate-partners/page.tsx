@@ -3,25 +3,25 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Affiliate Partners | Chat2Sales",
   description:
-    "Earn recurring revenue by introducing Chat2Sales to agencies, coaches, and e-commerce teams.",
+    "Become a Chat2Sales Affiliate Partner and earn up to 30% lifetime recurring commission promoting AI-powered chatbots.",
 };
 
 const PERKS = [
   {
-    title: "30% recurring",
-    body: "Earn 30% recurring commission on every customer for 12 months.",
+    title: "Up to 30% recurring",
+    body: "Earn up to 30% recurring commission — for life — on every license you help sell.",
   },
   {
-    title: "90-day cookie",
-    body: "Plenty of time for prospects to decide — you still get credit.",
+    title: "Promote anywhere",
+    body: "Share on social media, blogs, YouTube, or tech forums — wherever your audience lives.",
   },
   {
-    title: "Co-marketing",
-    body: "We'll co-host webinars, share playbooks, and feature top partners.",
+    title: "Product built to convert",
+    body: "AI-powered chatbots that customers already want — sell the future of conversation.",
   },
   {
-    title: "Dedicated manager",
-    body: "A real human to help you close bigger deals, faster.",
+    title: "Dedicated support",
+    body: "Our team backs you up with assets, playbooks, and real humans to help you close.",
   },
 ];
 
@@ -32,14 +32,17 @@ export default function AffiliatePartnersPage() {
         <div className="text-center">
           <span className="eyebrow">Affiliate Partners</span>
           <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-ink-900 sm:text-5xl">
-            Earn with Chat2Sales.
+            Become a Chatbot Affiliate Partner and earn up to 30% lifetime
+            recurring commission.
           </h1>
           <p className="mt-4 text-lg text-ink-900/70">
-            Refer agencies, coaches, and e-commerce brands — earn recurring
-            revenue every month they stay on Chat2Sales.
+            Join the Chat2Sales Affiliate Program and promote AI-powered
+            chatbots to your audience. Share on social media, blogs, YouTube,
+            or tech forums — and earn up to 30% recurring commission for life
+            on every license you help sell.
           </p>
           <a href="/contact" className="btn-primary mt-8">
-            Apply to join
+            Contact Us To Know More
           </a>
         </div>
 

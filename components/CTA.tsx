@@ -9,16 +9,17 @@ export default function CTA() {
           </div>
           <div className="relative">
             <h2 className="mx-auto max-w-3xl text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-              Let&apos;s turn your chats into{" "}
-              <span className="gradient-text">revenue</span> — starting today.
+              Boost revenue effortlessly with{" "}
+              <span className="gradient-text">AI automation.</span>
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-lg text-white/70">
-              Book a 20-minute demo with our team. We&apos;ll set up your first
-              AI agent for you and show you real pipeline in the first week.
+              Get a free live demo and consultation with our experts. We&apos;ll
+              set up your first AI agent — no coding, no setup headaches. Just
+              results.
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               <a href="/contact" className="btn-primary bg-white text-brand-700 shadow-none hover:bg-white/90">
-                Book a demo
+                Let&apos;s Try It Out
               </a>
               <a
                 href="mailto:hello@chat2sales.ai"

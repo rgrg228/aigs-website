@@ -4,21 +4,21 @@ const PILLARS = [
   {
     tag: "Sales 💰",
     title: "AI Sales Agent",
-    body: "Qualifies leads on budget, need, and timeline — then auto-books meetings with your team while you sleep.",
+    body: "Your always-on virtual sales assistant — automates lead generation, personalized conversations, and smart follow-ups with human-like precision, 24/7.",
     image: "/images/pillar-sales.webp",
     tint: "from-amber-100 to-orange-50",
   },
   {
     tag: "Marketing 🚀",
     title: "AI Marketing Agent",
-    body: "Captures contacts, nurtures prospects, and turns every chat into a segmented, enriched lead in your CRM.",
+    body: "Your always-on digital marketer — automates campaign management, personalized communication, and data-driven optimization to lift ROI.",
     image: "/images/pillar-marketing.webp",
     tint: "from-emerald-100 to-sky-50",
   },
   {
     tag: "Customer Service 💬",
     title: "AI Support Agent",
-    body: "Replies 24/7 on every channel. Routes complex cases to your team with full context, in one unified inbox.",
+    body: "Combines AI and your team to respond instantly, solve problems, and boost satisfaction around the clock — on every channel.",
     image: "/images/pillar-customer-service.webp",
     tint: "from-rose-100 to-pink-50",
   },
@@ -31,11 +31,12 @@ export default function Pillars() {
         <div className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">Solutions</span>
           <h2 className="mt-4 text-4xl font-extrabold tracking-tight text-ink-900 sm:text-5xl">
-            One AI employee. Three superpowers.
+            Onboard a human-like AI team.
           </h2>
           <p className="mt-4 text-lg text-ink-900/70">
-            Chat2Sales covers the full funnel — from the first hello to the
-            closed deal and the happy customer.
+            From small businesses to large enterprises, Chat2Sales AI agents
+            help you scale operations, reduce manual workload, and maximize
+            profitability through intelligent automation.
           </p>
         </div>
 
