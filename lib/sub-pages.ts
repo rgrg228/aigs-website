@@ -29,107 +29,246 @@ export const AI_BOTS: Record<string, SubPage> = {
   instagram: {
     slug: "instagram",
     section: "ai-bots",
-    eyebrow: "AI Instagram Chatbot",
-    title: "Turn Instagram DMs into paying customers.",
+    eyebrow: "AI Chatbot For Instagram",
+    title: "Create an AI Chatbot for Instagram & Automate Every Interaction",
     subtitle:
-      "Reply instantly to story mentions, comments, and DMs. Chat2Sales qualifies leads and closes sales while you focus on content.",
+      "Use Chat2Sales AI to capture and qualify leads, turn DMs into sales opportunities, reply to comments instantly, and provide round-the-clock customer support. No coding. No setup headaches. Just results.",
     channelLogo: "/images/channel-instagram.webp",
     heroImage: "/images/pillar-marketing.webp",
     features: [
-      { title: "Auto-reply to story mentions", body: "Never miss a lead from a story reaction or comment again." },
-      { title: "Qualify in DMs", body: "Capture name, phone, and intent inline — push straight to your CRM." },
-      { title: "Book appointments", body: "Share a calendar, confirm the slot, and drop a reminder — all in chat." },
+      {
+        title: "Marketing Automation",
+        body: "Nurture leads with smart broadcasts and personalized drip campaigns.",
+      },
+      {
+        title: "Sell Products",
+        body: "Showcase products with personalized recommendations and conversational shopping experiences.",
+      },
+      {
+        title: "Provide Support & FAQs",
+        body: "Deliver instant, friendly support through AI-powered chat.",
+      },
+      {
+        title: "Lead Generation",
+        body: "Capture and qualify leads effortlessly using AI.",
+      },
     ],
     faq: BOT_FAQ,
   },
   whatsapp: {
     slug: "whatsapp",
     section: "ai-bots",
-    eyebrow: "AI WhatsApp Chatbot",
-    title: "Your best salesperson, now on WhatsApp.",
+    eyebrow: "AI Chatbot For WhatsApp",
+    title: "Automate Your WhatsApp Conversations and Close More Sales",
     subtitle:
-      "Official WhatsApp Business API. Automated replies, lead capture, and appointment booking at scale — 24/7.",
+      "Reach customers instantly, capture leads, and deliver 24/7 support with Chat2Sales AI. Simplify marketing and sales in one chat.",
     channelLogo: "/images/channel-whatsapp.webp",
     heroImage: "/images/pillar-sales.webp",
     features: [
-      { title: "Official Business API", body: "We're a Meta Business Partner — set up verified WhatsApp Business for you." },
-      { title: "Broadcast & follow-up", body: "Send compliant broadcasts and automated follow-ups that drive replies." },
-      { title: "Team inbox", body: "One shared inbox with AI suggestions, routing, and canned replies." },
+      {
+        title: "Marketing Automation",
+        body: "Segment customers and send personalized drip or broadcast campaigns.",
+      },
+      {
+        title: "Sell Products",
+        body: "Advertise and sell products directly through WhatsApp.",
+      },
+      {
+        title: "Customer Support",
+        body: "AI WhatsApp bot handles customer queries instantly with live chat.",
+      },
+      {
+        title: "Book Appointments",
+        body: "Customers schedule meetings, tickets, or sessions and sync automatically with their calendars.",
+      },
+      {
+        title: "AI-Powered Chatbot",
+        body: "Build an AI WhatsApp Chatbot tailored to your business.",
+      },
+      {
+        title: "Extend With 80+ Integrations",
+        body: "Connect WhatsApp Chatbot with over 80 platforms and apps — CRMs, marketing tools, automation workflows.",
+      },
     ],
     faq: BOT_FAQ,
   },
   facebook: {
     slug: "facebook",
     section: "ai-bots",
-    eyebrow: "AI Facebook Chatbot",
-    title: "Convert Facebook visitors into buyers.",
+    eyebrow: "AI Chatbot For Facebook",
+    title: "Automate Conversations & Grow Faster with AI Chatbot for Facebook",
     subtitle:
-      "Answer FAQs, qualify leads, and book appointments in Messenger — 24/7, without lifting a finger.",
+      "Tap into the vast customer base on Facebook with our AI chatbot. Be on their mind 24/7 with broadcast and drip campaigns, capture and qualify leads, assist with support & shopping, and auto-reply to comments.",
     channelLogo: "/images/channel-messenger.webp",
     features: [
-      { title: "Reply in <1 second", body: "AI-first replies keep Messenger conversions high while your team sleeps." },
-      { title: "Ad-click auto-reply", body: "Trigger flows directly from your FB/IG ad click-to-Messenger campaigns." },
-      { title: "Book & remind", body: "Book slots on Google/Outlook and send WhatsApp/SMS reminders." },
+      {
+        title: "Train Your Facebook Bot",
+        body: "Teach your chatbot your products, FAQs, and services.",
+      },
+      {
+        title: "Comment Auto-Reply",
+        body: "Auto-reply to comments, thank users, and invite them to chat.",
+      },
+      {
+        title: "Display Your Bot Anywhere",
+        body: "Add your bot to your website or share it via a QR code.",
+      },
+      {
+        title: "Broadcast Messages",
+        body: "Share offers, reminders, or launches with all of your followers.",
+      },
+      {
+        title: "Smart Chat Flows",
+        body: "Set simple chat paths that lead customers from hello to purchase.",
+      },
+      {
+        title: "Smart Triggers",
+        body: "Auto-reply based on keywords or timing.",
+      },
     ],
     faq: BOT_FAQ,
   },
   websites: {
     slug: "websites",
     section: "ai-bots",
-    eyebrow: "AI Websites Chatbot",
-    title: "A smart chat widget that sells for you.",
+    eyebrow: "AI Chatbot For Websites",
+    title: "Turn Website Visitors into Customers with an AI Chatbot",
     subtitle:
-      "Drop a snippet on your site. Resolves FAQs, recommends products, and nudges checkout 24/7.",
+      "Provide 24/7 assistance on your website. Let your AI chatbot handle FAQs, appointment bookings, product inquiries, and purchases — launched without coding and trained on your content for accurate answers.",
     channelLogo: "/images/channel-website.webp",
     features: [
-      { title: "One-line embed", body: "Paste a single script tag — no dev work required." },
-      { title: "Trained on your site", body: "Ava indexes your pages, docs, and catalog automatically." },
-      { title: "Proactive nudges", body: "Engage hesitating visitors before they bounce — recover lost sales." },
+      {
+        title: "Train Your AI Chatbot",
+        body: "Power it with FAQs, website content, and your knowledge base.",
+      },
+      {
+        title: "Get Qualified Leads",
+        body: "Collect contact details and sync them directly to your CRM.",
+      },
+      {
+        title: "Give Timely Customer Support",
+        body: "Connect customers to live chat and assist with navigation.",
+      },
+      {
+        title: "Book Appointments",
+        body: "Meetings, classes, or sessions synced with your calendar.",
+      },
+      {
+        title: "Improve Conversion Rates",
+        body: "Product suggestions, order updates, payment support, and cart recovery.",
+      },
+      {
+        title: "Live Chat for Website",
+        body: "Omnichannel live chat with real-time human takeover.",
+      },
     ],
     faq: BOT_FAQ,
   },
   shopify: {
     slug: "shopify",
     section: "ai-bots",
-    eyebrow: "AI Shopify Chatbot",
-    title: "Recover carts. Answer questions. Upsell.",
+    eyebrow: "AI Chatbot For Shopify",
+    title: "Maximize Customer Satisfaction and Sales with Chatbot for Shopify",
     subtitle:
-      "A native Shopify integration that turns shoppers into buyers — on your store, WhatsApp, and DMs.",
+      "Simplify Shopify store operations and enhance customer experiences using our AI-powered chatbot built specifically for Shopify businesses.",
     heroImage: "/images/pillar-sales.webp",
     features: [
-      { title: "Cart recovery", body: "Re-engage abandoned carts on WhatsApp and Messenger automatically." },
-      { title: "Product recommendations", body: "Chat2Sales reads your catalog and suggests the perfect product." },
-      { title: "Order lookup", body: "Customers check order status in chat without opening a ticket." },
+      {
+        title: "Abandoned Cart Recovery",
+        body: "Automatic cart-abandonment follow-ups that win back lost sales.",
+      },
+      {
+        title: "Order Confirmation, Cancellation & Fulfillment",
+        body: "Real-time updates keep customers in the loop at every step.",
+      },
+      {
+        title: "AI Shopping Assistant",
+        body: "Personalized product suggestions and real-time support.",
+      },
+      {
+        title: "COD Order Notifications",
+        body: "Instant notifications for cash-on-delivery orders.",
+      },
+      {
+        title: "Return & Refund Updates",
+        body: "Keep customers informed about return and refund status.",
+      },
+      {
+        title: "24/7 Customer Support",
+        body: "Always-on support that builds loyalty and repeat buyers.",
+      },
     ],
     faq: BOT_FAQ,
   },
   woocommerce: {
     slug: "woocommerce",
     section: "ai-bots",
-    eyebrow: "AI WooCommerce Chatbot",
-    title: "Turn your WooCommerce store into a 24/7 sales machine.",
+    eyebrow: "AI Chatbot For WooCommerce",
+    title: "Enhance Your WooCommerce Store with an AI Chatbot",
     subtitle:
-      "Native WooCommerce connector. Recover carts, answer FAQs, and close more sales across chat channels.",
+      "Deliver real-time support, send order updates, and improve customer shopping experiences effortlessly. Grow WooCommerce sales with a WhatsApp chatbot that automates cart recovery, order updates, confirmations, and 24/7 AI support.",
     heroImage: "/images/pillar-sales.webp",
     features: [
-      { title: "WooCommerce sync", body: "Two-way sync with products, orders, and customer data." },
-      { title: "Abandoned cart flow", body: "Automated WhatsApp + email flow to recover lost revenue." },
-      { title: "Smart upsell", body: "Chat2Sales suggests add-ons at the right moment — mid-conversation." },
+      {
+        title: "Abandoned Cart Recovery",
+        body: "Automatic WhatsApp reminders that bring shoppers back to checkout.",
+      },
+      {
+        title: "Personalized Product Recommendations",
+        body: "Upselling and cross-selling powered by AI.",
+      },
+      {
+        title: "Order Confirmation & Fulfillment",
+        body: "Instant confirmations and delivery updates.",
+      },
+      {
+        title: "AI Shopping Assistant",
+        body: "Real-time tracking and delivery notifications.",
+      },
+      {
+        title: "Return & Exchange Requests",
+        body: "Trained on your store's policies and URLs.",
+      },
+      {
+        title: "24/7 Customer Support",
+        body: "Round-the-clock WhatsApp chatbot for WooCommerce.",
+      },
     ],
     faq: BOT_FAQ,
   },
   telegram: {
     slug: "telegram",
     section: "ai-bots",
-    eyebrow: "AI Telegram Chatbot",
-    title: "A custom AI assistant for your Telegram community.",
+    eyebrow: "AI Chatbot For Telegram",
+    title: "Automate Your Telegram Chats and Boost Engagement",
     subtitle:
-      "Engage subscribers, answer questions at scale, and turn Telegram chats into loyal, paying customers.",
+      "Connect instantly, nurture leads, and offer 24/7 support with Chat2Sales AI on Telegram — powering every part of your business.",
     channelLogo: "/images/channel-telegram.webp",
     features: [
-      { title: "Group + DM support", body: "AI replies in groups, channels, and private messages." },
-      { title: "Custom commands", body: "Design slash-commands for your product catalog, prices, and offers." },
-      { title: "Subscriber insights", body: "Tag and segment subscribers for targeted broadcasts." },
+      {
+        title: "Provide Customer Support",
+        body: "24/7 instant responses across chats, groups, and channels.",
+      },
+      {
+        title: "Marketing Automation",
+        body: "Segment audiences and send updates or promotions.",
+      },
+      {
+        title: "Increase Sales",
+        body: "Recommend products, handle orders, and recover abandoned carts.",
+      },
+      {
+        title: "Unified Inbox & Live Chat",
+        body: "A centralized inbox and live chat tool for your team.",
+      },
+      {
+        title: "Appointment Booking",
+        body: "Schedule meetings, sessions, or classes directly in chat.",
+      },
+      {
+        title: "Share Files",
+        body: "Documents, videos, and images with Telegram's end-to-end encryption.",
+      },
     ],
     faq: BOT_FAQ,
   },
@@ -139,113 +278,229 @@ export const SOLUTIONS: Record<string, SubPage> = {
   "ai-sales-agents": {
     slug: "ai-sales-agents",
     section: "solutions",
-    eyebrow: "AI Sales Agents",
-    title: "Your always-on AI sales team.",
+    eyebrow: "AI Sales Agent",
+    title: "Multiply Sales Conversions with an AI Sales Agent That Works 24/7",
     subtitle:
-      "Chat2Sales qualifies budget, need, and timeline — then books meetings with your reps while you sleep.",
+      "Empower your team with an AI sales agent that automates lead follow-ups, personalizes conversations, and closes deals faster — while you focus on strategy and growth.",
     heroImage: "/images/pillar-sales.webp",
     features: [
-      { title: "Qualify on BANT", body: "Budget, need, timeline, and authority captured in chat automatically." },
-      { title: "Auto-book meetings", body: "Find a slot, confirm the invite, and send reminders — zero back-and-forth." },
-      { title: "CRM push", body: "Enriched lead goes straight to HubSpot, Salesforce, or Pipedrive." },
+      {
+        title: "24/7 Availability",
+        body: "Continuous support for your customers across all timezones.",
+      },
+      {
+        title: "AI-Driven Insights",
+        body: "Performance data analysis across your entire sales pipeline.",
+      },
+      {
+        title: "Contextual Awareness",
+        body: "Adapts to your brand voice and communication style.",
+      },
+      {
+        title: "Lead Qualification Automation",
+        body: "Identify and prioritize your highest-potential prospects.",
+      },
+      {
+        title: "Automated Follow-Ups",
+        body: "Personalized follow-ups triggered by user behavior.",
+      },
+      {
+        title: "Native App Integrations",
+        body: "Seamless with CRMs, marketing tools, and communication apps.",
+      },
     ],
   },
   "ai-marketing-agents": {
     slug: "ai-marketing-agents",
     section: "solutions",
-    eyebrow: "AI Marketing Agents",
-    title: "Turn every visitor into a contact.",
+    eyebrow: "AI Marketing Agent",
+    title: "Supercharge Your Marketing with an AI Marketing Agent",
     subtitle:
-      "Capture leads across every channel, nurture with smart follow-ups, and fill the top of your funnel — on autopilot.",
+      "Leverage AI-driven automation, personalization, and seamless integration to optimize every campaign — smarter execution, faster decisions, higher ROI.",
     heroImage: "/images/pillar-marketing.webp",
     features: [
-      { title: "Multi-channel capture", body: "Collect leads from ads, website, DMs, and WhatsApp into one place." },
-      { title: "Segment on the fly", body: "Chat2Sales tags contacts by intent, source, and attributes." },
-      { title: "Warm-up sequences", body: "Automated follow-ups nudge leads to book a meeting or make a purchase." },
+      {
+        title: "Targeted Campaigns",
+        body: "AI segmentation by behavior, interests, and intent.",
+      },
+      {
+        title: "Lead Scoring",
+        body: "Prioritize high-quality leads automatically.",
+      },
+      {
+        title: "Predictive Insights",
+        body: "Anticipate actions and buying behavior.",
+      },
+      {
+        title: "Real-Time Personalization",
+        body: "Adapt messages in real time based on signals.",
+      },
+      {
+        title: "Campaign Optimization",
+        body: "Auto-refine campaigns based on live interactions.",
+      },
+      {
+        title: "Omnichannel Presence",
+        body: "Email, social media, SMS, and ads from one platform.",
+      },
+      {
+        title: "Content Creation",
+        body: "Multilingual, culturally-aware marketing assets.",
+      },
+      {
+        title: "Seamless Integration",
+        body: "Sync data, automate workflows, and scale without disruption.",
+      },
     ],
   },
   "chatbot-for-marketing": {
     slug: "chatbot-for-marketing",
     section: "solutions",
     eyebrow: "Chatbot for Marketing",
-    title: "Marketing on every channel, answered in seconds.",
+    title: "Turn Your Leads Into Paying Customers",
     subtitle:
-      "Run click-to-chat ads, capture leads, and nurture them — without adding headcount.",
+      "You drive the traffic — Chat2Sales AI does the heavy lifting. Smart chatbots engage, qualify, and nurture every lead across WhatsApp, Instagram, and your website.",
     heroImage: "/images/pillar-marketing.webp",
     features: [
-      { title: "Click-to-chat ads", body: "Route Meta and Google ads directly into AI conversations." },
-      { title: "Campaign dashboards", body: "Track which campaigns drive conversations, pipeline, and revenue." },
-      { title: "Promo broadcasts", body: "Send compliant WhatsApp broadcasts with reply intent tracking." },
+      {
+        title: "Align the Chatbot with Your Marketing Goals",
+        body: "Identify key touchpoints and align chatbot objectives with marketing outcomes.",
+      },
+      {
+        title: "Design an Engaging Conversational Experience",
+        body: "Engage leads 24/7 with human-like interactions.",
+      },
+      {
+        title: "Deploy Across Every Channel That Matters",
+        body: "WhatsApp, Facebook, Instagram, or your website.",
+      },
+      {
+        title: "Analyze, Learn, and Optimize for Growth",
+        body: "Track performance, identify drop-offs, and refine strategy.",
+      },
     ],
   },
   "chatbot-for-sales": {
     slug: "chatbot-for-sales",
     section: "solutions",
     eyebrow: "Chatbot for Sales",
-    title: "Close more deals on chat.",
+    title: "Automate Tedious Tasks and Focus on Closing More Deals",
     subtitle:
-      "AI that qualifies, recommends, and books — so your sales team only talks to ready-to-buy prospects.",
+      "Chat2Sales AI empowers your sales team with smart assistants and chatbots that boost productivity, streamline workflows, and drive consistent revenue growth.",
     heroImage: "/images/pillar-sales.webp",
     features: [
-      { title: "Lead scoring", body: "Every chat produces an intent and fit score pushed to your CRM." },
-      { title: "Product recommendation", body: "Chat2Sales matches products to needs using your real catalog." },
-      { title: "Human handoff", body: "Route hot leads to a live rep with full transcript and context." },
+      {
+        title: "Align the Chatbot with Your Sales Strategy",
+        body: "Identify key touchpoints and align with your sales process.",
+      },
+      {
+        title: "Train It with Your Sales Qualification Criteria",
+        body: "Teach the bot to qualify prospects based on your unique rules.",
+      },
+      {
+        title: "Connect to Your CRM and Calendar, Then Launch Anywhere",
+        body: "Automate scheduling, data syncing, and follow-ups.",
+      },
+      {
+        title: "Nurture Leads and Optimize Performance",
+        body: "Monitor conversations, identify drop-offs, and refine flows.",
+      },
     ],
   },
   "chatbot-for-lead-generation": {
     slug: "chatbot-for-lead-generation",
     section: "solutions",
     eyebrow: "Chatbot for Lead Generation",
-    title: "Fill your funnel while you sleep.",
+    title: "Automate Tedious Tasks and Focus on Closing More Deals",
     subtitle:
-      "Capture contacts from ads, website, and DMs — enrich, qualify, and deliver them to your team, ready to call.",
+      "Say goodbye to boring forms and high drop-offs. Turn conversations into conversions by collecting data and opt-ins via your website or WhatsApp — make every interaction smooth, personal, and engaging.",
     heroImage: "/images/pillar-marketing.webp",
     features: [
-      { title: "Capture everywhere", body: "Website widget, WhatsApp, IG, Messenger, and Telegram — one inbox." },
-      { title: "Auto-enrichment", body: "Email, phone, company, and intent captured without forms." },
-      { title: "Instant routing", body: "Route qualified leads to the right rep by region or product." },
+      {
+        title: "Conversational Lead Capture",
+        body: "Collect data and opt-ins via your website or WhatsApp instead of static forms.",
+      },
+      {
+        title: "Identify High-Intent Leads",
+        body: "Custom conditions and pre-built blocks score leads automatically.",
+      },
+      {
+        title: "Route to the Right Person",
+        body: "Transition chats to humans instantly when intent is ready.",
+      },
     ],
   },
   "chatbot-for-engagement": {
     slug: "chatbot-for-engagement",
     section: "solutions",
-    eyebrow: "Chatbot for Engagement",
-    title: "Engage 70% more visitors.",
+    eyebrow: "Chatbot for Customer Engagement",
+    title: "Keep Your Audience Engaged with Interactive AI Chat Experiences",
     subtitle:
-      "Proactive chat nudges, personalized greetings, and helpful suggestions — right when they matter.",
+      "Chat2Sales AI helps you connect with customers across every stage of their journey through instant replies, reminders, product recommendations, and interactive experiences that strengthen brand loyalty.",
     heroImage: "/images/pillar-customer-service.webp",
     features: [
-      { title: "Proactive messages", body: "Trigger messages by URL, time on page, or scroll depth." },
-      { title: "Personalized greeting", body: "Greet returning visitors by name and context." },
-      { title: "Live interventions", body: "Let humans jump in on high-value conversations." },
+      {
+        title: "Boost Adoption & Discovery",
+        body: "Educate new users with regular communications on web & mobile.",
+      },
+      {
+        title: "Smart Notifications",
+        body: "Automatically send service updates, reminders, and alerts to reduce support requests.",
+      },
+      {
+        title: "Tailored Messaging",
+        body: "Integrate with leading CRMs, helpdesks & marketing apps for the right data at the right time.",
+      },
     ],
   },
   "chatbot-for-customer-support": {
     slug: "chatbot-for-customer-support",
     section: "solutions",
     eyebrow: "Chatbot for Customer Support",
-    title: "Solve 90% of queries automatically.",
+    title: "Deliver 5-Star Support and Build Stronger Customer Relationships",
     subtitle:
-      "AI handles FAQs, order status, and account questions — your team handles the 10% that really matters.",
+      "Use AI chatbots to automate customer service, save time, and deliver personalized support — on every channel your customers already use.",
     heroImage: "/images/pillar-customer-service.webp",
     features: [
-      { title: "Trained on your docs", body: "Point Chat2Sales at your help center — answers stay on-brand." },
-      { title: "Ticket deflection", body: "Cut support volume 50–90% without hurting CSAT." },
-      { title: "Smart routing", body: "Escalate by priority, language, or customer tier — automatically." },
+      {
+        title: "Help Customers 24/7",
+        body: "Empower customers to solve their own questions with automated FAQs, smart replies, and proactive notifications.",
+      },
+      {
+        title: "Shared Team Inbox",
+        body: "Human takeover, automation tools, and shortcuts to manage complex queries in one place.",
+      },
+      {
+        title: "Tailored Messaging",
+        body: "Integrate with CRMs, helpdesks, and marketing apps so every reply has the right context.",
+      },
     ],
   },
   "chatbot-for-ecommerce": {
     slug: "chatbot-for-ecommerce",
     section: "solutions",
     eyebrow: "Chatbot for Ecommerce",
-    title: "Recover carts. Drive repeat buys. Delight shoppers.",
+    title: "Automate Your eCommerce Sales and Support with Chat2Sales AI",
     subtitle:
-      "Built for Shopify, WooCommerce, and custom stores — Chat2Sales helps you sell more with less effort.",
+      "Engage shoppers instantly, recommend products, recover abandoned carts, and provide 24/7 customer service through WhatsApp, Instagram, and your website.",
     heroImage: "/images/pillar-sales.webp",
     features: [
-      { title: "Abandoned cart recovery", body: "WhatsApp + email flows that recover 20–40% of abandoned carts." },
-      { title: "Order tracking", body: "Customers self-serve order status in chat — lower tickets, happier buyers." },
-      { title: "Personalized offers", body: "Upsell and cross-sell based on browsing and purchase history." },
+      {
+        title: "Recover Lost Sales Automatically",
+        body: "Personalized follow-ups via WhatsApp or Instagram.",
+      },
+      {
+        title: "Deliver Instant, 24/7 Customer Support",
+        body: "Answer questions about products, pricing, or delivery any time of day.",
+      },
+      {
+        title: "Recover Abandoned Carts",
+        body: "Human takeover, automation tools, and shortcuts for complex queries.",
+      },
+      {
+        title: "Recommend Products That Sell",
+        body: "AI-driven recommendations to boost average order value.",
+      },
     ],
   },
 };
