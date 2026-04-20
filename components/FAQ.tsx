@@ -4,28 +4,28 @@ import { useState } from "react";
 
 const ITEMS = [
   {
-    q: "How quickly can I launch Chat2Sales?",
-    a: "Most teams go live in under 90 minutes. Paste a snippet on your site, connect WhatsApp or Instagram, and Ava is ready to talk to customers.",
+    q: "What is Chat2Sales AI?",
+    a: "Chat2Sales is your 24/7 AI sales assistant that replies to customers, books appointments, and follows up leads automatically across WhatsApp, Instagram, Website, Facebook, LINE, and more.",
   },
   {
-    q: "Do I need to write prompts or train a model?",
-    a: "No. Point Ava at your website or docs and she indexes them automatically. You can optionally add playbooks to teach her your ICP, pricing, and objections.",
+    q: "Can I connect it to my existing accounts?",
+    a: "Yes. Chat2Sales works with WhatsApp, Facebook, Instagram, LINE, WeChat, Telegram, and your website chat widget.",
   },
   {
-    q: "Which LLM powers Chat2Sales?",
-    a: "By default we use a blend of frontier models (OpenAI, Anthropic, Google) with intelligent routing for cost and quality. Enterprise customers can BYO-model.",
+    q: "Do I need any technical skills?",
+    a: "Not at all. We can 100% set up for you.",
   },
   {
-    q: "Is my customer data safe?",
-    a: "Yes. We are SOC 2 Type II certified, GDPR-compliant, and offer HIPAA BAAs. Data is encrypted at rest and in transit, and can be pinned to EU or US regions.",
+    q: "Can the AI speak multiple languages?",
+    a: "Yes. Chat2Sales supports over 50 languages, including English, Mandarin, Bahasa Malaysia, and Cantonese.",
   },
   {
-    q: "Can Ava hand off to a human agent?",
-    a: "Absolutely. You can set handoff rules by intent, deal size, or sentiment. Conversations route seamlessly to your team in our inbox, Slack, or Intercom.",
+    q: "Can I still chat manually if I want to?",
+    a: "Of course. You can jump into any conversation anytime — your AI will pause automatically.",
   },
   {
-    q: "Does Chat2Sales work on WhatsApp Business?",
-    a: "Yes — we are an official WhatsApp Business Solution Provider. Same for Instagram DMs, Messenger, SMS, and email.",
+    q: "Difference between an AI chatbot and a chatbot?",
+    a: "A generative AI chatbot (Chat2Sales) is an advanced type of chatbot that uses artificial intelligence to create dynamic, human-like responses in real time rather than relying solely on predefined scripts or answers. Unlike rule-based bots, which can only respond with pre-programmed replies, a generative AI chatbot understands the context and meaning behind a user's input, and generates new and unique responses based on the conversation.",
   },
 ];
 
@@ -33,19 +33,19 @@ export default function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="section bg-brand-50/40">
+    <section id="faq" className="section">
       <div className="container-xl">
         <div className="grid gap-12 lg:grid-cols-[1fr_2fr]">
           <div>
-            <span className="eyebrow">FAQ</span>
+            <span className="eyebrow">FAQs</span>
             <h2 className="mt-4 text-4xl font-extrabold tracking-tight text-ink-900 sm:text-5xl">
-              Questions, answered.
+              Frequently Asked Questions
             </h2>
             <p className="mt-4 text-ink-900/70">
-              Still curious? Our team replies in under 2 hours — usually faster.
+              Still curious? We reply personally — usually within a few hours.
             </p>
-            <a href="#" className="mt-6 inline-flex text-sm font-semibold text-brand-600">
-              Contact support →
+            <a href="#contact" className="mt-6 inline-flex text-sm font-semibold text-brand-700">
+              Contact us →
             </a>
           </div>
 

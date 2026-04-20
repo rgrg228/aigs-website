@@ -9,23 +9,22 @@ export default function CTA() {
           </div>
           <div className="relative">
             <h2 className="mx-auto max-w-3xl text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-              Give your website a{" "}
-              <span className="gradient-text">top-performing sales rep</span>{" "}
-              — tonight.
+              Let&apos;s turn your chats into{" "}
+              <span className="gradient-text">revenue</span> — starting today.
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-lg text-white/70">
-              14-day free trial. No credit card. Cancel anytime. You'll see ROI
-              before the trial ends or we'll extend it.
+              Book a 20-minute demo with our team. We&apos;ll set up your first
+              AI agent for you and show you real pipeline in the first week.
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-              <a href="#signup" className="btn-primary bg-white text-brand-700 shadow-none hover:bg-white/90">
-                Start free
+              <a href="#contact" className="btn-primary bg-white text-brand-700 shadow-none hover:bg-white/90">
+                Book a demo
               </a>
               <a
-                href="#demo"
+                href="mailto:hello@chat2sales.ai"
                 className="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
               >
-                Book a 15-min demo
+                hello@chat2sales.ai
               </a>
             </div>
           </div>

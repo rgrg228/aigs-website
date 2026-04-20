@@ -44,7 +44,7 @@ export default function ChatMockup() {
             <li>• 5 team seats</li>
           </ul>
           <button className="mt-3 w-full rounded-full bg-brand-600 py-2 text-sm font-semibold text-white hover:bg-brand-700">
-            Start 14-day trial
+            Book a demo
           </button>
         </div>
 

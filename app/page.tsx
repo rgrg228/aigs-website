@@ -1,14 +1,12 @@
 import CTA from "@/components/CTA";
+import Channels from "@/components/Channels";
 import FAQ from "@/components/FAQ";
 import Features from "@/components/Features";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import HowItWorks from "@/components/HowItWorks";
-import Integrations from "@/components/Integrations";
-import Pricing from "@/components/Pricing";
-import Testimonials from "@/components/Testimonials";
-import UseCases from "@/components/UseCases";
+import Partners from "@/components/Partners";
+import Pillars from "@/components/Pillars";
 
 export default function Page() {
   return (
@@ -16,12 +14,10 @@ export default function Page() {
       <Header />
       <main>
         <Hero />
+        <Partners />
         <Features />
-        <Integrations />
-        <HowItWorks />
-        <UseCases />
-        <Testimonials />
-        <Pricing />
+        <Pillars />
+        <Channels />
         <FAQ />
         <CTA />
       </main>
