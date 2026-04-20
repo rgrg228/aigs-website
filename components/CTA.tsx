@@ -17,7 +17,7 @@ export default function CTA() {
               AI agent for you and show you real pipeline in the first week.
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-              <a href="#contact" className="btn-primary bg-white text-brand-700 shadow-none hover:bg-white/90">
+              <a href="/contact" className="btn-primary bg-white text-brand-700 shadow-none hover:bg-white/90">
                 Book a demo
               </a>
               <a

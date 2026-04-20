@@ -7,34 +7,34 @@ const NAV: { label: string; items: { label: string; href: string }[] }[] = [
   {
     label: "AI Bots",
     items: [
-      { label: "AI Instagram Chatbot", href: "#" },
-      { label: "AI WhatsApp Chatbot", href: "#" },
-      { label: "AI Facebook Chatbot", href: "#" },
-      { label: "AI Websites Chatbot", href: "#" },
-      { label: "AI Shopify Chatbot", href: "#" },
-      { label: "AI WooCommerce Chatbot", href: "#" },
-      { label: "AI Telegram Chatbot", href: "#" },
+      { label: "AI Instagram Chatbot", href: "/ai-bots/instagram" },
+      { label: "AI WhatsApp Chatbot", href: "/ai-bots/whatsapp" },
+      { label: "AI Facebook Chatbot", href: "/ai-bots/facebook" },
+      { label: "AI Websites Chatbot", href: "/ai-bots/websites" },
+      { label: "AI Shopify Chatbot", href: "/ai-bots/shopify" },
+      { label: "AI WooCommerce Chatbot", href: "/ai-bots/woocommerce" },
+      { label: "AI Telegram Chatbot", href: "/ai-bots/telegram" },
     ],
   },
   {
     label: "Solutions",
     items: [
-      { label: "AI Sales Agents Chatbot", href: "#" },
-      { label: "AI Marketing Agents Chatbot", href: "#" },
-      { label: "Chatbot for Marketing", href: "#" },
-      { label: "Chatbot for Sales", href: "#" },
-      { label: "Chatbot for Lead Generation", href: "#" },
-      { label: "Chatbot for Engagement", href: "#" },
-      { label: "Chatbot for Customer Support", href: "#" },
-      { label: "Chatbot for Ecommerce", href: "#" },
+      { label: "AI Sales Agents Chatbot", href: "/solutions/ai-sales-agents" },
+      { label: "AI Marketing Agents Chatbot", href: "/solutions/ai-marketing-agents" },
+      { label: "Chatbot for Marketing", href: "/solutions/chatbot-for-marketing" },
+      { label: "Chatbot for Sales", href: "/solutions/chatbot-for-sales" },
+      { label: "Chatbot for Lead Generation", href: "/solutions/chatbot-for-lead-generation" },
+      { label: "Chatbot for Engagement", href: "/solutions/chatbot-for-engagement" },
+      { label: "Chatbot for Customer Support", href: "/solutions/chatbot-for-customer-support" },
+      { label: "Chatbot for Ecommerce", href: "/solutions/chatbot-for-ecommerce" },
     ],
   },
   {
     label: "Resources",
     items: [
-      { label: "Affiliate Partners", href: "#" },
-      { label: "Blogs", href: "#" },
-      { label: "Contact Us", href: "#contact" },
+      { label: "Affiliate Partners", href: "/resources/affiliate-partners" },
+      { label: "Blogs", href: "/resources/blogs" },
+      { label: "Contact Us", href: "/contact" },
     ],
   },
 ];
@@ -85,10 +85,10 @@ export default function Header() {
         </nav>
 
         <div className="hidden items-center gap-2 lg:flex">
-          <a href="#contact" className="btn-ghost">
+          <a href="/contact" className="btn-ghost">
             Contact
           </a>
-          <a href="#contact" className="btn-primary">
+          <a href="/contact" className="btn-primary">
             Book a demo
           </a>
         </div>
@@ -135,10 +135,10 @@ export default function Header() {
               </details>
             ))}
             <div className="mt-2 flex flex-col gap-2">
-              <a href="#contact" className="btn-secondary w-full">
+              <a href="/contact" className="btn-secondary w-full">
                 Contact
               </a>
-              <a href="#contact" className="btn-primary w-full">
+              <a href="/contact" className="btn-primary w-full">
                 Book a demo
               </a>
             </div>

@@ -6,40 +6,40 @@ const GROUPS = [
   {
     title: "AI Bots",
     items: [
-      { label: "AI Instagram Chatbot", href: "#" },
-      { label: "AI WhatsApp Chatbot", href: "#" },
-      { label: "AI Facebook Chatbot", href: "#" },
-      { label: "AI Websites Chatbot", href: "#" },
-      { label: "AI Shopify Chatbot", href: "#" },
-      { label: "AI WooCommerce Chatbot", href: "#" },
-      { label: "AI Telegram Chatbot", href: "#" },
+      { label: "AI Instagram Chatbot", href: "/ai-bots/instagram" },
+      { label: "AI WhatsApp Chatbot", href: "/ai-bots/whatsapp" },
+      { label: "AI Facebook Chatbot", href: "/ai-bots/facebook" },
+      { label: "AI Websites Chatbot", href: "/ai-bots/websites" },
+      { label: "AI Shopify Chatbot", href: "/ai-bots/shopify" },
+      { label: "AI WooCommerce Chatbot", href: "/ai-bots/woocommerce" },
+      { label: "AI Telegram Chatbot", href: "/ai-bots/telegram" },
     ],
   },
   {
     title: "Solutions",
     items: [
-      { label: "Chatbot for Marketing", href: "#" },
-      { label: "Chatbot for Sales", href: "#" },
-      { label: "Chatbot for Lead Generation", href: "#" },
-      { label: "Chatbot for Engagement", href: "#" },
-      { label: "Chatbot for Customer Support", href: "#" },
-      { label: "Chatbot for Ecommerce", href: "#" },
+      { label: "Chatbot for Marketing", href: "/solutions/chatbot-for-marketing" },
+      { label: "Chatbot for Sales", href: "/solutions/chatbot-for-sales" },
+      { label: "Chatbot for Lead Generation", href: "/solutions/chatbot-for-lead-generation" },
+      { label: "Chatbot for Engagement", href: "/solutions/chatbot-for-engagement" },
+      { label: "Chatbot for Customer Support", href: "/solutions/chatbot-for-customer-support" },
+      { label: "Chatbot for Ecommerce", href: "/solutions/chatbot-for-ecommerce" },
     ],
   },
   {
     title: "Quick Links",
     items: [
-      { label: "Home", href: "#" },
-      { label: "Affiliate Partners", href: "#" },
-      { label: "Blogs", href: "#" },
-      { label: "Contact Us", href: "#contact" },
+      { label: "Home", href: "/" },
+      { label: "Affiliate Partners", href: "/resources/affiliate-partners" },
+      { label: "Blogs", href: "/resources/blogs" },
+      { label: "Contact Us", href: "/contact" },
     ],
   },
 ];
 
 export default function Footer() {
   return (
-    <footer id="contact" className="border-t border-ink-900/[0.08] bg-ink-900 text-white">
+    <footer className="border-t border-ink-900/[0.08] bg-ink-900 text-white">
       <div className="container-xl py-16">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_repeat(3,1fr)]">
           <div>

@@ -44,7 +44,7 @@ export default function FAQ() {
             <p className="mt-4 text-ink-900/70">
               Still curious? We reply personally — usually within a few hours.
             </p>
-            <a href="#contact" className="mt-6 inline-flex text-sm font-semibold text-brand-700">
+            <a href="/contact" className="mt-6 inline-flex text-sm font-semibold text-brand-700">
               Contact us →
             </a>
           </div>
