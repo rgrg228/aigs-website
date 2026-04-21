@@ -4,7 +4,7 @@ const dict: Dictionary = {
   common: {
     bookDemo: "预约演示",
     contact: "联系我们",
-    tryItOut: "立即试用",
+    tryItOut: "预约演示",
     seeAllChannels: "查看所有渠道",
     close: "关闭",
     languageSwitcher: "语言",
@@ -54,7 +54,7 @@ const dict: Dictionary = {
     titleHighlight: "都变成成交。",
     subtitle:
       "覆盖 WhatsApp、Facebook、Instagram、网站、Telegram 等渠道的 AI 聊天机器人。以极低成本雇用你的第一位 AI 员工——Chat2Sales 会像你最得力的员工一样回复客户、跟进线索、预约客户，不同的是它从不下班。",
-    primaryCta: "立即试用",
+    primaryCta: "预约演示",
     secondaryCta: "看它能做什么",
     stats: [
       { v: "10 倍", l: "线索" },
@@ -195,7 +195,8 @@ const dict: Dictionary = {
     titleHighlight: "轻松提升营收。",
     subtitle:
       "免费预约一次专家演示与咨询。我们帮你把第一个 AI 助理设置好——零代码、零麻烦，直接看到结果。",
-    primaryCta: "立即试用",
+    primaryCta: "预约演示",
+    reassurance: "按年付费享 2 个月免费 · 零设置费 · 由我们帮你设置",
   },
   footer: {
     tagline:
@@ -271,7 +272,7 @@ const dict: Dictionary = {
       "覆盖 WhatsApp、FB、IG 与 Shopify",
       "含设置与培训",
     ],
-    recommendedCta: "立即试用",
+    recommendedCta: "预约演示",
     inputPlaceholder: "输入消息…",
   },
   contact: {
@@ -339,7 +340,7 @@ const dict: Dictionary = {
       heading: "在你自己的业务上看效果。",
       subtitle:
         "预约一次免费演示，我们直接用你店铺的场景演示 Chat2Sales 如何运作。",
-      button: "立即试用",
+      button: "预约演示",
     },
   },
   affiliate: {

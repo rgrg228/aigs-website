@@ -21,7 +21,7 @@ export default function Partners({ dict }: { dict: Dictionary["partners"] }) {
               <img
                 src={p.src}
                 alt={p.alt}
-                className="h-10 w-auto object-contain opacity-80 grayscale transition hover:opacity-100 hover:grayscale-0 sm:h-12"
+                className="h-10 w-auto object-contain transition hover:scale-105 sm:h-12"
               />
             </div>
           ))}

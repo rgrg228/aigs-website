@@ -2,16 +2,16 @@ import type { Dictionary } from "../types";
 
 const dict: Dictionary = {
   common: {
-    bookDemo: "Book a demo",
+    bookDemo: "Book a Demo",
     contact: "Contact",
-    tryItOut: "Let's Try It Out",
+    tryItOut: "Book a Demo",
     seeAllChannels: "See all channels",
     close: "Close",
     languageSwitcher: "Language",
   },
   header: {
     contactCta: "Contact",
-    bookDemo: "Book a demo",
+    bookDemo: "Book a Demo",
     groups: [
       {
         label: "AI Bots",
@@ -54,7 +54,7 @@ const dict: Dictionary = {
     titleHighlight: "Into Sales.",
     subtitle:
       "AI Chatbot for WhatsApp, Facebook, Instagram, Website, Telegram & more. Hire your first AI employee for a fraction of the cost — Chat2Sales replies to customers, follows up leads, and books appointments, just like your best staff, but works non-stop.",
-    primaryCta: "Let's Try It Out",
+    primaryCta: "Book a Demo",
     secondaryCta: "See what it does",
     stats: [
       { v: "10x", l: "More leads" },
@@ -195,7 +195,8 @@ const dict: Dictionary = {
     titleHighlight: "AI automation.",
     subtitle:
       "Get a free live demo and consultation with our experts. We'll set up your first AI agent — no coding, no setup headaches. Just results.",
-    primaryCta: "Let's Try It Out",
+    primaryCta: "Book a Demo",
+    reassurance: "Free 2 months on yearly · No setup fee · We set it up for you",
   },
   footer: {
     tagline:
@@ -271,7 +272,7 @@ const dict: Dictionary = {
       "WhatsApp, FB, IG & Shopify",
       "Setup & training included",
     ],
-    recommendedCta: "Let's Try It Out",
+    recommendedCta: "Book a Demo",
     inputPlaceholder: "Type a message…",
   },
   contact: {
@@ -340,7 +341,7 @@ const dict: Dictionary = {
       heading: "See it on your own business.",
       subtitle:
         "Book a free demo and we'll show you exactly how Chat2Sales would run for your store.",
-      button: "Let's Try It Out",
+      button: "Book a Demo",
     },
   },
   affiliate: {
@@ -377,7 +378,7 @@ const dict: Dictionary = {
     whatYouGetTitle: "Built for the way your team actually sells.",
     faqsEyebrow: "FAQs",
     faqsTitle: "Frequently asked questions",
-    bookDemo: "Book a demo",
+    bookDemo: "Book a Demo",
     seeAllChannels: "See all channels",
   },
   legal: {
