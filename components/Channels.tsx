@@ -38,15 +38,14 @@ export default function Channels() {
     <section id="channels" className="section bg-brand-50/40">
       <div className="container-xl">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow">Channels</span>
+          <span className="eyebrow">Sell Smarter on Every Platform</span>
           <h2 className="mt-4 text-4xl font-extrabold tracking-tight text-ink-900 sm:text-5xl">
-            Sell smarter on every platform.
+            From WhatsApp to Facebook to LINE — one AI, every channel.
           </h2>
           <p className="mt-4 text-lg text-ink-900/70">
-            From WhatsApp to Facebook to LINE, Chat2Sales helps you reply,
-            follow up, and sell — automatically, all in one place. Add an AI
-            chatbot to your website, LiveChat, Messenger, or Slack to handle
-            all support cases 24/7.
+            Chat2Sales helps you reply, follow up, and sell — automatically, all
+            in one place. Add an AI chatbot to your website, LiveChat, Messenger,
+            or Slack to handle every conversation 24/7.
           </p>
         </div>
 

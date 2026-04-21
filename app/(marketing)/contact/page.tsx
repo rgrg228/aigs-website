@@ -1,16 +1,11 @@
 import type { Metadata } from "next";
+import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact Us | Chat2Sales",
   description:
     "Boost revenue effortlessly with AI automation. Get a free live demo and consultation with the Chat2Sales team — based in Kuala Lumpur, Malaysia.",
 };
-
-const REQUIREMENTS = [
-  "Affiliate Partner",
-  "Custom ChatBot Development",
-  "Others",
-];
 
 export default function ContactPage() {
   return (
@@ -56,85 +51,8 @@ export default function ContactPage() {
           </div>
         </div>
 
-        <form className="rounded-3xl border border-ink-900/[0.08] bg-white p-8 shadow-sm">
-          <h2 className="text-2xl font-bold text-ink-900">Let&apos;s get in touch</h2>
-          <p className="mt-2 text-sm text-ink-900/65">
-            Fill up the form and our team will get back to you within 24 hours.
-          </p>
-          <div className="mt-6 grid gap-4">
-            <Field label="Full Name" name="name" placeholder="Jane Doe" required />
-            <Field label="Phone" name="phone" placeholder="+60 12 345 6789" required />
-            <Field label="Email" name="email" type="email" placeholder="jane@company.com" required />
-            <label className="block">
-              <span className="text-sm font-semibold text-ink-900">
-                Select Your Requirement <span className="text-rose-500">*</span>
-              </span>
-              <select
-                name="requirement"
-                required
-                defaultValue=""
-                className="mt-2 w-full rounded-xl border border-ink-900/10 bg-white px-4 py-3 text-sm text-ink-900 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/30"
-              >
-                <option value="" disabled>
-                  Choose an option…
-                </option>
-                {REQUIREMENTS.map((r) => (
-                  <option key={r} value={r}>
-                    {r}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <label className="block">
-              <span className="text-sm font-semibold text-ink-900">
-                Enter Your Message Below <span className="text-rose-500">*</span>
-              </span>
-              <textarea
-                name="message"
-                rows={4}
-                required
-                placeholder="Tell us about your use case…"
-                className="mt-2 w-full rounded-xl border border-ink-900/10 bg-white px-4 py-3 text-sm placeholder:text-ink-900/40 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/30"
-              />
-            </label>
-            <button type="submit" className="btn-primary mt-2 justify-center">
-              Submit
-            </button>
-            <p className="text-xs text-ink-900/50">
-              By submitting the form you agree to the Terms and Privacy Policy.
-            </p>
-          </div>
-        </form>
+        <ContactForm />
       </div>
     </section>
-  );
-}
-
-function Field({
-  label,
-  name,
-  type = "text",
-  placeholder,
-  required,
-}: {
-  label: string;
-  name: string;
-  type?: string;
-  placeholder?: string;
-  required?: boolean;
-}) {
-  return (
-    <label className="block">
-      <span className="text-sm font-semibold text-ink-900">
-        {label} {required && <span className="text-rose-500">*</span>}
-      </span>
-      <input
-        name={name}
-        type={type}
-        required={required}
-        placeholder={placeholder}
-        className="mt-2 w-full rounded-xl border border-ink-900/10 bg-white px-4 py-3 text-sm placeholder:text-ink-900/40 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/30"
-      />
-    </label>
   );
 }

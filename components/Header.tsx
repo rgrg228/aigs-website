@@ -51,6 +51,12 @@ export default function Header() {
         </a>
 
         <nav className="hidden items-center gap-1 lg:flex">
+          <a
+            href="/pricing"
+            className="inline-flex items-center gap-1 rounded-full px-4 py-2 text-sm font-medium text-ink-900/75 transition hover:bg-brand-50 hover:text-brand-700"
+          >
+            Pricing
+          </a>
           {NAV.map((group) => (
             <div
               key={group.label}
@@ -112,6 +118,13 @@ export default function Header() {
       {open && (
         <div className="border-t border-ink-900/[0.06] bg-white lg:hidden">
           <div className="container-xl flex flex-col gap-1 py-4">
+            <a
+              href="/pricing"
+              onClick={() => setOpen(false)}
+              className="rounded-xl px-4 py-3 text-sm font-semibold text-ink-900 hover:bg-brand-50"
+            >
+              Pricing
+            </a>
             {NAV.map((group) => (
               <details key={group.label} className="group">
                 <summary className="flex cursor-pointer items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-ink-900 hover:bg-brand-50">

@@ -1,15 +1,34 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://chat2sales.ai";
+
 export const metadata: Metadata = {
-  title: "Chat2Sales — Turn conversations into revenue with AI",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "Chat2Sales | Your AI Sales Agent",
+    template: "%s | Chat2Sales",
+  },
   description:
-    "Chat2Sales is the AI sales agent that qualifies leads, books meetings, and closes deals 24/7 — directly on your website, WhatsApp, and Instagram.",
+    "Turning every conversation into sales. AI chatbot for WhatsApp, Facebook, Instagram, Website, Telegram & more — Chat2Sales replies to customers, follows up leads, and books appointments, 24/7.",
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "Chat2Sales — Turn conversations into revenue with AI",
+    title: "Chat2Sales | Your AI Sales Agent",
     description:
-      "The AI sales agent that qualifies leads, books meetings, and closes deals 24/7.",
+      "Turning every conversation into sales. AI chatbot across WhatsApp, Instagram, Website and more — built by AI Growth Solution (Kuala Lumpur).",
     type: "website",
+    url: SITE_URL,
+    siteName: "Chat2Sales",
+    locale: "en_MY",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Chat2Sales | Your AI Sales Agent",
+    description:
+      "Turning every conversation into sales. AI chatbot for WhatsApp, Instagram, Website & more.",
+  },
+  icons: {
+    icon: "/images/logo.webp",
   },
 };
 
