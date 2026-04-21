@@ -103,16 +103,22 @@ export default function SubPageTemplate({
               </div>
             </div>
 
-            {page.heroImage && (
-              <div className="relative">
-                <div className="absolute -inset-6 -z-10 rounded-[40px] bg-gradient-to-br from-brand-500/20 via-accent-500/20 to-transparent blur-2xl" />
+            <div className="relative">
+              <div className="absolute -inset-6 -z-10 rounded-[40px] bg-gradient-to-br from-brand-500/20 via-accent-500/20 to-transparent blur-2xl" />
+              {page.heroImage ? (
                 <img
                   src={page.heroImage}
                   alt=""
                   className="mx-auto w-full max-w-md"
                 />
-              </div>
-            )}
+              ) : (
+                <HeroChannelPreview
+                  channelLogo={page.channelLogo}
+                  eyebrow={page.eyebrow}
+                  locale={locale}
+                />
+              )}
+            </div>
           </div>
         </div>
       </section>
@@ -227,5 +233,66 @@ export default function SubPageTemplate({
 
       <CTA dict={dict.cta} locale={locale} />
     </>
+  );
+}
+
+function HeroChannelPreview({
+  channelLogo,
+  eyebrow,
+  locale,
+}: {
+  channelLogo?: string;
+  eyebrow: string;
+  locale: Locale;
+}) {
+  const previewMessages =
+    locale === "zh"
+      ? ["你好 👋 今天想找什么？", "有货吗？多少钱？", "✅ 明天 2:00 PM 已预约"]
+      : ["Hi 👋 What are you looking for?", "Is this in stock? How much?", "✅ Booked for tomorrow 2:00 PM"];
+
+  return (
+    <div className="relative mx-auto w-full max-w-md">
+      <div className="rounded-[32px] bg-white p-5 shadow-2xl ring-1 ring-ink-900/5">
+        <div className="flex items-center gap-3 border-b border-ink-900/5 pb-3">
+          {channelLogo && (
+            <img src={channelLogo} alt="" className="h-10 w-10 rounded-xl" />
+          )}
+          <div>
+            <p className="text-sm font-semibold text-ink-900">{eyebrow}</p>
+            <p className="text-[11px] text-ink-900/55">
+              {locale === "zh" ? "1 秒内回复" : "Replies in < 1s"}
+            </p>
+          </div>
+          <span className="ml-auto inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500" />
+        </div>
+        <div className="mt-4 space-y-3">
+          <div className="flex justify-start">
+            <div className="max-w-[85%] rounded-2xl rounded-bl-sm bg-brand-50 px-3.5 py-2 text-sm text-ink-900 ring-1 ring-brand-500/10">
+              {previewMessages[0]}
+            </div>
+          </div>
+          <div className="flex justify-end">
+            <div className="max-w-[85%] rounded-2xl rounded-br-sm bg-brand-600 px-3.5 py-2 text-sm text-white shadow-sm">
+              {previewMessages[1]}
+            </div>
+          </div>
+          <div className="flex justify-start">
+            <div className="max-w-[85%] rounded-2xl rounded-bl-sm bg-emerald-50 px-3.5 py-2 text-sm text-emerald-900 ring-1 ring-emerald-500/15">
+              {previewMessages[2]}
+            </div>
+          </div>
+        </div>
+        <div className="mt-5 flex items-center gap-2 border-t border-ink-900/5 pt-3">
+          <span className="flex-1 rounded-full bg-ink-900/[0.04] px-3 py-1.5 text-xs text-ink-900/40">
+            {locale === "zh" ? "输入消息…" : "Type a message…"}
+          </span>
+          <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-brand-600 text-white">
+            <svg className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M3.105 3.105a1.5 1.5 0 011.628-.334l13.5 5.5a1.5 1.5 0 010 2.78l-13.5 5.5a1.5 1.5 0 01-2.044-1.69l.94-4.231a1.5 1.5 0 011.17-1.144L10 10 4.8 8.514a1.5 1.5 0 01-1.17-1.144l-.94-4.231a1.5 1.5 0 01.415-1.034z" />
+            </svg>
+          </span>
+        </div>
+      </div>
+    </div>
   );
 }
