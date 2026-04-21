@@ -87,6 +87,19 @@ export const AI_BOTS: Record<string, SubPage> = {
         ],
         faq: BOT_FAQ_EN,
       },
+      zh: {
+        eyebrow: "Instagram AI 聊天机器人",
+        title: "搭建 Instagram AI 聊天机器人，自动接待每一次互动",
+        subtitle:
+          "用 Chat2Sales AI 获取并筛选线索，把私信变成成交机会，即时回复评论，全天候为客户服务。零代码，零麻烦，只看结果。",
+        features: [
+          { title: "营销自动化", body: "用智能群发和个性化滴灌活动，持续养熟每一条线索。" },
+          { title: "卖出产品", body: "用个性化推荐与对话式购物，把浏览者变成买家。" },
+          { title: "即时客服与常见问题", body: "通过 AI 聊天，提供即时、友好的服务。" },
+          { title: "获取线索", body: "让 AI 轻松获取并筛选高意向客户。" },
+        ],
+        faq: BOT_FAQ_ZH,
+      },
     },
   },
   whatsapp: {
@@ -128,6 +141,21 @@ export const AI_BOTS: Record<string, SubPage> = {
         ],
         faq: BOT_FAQ_EN,
       },
+      zh: {
+        eyebrow: "WhatsApp AI 聊天机器人",
+        title: "自动化你的 WhatsApp 对话，成交更多客户",
+        subtitle:
+          "用 Chat2Sales AI 即时接触客户、获取线索、全天候提供支持。一个对话，搞定营销与销售。",
+        features: [
+          { title: "营销自动化", body: "对客户进行分群，发送个性化的滴灌或群发活动。" },
+          { title: "卖出产品", body: "直接在 WhatsApp 上宣传并卖出产品。" },
+          { title: "客户支持", body: "AI WhatsApp 机器人即时响应客户问题，并支持在线人工。" },
+          { title: "预约时间", body: "客户可直接在对话中预约会议或课程，并自动同步到日历。" },
+          { title: "AI 驱动的聊天机器人", body: "为你的业务量身打造专属 AI WhatsApp 机器人。" },
+          { title: "对接 80+ 应用", body: "与 80 多个平台无缝对接——CRM、营销工具、自动化流程。" },
+        ],
+        faq: BOT_FAQ_ZH,
+      },
     },
   },
   facebook: {
@@ -149,6 +177,21 @@ export const AI_BOTS: Record<string, SubPage> = {
           { title: "Smart Triggers", body: "Auto-reply based on keywords or timing." },
         ],
         faq: BOT_FAQ_EN,
+      },
+      zh: {
+        eyebrow: "Facebook AI 聊天机器人",
+        title: "用 Facebook AI 聊天机器人自动接待客户、加速增长",
+        subtitle:
+          "用 AI 聊天机器人触达 Facebook 的庞大用户群。通过群发与滴灌活动 7×24 小时保持存在感，自动获取并筛选线索，协助客服与购物，并自动回复评论。",
+        features: [
+          { title: "训练 Facebook 机器人", body: "让聊天机器人学习你的产品、常见问题和服务。" },
+          { title: "自动回复评论", body: "自动回复评论，感谢用户并引导他们继续对话。" },
+          { title: "随处展示机器人", body: "把机器人加到你的网站，或通过二维码分享。" },
+          { title: "群发消息", body: "一键给所有粉丝发送活动、提醒或上新。" },
+          { title: "智能对话流程", body: "设计简单的对话路径，把客户从打招呼引导到下单。" },
+          { title: "智能触发器", body: "根据关键词或时间自动回复。" },
+        ],
+        faq: BOT_FAQ_ZH,
       },
     },
   },
@@ -172,6 +215,21 @@ export const AI_BOTS: Record<string, SubPage> = {
         ],
         faq: BOT_FAQ_EN,
       },
+      zh: {
+        eyebrow: "网站 AI 聊天机器人",
+        title: "用 AI 聊天机器人，把网站访客变成客户",
+        subtitle:
+          "在你的网站上提供 7×24 小时服务。让 AI 聊天机器人处理常见问题、预约、产品咨询和下单——零代码部署，基于你自己的内容训练，答案准确可靠。",
+        features: [
+          { title: "训练你的 AI 聊天机器人", body: "用常见问题、网站内容和知识库让它更聪明。" },
+          { title: "获取高质量线索", body: "收集联系方式，直接同步到你的 CRM。" },
+          { title: "提供及时客服", body: "把客户转接到在线人工，并协助他们使用网站。" },
+          { title: "预约时间", body: "把会议、课程或体验课与你的日历自动同步。" },
+          { title: "提升转化率", body: "推荐产品、提供订单更新、支付支持和弃购挽回。" },
+          { title: "网站在线客服", body: "全渠道在线客服，支持真人实时接手。" },
+        ],
+        faq: BOT_FAQ_ZH,
+      },
     },
   },
   shopify: {
@@ -193,6 +251,21 @@ export const AI_BOTS: Record<string, SubPage> = {
           { title: "24/7 Customer Support", body: "Always-on support that builds loyalty and repeat buyers." },
         ],
         faq: BOT_FAQ_EN,
+      },
+      zh: {
+        eyebrow: "Shopify AI 聊天机器人",
+        title: "用 Shopify 聊天机器人，提升客户满意度与销售",
+        subtitle:
+          "专为 Shopify 商家打造的 AI 聊天机器人，简化店铺运营，同时提升客户体验。",
+        features: [
+          { title: "弃购挽回", body: "自动跟进弃购客户，把流失的订单赢回来。" },
+          { title: "订单确认、取消与发货", body: "实时更新让客户在每个环节都安心。" },
+          { title: "AI 购物助理", body: "个性化产品推荐，实时解答疑问。" },
+          { title: "货到付款通知", body: "货到付款订单即时通知。" },
+          { title: "退货与退款更新", body: "让客户随时了解退货与退款进度。" },
+          { title: "7×24 小时客服", body: "全天候服务，培养忠诚客户与复购。" },
+        ],
+        faq: BOT_FAQ_ZH,
       },
     },
   },
@@ -216,6 +289,21 @@ export const AI_BOTS: Record<string, SubPage> = {
         ],
         faq: BOT_FAQ_EN,
       },
+      zh: {
+        eyebrow: "WooCommerce AI 聊天机器人",
+        title: "用 AI 聊天机器人升级你的 WooCommerce 店铺",
+        subtitle:
+          "即时提供客服、自动发送订单更新、轻松提升购物体验。用 WhatsApp 聊天机器人自动化弃购挽回、订单更新、确认和 7×24 小时 AI 客服，推动 WooCommerce 销售增长。",
+        features: [
+          { title: "弃购挽回", body: "通过 WhatsApp 自动提醒，把客人拉回结账。" },
+          { title: "个性化产品推荐", body: "AI 驱动的向上销售与交叉销售。" },
+          { title: "订单确认与发货", body: "即时确认与配送更新。" },
+          { title: "AI 购物助理", body: "实时跟踪与配送通知。" },
+          { title: "退货与换货申请", body: "基于你自己的退货政策与页面训练。" },
+          { title: "7×24 小时客服", body: "专为 WooCommerce 打造的全天候 WhatsApp 机器人。" },
+        ],
+        faq: BOT_FAQ_ZH,
+      },
     },
   },
   telegram: {
@@ -237,6 +325,21 @@ export const AI_BOTS: Record<string, SubPage> = {
           { title: "Share Files", body: "Documents, videos, and images with Telegram's end-to-end encryption." },
         ],
         faq: BOT_FAQ_EN,
+      },
+      zh: {
+        eyebrow: "Telegram AI 聊天机器人",
+        title: "自动化你的 Telegram 对话，持续拉升互动",
+        subtitle:
+          "用 Chat2Sales AI 在 Telegram 上即时接触客户、养熟线索、提供 7×24 小时服务——驱动业务的每一个环节。",
+        features: [
+          { title: "提供客户支持", body: "7×24 小时即时响应，覆盖私聊、群组与频道。" },
+          { title: "营销自动化", body: "对用户分群，发送更新或促销。" },
+          { title: "提升销售", body: "推荐产品、处理订单、挽回弃购。" },
+          { title: "统一收件箱与在线客服", body: "为团队提供集中式收件箱与在线客服工具。" },
+          { title: "预约时间", body: "直接在对话中安排会议、课程或体验。" },
+          { title: "分享文件", body: "用 Telegram 的端到端加密分享文档、视频、图片。" },
+        ],
+        faq: BOT_FAQ_ZH,
       },
     },
   },
