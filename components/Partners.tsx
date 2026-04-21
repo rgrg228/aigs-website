@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import type { Dictionary } from "@/lib/i18n/types";
 
 const PARTNERS = [
   { src: "/images/partner-meta.webp", alt: "Meta Business Partners" },
@@ -7,12 +8,12 @@ const PARTNERS = [
   { src: "/images/partner-deepseek.webp", alt: "DeepSeek" },
 ];
 
-export default function Partners() {
+export default function Partners({ dict }: { dict: Dictionary["partners"] }) {
   return (
     <section className="border-y border-ink-900/[0.06] bg-brand-50/30 py-14">
       <div className="container-xl">
         <p className="text-center text-xs font-semibold uppercase tracking-[0.2em] text-ink-900/50">
-          Global Accreditation and Strategic Partnerships
+          {dict.heading}
         </p>
         <div className="mt-8 grid grid-cols-2 items-center gap-8 sm:grid-cols-4 sm:gap-12">
           {PARTNERS.map((p) => (

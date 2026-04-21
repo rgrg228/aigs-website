@@ -1,13 +1,17 @@
 import ChatMockup from "./ChatMockup";
+import type { Dictionary } from "@/lib/i18n/types";
+import type { Locale } from "@/lib/i18n/config";
+import { localeHref } from "@/lib/i18n/href";
 
-const STATS = [
-  { v: "10x", l: "More leads" },
-  { v: "90%", l: "Queries solved" },
-  { v: "70%", l: "More engagement" },
-  { v: "90%", l: "More revenue" },
-];
-
-export default function Hero() {
+export default function Hero({
+  dict,
+  mockupDict,
+  locale,
+}: {
+  dict: Dictionary["hero"];
+  mockupDict: Dictionary["chatMockup"];
+  locale: Locale;
+}) {
   return (
     <section className="relative overflow-hidden">
       <div className="absolute inset-0 -z-10">
@@ -21,33 +25,30 @@ export default function Hero() {
           <div>
             <span className="eyebrow">
               <span className="h-1.5 w-1.5 rounded-full bg-accent-500" />
-              Meta Business Partner · Google Partner
+              {dict.eyebrow}
             </span>
             <h1 className="mt-6 text-5xl font-extrabold leading-[1.05] tracking-tight text-ink-900 sm:text-6xl lg:text-7xl">
-              Turning Every Conversation{" "}
-              <span className="gradient-text">Into Sales.</span>
+              {dict.titleLine1}{" "}
+              <span className="gradient-text">{dict.titleHighlight}</span>
             </h1>
             <p className="mt-5 max-w-xl text-lg text-ink-900/70">
-              AI Chatbot for WhatsApp, Facebook, Instagram, Website, Telegram &amp;
-              more. Hire your first AI employee for a fraction of the cost —
-              Chat2Sales replies to customers, follows up leads, and books
-              appointments, just like your best staff, but works non-stop.
+              {dict.subtitle}
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
-              <a href="/contact" className="btn-primary text-base">
-                Let&apos;s Try It Out
+              <a href={localeHref(locale, "/contact")} className="btn-primary text-base">
+                {dict.primaryCta}
                 <svg className="ml-2 h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M7.22 14.78a.75.75 0 010-1.06L10.94 10 7.22 6.28a.75.75 0 111.06-1.06l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0z" clipRule="evenodd" />
                 </svg>
               </a>
               <a href="#features" className="btn-secondary text-base">
-                See what it does
+                {dict.secondaryCta}
               </a>
             </div>
 
             <dl className="mt-10 grid max-w-xl grid-cols-2 gap-6 border-t border-ink-900/10 pt-8 sm:grid-cols-4">
-              {STATS.map((s) => (
+              {dict.stats.map((s) => (
                 <div key={s.l}>
                   <dt className="text-xs font-semibold uppercase tracking-wider text-ink-900/50">
                     {s.l}
@@ -62,7 +63,7 @@ export default function Hero() {
 
           <div className="relative">
             <div className="absolute -inset-6 -z-10 rounded-[40px] bg-gradient-to-br from-brand-500/20 via-accent-400/20 to-transparent blur-2xl" />
-            <ChatMockup />
+            <ChatMockup dict={mockupDict} />
           </div>
         </div>
       </div>

@@ -1,35 +1,17 @@
 "use client";
 
 import { useState } from "react";
+import type { Dictionary } from "@/lib/i18n/types";
+import type { Locale } from "@/lib/i18n/config";
+import { localeHref } from "@/lib/i18n/href";
 
-const ITEMS = [
-  {
-    q: "What is Chat2Sales AI?",
-    a: "Chat2Sales is your 24/7 AI sales assistant that replies to customers, books appointments, and follows up leads automatically across WhatsApp, Instagram, Website, Facebook, LINE, and more.",
-  },
-  {
-    q: "Can I connect it to my existing accounts?",
-    a: "Yes. Chat2Sales works with WhatsApp, Facebook, Instagram, LINE, WeChat, Telegram, and your website chat widget.",
-  },
-  {
-    q: "Do I need any technical skills?",
-    a: "Not at all. We can 100% set up for you.",
-  },
-  {
-    q: "Can the AI speak multiple languages?",
-    a: "Yes. Chat2Sales supports over 50 languages, including English, Mandarin, Bahasa Malaysia, and Cantonese.",
-  },
-  {
-    q: "Can I still chat manually if I want to?",
-    a: "Of course. You can jump into any conversation anytime — your AI will pause automatically.",
-  },
-  {
-    q: "Difference between an AI chatbot and a chatbot?",
-    a: "A generative AI chatbot (Chat2Sales) is an advanced type of chatbot that uses artificial intelligence to create dynamic, human-like responses in real time rather than relying solely on predefined scripts or answers. Unlike rule-based bots, which can only respond with pre-programmed replies, a generative AI chatbot understands the context and meaning behind a user's input, and generates new and unique responses based on the conversation.",
-  },
-];
-
-export default function FAQ() {
+export default function FAQ({
+  dict,
+  locale,
+}: {
+  dict: Dictionary["faq"];
+  locale: Locale;
+}) {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
@@ -37,20 +19,21 @@ export default function FAQ() {
       <div className="container-xl">
         <div className="grid gap-12 lg:grid-cols-[1fr_2fr]">
           <div>
-            <span className="eyebrow">FAQs</span>
+            <span className="eyebrow">{dict.eyebrow}</span>
             <h2 className="mt-4 text-4xl font-extrabold tracking-tight text-ink-900 sm:text-5xl">
-              Frequently Asked Questions
+              {dict.title}
             </h2>
-            <p className="mt-4 text-ink-900/70">
-              Still curious? We reply personally — usually within a few hours.
-            </p>
-            <a href="/contact" className="mt-6 inline-flex text-sm font-semibold text-brand-700">
-              Contact us →
+            <p className="mt-4 text-ink-900/70">{dict.subtitle}</p>
+            <a
+              href={localeHref(locale, "/contact")}
+              className="mt-6 inline-flex text-sm font-semibold text-brand-700"
+            >
+              {dict.contactLink}
             </a>
           </div>
 
           <div className="divide-y divide-ink-900/10 rounded-3xl border border-ink-900/[0.08] bg-white">
-            {ITEMS.map((item, i) => {
+            {dict.items.map((item, i) => {
               const isOpen = open === i;
               return (
                 <button
