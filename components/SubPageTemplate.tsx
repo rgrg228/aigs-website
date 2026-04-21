@@ -7,6 +7,52 @@ import type { Dictionary } from "@/lib/i18n/types";
 import type { Locale } from "@/lib/i18n/config";
 import { localeHref } from "@/lib/i18n/href";
 
+type FeatureStyle = {
+  badge: string;
+  ring: string;
+  wash: string;
+  glow: string;
+};
+
+const FEATURE_STYLES: FeatureStyle[] = [
+  {
+    badge: "bg-brand-600 text-white",
+    ring: "ring-brand-500/20",
+    wash: "from-brand-500/10 via-brand-300/5 to-transparent",
+    glow: "bg-brand-400/40",
+  },
+  {
+    badge: "bg-emerald-600 text-white",
+    ring: "ring-emerald-500/25",
+    wash: "from-emerald-400/15 via-emerald-200/5 to-transparent",
+    glow: "bg-emerald-400/40",
+  },
+  {
+    badge: "bg-amber-500 text-white",
+    ring: "ring-amber-400/25",
+    wash: "from-amber-400/15 via-orange-200/5 to-transparent",
+    glow: "bg-amber-400/40",
+  },
+  {
+    badge: "bg-violet-600 text-white",
+    ring: "ring-violet-500/20",
+    wash: "from-violet-500/15 via-fuchsia-300/5 to-transparent",
+    glow: "bg-violet-400/40",
+  },
+  {
+    badge: "bg-rose-500 text-white",
+    ring: "ring-rose-400/25",
+    wash: "from-rose-400/15 via-pink-200/5 to-transparent",
+    glow: "bg-rose-400/40",
+  },
+  {
+    badge: "bg-sky-600 text-white",
+    ring: "ring-sky-500/20",
+    wash: "from-sky-500/15 via-cyan-200/5 to-transparent",
+    glow: "bg-sky-400/40",
+  },
+];
+
 export default function SubPageTemplate({
   page,
   dict,
@@ -94,15 +140,38 @@ export default function SubPageTemplate({
               {t.whatYouGetTitle}
             </h2>
           </div>
-          <div className="mt-14 grid gap-6 md:grid-cols-3">
-            {page.features.map((f) => (
-              <div key={f.title} className="card">
-                <h3 className="text-lg font-semibold text-ink-900">{f.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-ink-900/65">
-                  {f.body}
-                </p>
-              </div>
-            ))}
+          <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {page.features.map((f, i) => {
+              const style = FEATURE_STYLES[i % FEATURE_STYLES.length];
+              return (
+                <article
+                  key={f.title}
+                  className={`group relative flex flex-col overflow-hidden rounded-3xl bg-white p-7 ring-1 transition duration-300 hover:-translate-y-1 hover:shadow-xl ${style.ring}`}
+                >
+                  <div
+                    className={`pointer-events-none absolute inset-0 bg-gradient-to-br ${style.wash}`}
+                    aria-hidden="true"
+                  />
+                  <div
+                    className={`pointer-events-none absolute -right-12 -top-12 h-32 w-32 rounded-full blur-2xl opacity-0 transition duration-500 group-hover:opacity-80 ${style.glow}`}
+                    aria-hidden="true"
+                  />
+                  <div className="relative flex items-center">
+                    <span
+                      className={`inline-flex h-9 w-9 items-center justify-center rounded-full text-sm font-bold ${style.badge}`}
+                    >
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                  </div>
+                  <h3 className="relative mt-5 text-lg font-bold leading-snug text-ink-900">
+                    {f.title}
+                  </h3>
+                  <p className="relative mt-2 text-[15px] leading-relaxed text-ink-900/65">
+                    {f.body}
+                  </p>
+                </article>
+              );
+            })}
           </div>
         </div>
       </section>
