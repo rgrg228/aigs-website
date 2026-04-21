@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 export default function ChatMockup() {
   return (
     <div className="relative mx-auto w-full max-w-md overflow-hidden rounded-3xl border border-ink-900/10 bg-white shadow-2xl">
@@ -10,8 +11,8 @@ export default function ChatMockup() {
             <span className="absolute -bottom-0.5 -right-0.5 h-3 w-3 rounded-full border-2 border-white bg-green-500" />
           </div>
           <div>
-            <p className="text-sm font-semibold text-ink-900">Ava · Sales AI</p>
-            <p className="text-xs text-ink-900/55">Online · replies in &lt; 1s</p>
+            <p className="text-sm font-semibold text-ink-900">Chat2Sales AI</p>
+            <p className="text-xs text-ink-900/55">WhatsApp · replies in &lt; 1s</p>
           </div>
         </div>
         <div className="flex items-center gap-1">
@@ -23,34 +24,35 @@ export default function ChatMockup() {
 
       <div className="space-y-4 bg-gradient-to-b from-brand-50/60 to-white px-5 py-6">
         <Bubble from="bot">
-          Hey 👋 I'm Ava. Looking for a plan that fits a team of 20?
+          Hi 👋 Thanks for reaching out to Chat2Sales. What brings you here today?
         </Bubble>
         <Bubble from="user">
-          Yes — we need HubSpot sync and WhatsApp. What would you recommend?
+          Looking for a chatbot for my Shopify store + WhatsApp.
         </Bubble>
         <Bubble from="bot" typing>
-          Based on your stack, the <b>Growth plan</b> is perfect. It includes
-          native HubSpot + WhatsApp Business and 10k AI conversations / mo.
+          Got it. How many messages per month do you usually get across all
+          channels?
         </Bubble>
 
         <div className="rounded-2xl border border-ink-900/10 bg-white p-4 shadow-sm">
           <p className="text-xs font-semibold uppercase tracking-wide text-brand-700">
-            Recommended
+            Suggested Plan
           </p>
-          <p className="mt-1 text-lg font-bold text-ink-900">Growth · $149/mo</p>
+          <p className="mt-1 text-lg font-bold text-ink-900">AI Smart · RM699/mo</p>
           <ul className="mt-2 space-y-1 text-sm text-ink-900/70">
-            <li>• 10,000 AI conversations</li>
-            <li>• HubSpot + WhatsApp Business</li>
-            <li>• 5 team seats</li>
+            <li>• Unlimited messages</li>
+            <li>• WhatsApp, FB, IG &amp; Shopify</li>
+            <li>• 5 team seats · 3 agents</li>
           </ul>
           <button className="mt-3 w-full rounded-full bg-brand-600 py-2 text-sm font-semibold text-white hover:bg-brand-700">
-            Book a demo
+            Let&apos;s Try It Out
           </button>
         </div>
 
-        <Bubble from="user">Can you book a demo with sales tomorrow?</Bubble>
+        <Bubble from="user">Can we get a live demo tomorrow?</Bubble>
         <Bubble from="bot">
-          ✅ Booked — tomorrow at 2:00 PM with Maya. Calendar invite sent.
+          ✅ Booked — tomorrow 2:00 PM (GMT+8). A team member will message you
+          here to confirm.
         </Bubble>
       </div>
 

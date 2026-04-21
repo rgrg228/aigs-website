@@ -30,6 +30,7 @@ const GROUPS = [
     title: "Quick Links",
     items: [
       { label: "Home", href: "/" },
+      { label: "Pricing", href: "/pricing" },
       { label: "Affiliate Partners", href: "/resources/affiliate-partners" },
       { label: "Blogs", href: "/resources/blogs" },
       { label: "Contact Us", href: "/contact" },
@@ -91,8 +92,8 @@ export default function Footer() {
         <div className="mt-12 flex flex-col items-start justify-between gap-4 border-t border-white/10 pt-8 text-sm text-white/50 sm:flex-row sm:items-center">
           <p>© AI Growth Solution {new Date().getFullYear()}. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <a href="#" className="hover:text-white">Privacy Policy</a>
-            <a href="#" className="hover:text-white">Terms &amp; Conditions</a>
+            <a href="/privacy-policy" className="hover:text-white">Privacy Policy</a>
+            <a href="/terms-and-conditions" className="hover:text-white">Terms &amp; Conditions</a>
           </div>
         </div>
       </div>
