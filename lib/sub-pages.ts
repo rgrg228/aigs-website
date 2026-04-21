@@ -365,6 +365,20 @@ export const SOLUTIONS: Record<string, SubPage> = {
           { title: "Native App Integrations", body: "Seamless with CRMs, marketing tools, and communication apps." },
         ],
       },
+      zh: {
+        eyebrow: "AI 销售助理",
+        title: "用 7×24 小时在线的 AI 销售助理，数倍提升成交",
+        subtitle:
+          "让 AI 销售助理帮团队自动化跟进线索、个性化对话、更快完成成交——你专心做战略与增长。",
+        features: [
+          { title: "7×24 小时在线", body: "跨时区持续为客户提供支持。" },
+          { title: "数据驱动洞察", body: "覆盖整个销售漏斗的绩效分析。" },
+          { title: "上下文感知", body: "适配你的品牌语气与沟通风格。" },
+          { title: "自动化线索筛选", body: "识别并优先处理最高潜力的客户。" },
+          { title: "自动化跟进", body: "根据用户行为触发个性化跟进。" },
+          { title: "原生应用集成", body: "无缝对接 CRM、营销工具与沟通应用。" },
+        ],
+      },
     },
   },
   "ai-marketing-agents": {
@@ -388,6 +402,22 @@ export const SOLUTIONS: Record<string, SubPage> = {
           { title: "Seamless Integration", body: "Sync data, automate workflows, and scale without disruption." },
         ],
       },
+      zh: {
+        eyebrow: "AI 营销助理",
+        title: "用 AI 营销助理，把你的营销推上新高度",
+        subtitle:
+          "用 AI 驱动的自动化、个性化和无缝集成，优化每一场营销活动——更聪明的执行、更快的决策、更高的 ROI。",
+        features: [
+          { title: "精准活动", body: "基于行为、兴趣和意图进行 AI 分群。" },
+          { title: "线索评分", body: "自动把高质量线索排在最前面。" },
+          { title: "预测性洞察", body: "预判用户下一步动作与购买行为。" },
+          { title: "实时个性化", body: "根据实时信号动态调整内容。" },
+          { title: "活动优化", body: "根据实时互动自动调优投放。" },
+          { title: "全渠道覆盖", body: "在一个平台上同时跑邮件、社交媒体、短信与广告。" },
+          { title: "内容创作", body: "生成多语言、本地化的营销素材。" },
+          { title: "无缝对接", body: "同步数据、自动化流程，增长不中断。" },
+        ],
+      },
     },
   },
   "chatbot-for-marketing": {
@@ -405,6 +435,18 @@ export const SOLUTIONS: Record<string, SubPage> = {
           { title: "Design an Engaging Conversational Experience", body: "Engage leads 24/7 with human-like interactions." },
           { title: "Deploy Across Every Channel That Matters", body: "WhatsApp, Facebook, Instagram, or your website." },
           { title: "Analyze, Learn, and Optimize for Growth", body: "Track performance, identify drop-offs, and refine strategy." },
+        ],
+      },
+      zh: {
+        eyebrow: "营销聊天机器人",
+        title: "把你的线索变成付费客户",
+        subtitle:
+          "你负责把流量引进来——Chat2Sales AI 负责搞定剩下的。智能聊天机器人在 WhatsApp、Instagram 和你的网站上互动、筛选、养熟每一条线索。",
+        features: [
+          { title: "让聊天机器人配合营销目标", body: "识别关键触点，把机器人目标与营销结果对齐。" },
+          { title: "设计有吸引力的对话体验", body: "7×24 小时像真人一样互动，让线索持续参与。" },
+          { title: "部署到所有重要渠道", body: "WhatsApp、Facebook、Instagram 或你的网站。" },
+          { title: "分析、学习、持续优化", body: "追踪表现、找到流失点、优化策略。" },
         ],
       },
     },
@@ -426,6 +468,18 @@ export const SOLUTIONS: Record<string, SubPage> = {
           { title: "Nurture Leads and Optimize Performance", body: "Monitor conversations, identify drop-offs, and refine flows." },
         ],
       },
+      zh: {
+        eyebrow: "销售聊天机器人",
+        title: "把琐事交给机器人，专心成交更多订单",
+        subtitle:
+          "Chat2Sales AI 为销售团队带来智能助手与聊天机器人，提升效率、简化流程、稳定带来营收增长。",
+        features: [
+          { title: "让机器人匹配你的销售策略", body: "识别关键触点，把机器人流程和销售流程对齐。" },
+          { title: "按你的筛选标准训练它", body: "按照你的规则教机器人如何筛选客户。" },
+          { title: "对接 CRM 与日历，部署到任何渠道", body: "自动化预约、数据同步与跟进。" },
+          { title: "养熟线索、优化表现", body: "监测对话、识别流失点、优化流程。" },
+        ],
+      },
     },
   },
   "chatbot-for-lead-generation": {
@@ -442,6 +496,17 @@ export const SOLUTIONS: Record<string, SubPage> = {
           { title: "Conversational Lead Capture", body: "Collect data and opt-ins via your website or WhatsApp instead of static forms." },
           { title: "Identify High-Intent Leads", body: "Custom conditions and pre-built blocks score leads automatically." },
           { title: "Route to the Right Person", body: "Transition chats to humans instantly when intent is ready." },
+        ],
+      },
+      zh: {
+        eyebrow: "获客聊天机器人",
+        title: "告别枯燥表单，让对话自动带来订单",
+        subtitle:
+          "不用再担心表单太长、流失太多。用网站或 WhatsApp 上的对话式获客，收集信息与授权——让每一次互动都自然、贴心又有吸引力。",
+        features: [
+          { title: "对话式线索获取", body: "用网站或 WhatsApp 的对话代替静态表单收集信息与授权。" },
+          { title: "识别高意向客户", body: "自定义规则与预置模块自动为客户打分。" },
+          { title: "即时路由到合适的同事", body: "当客户意向成熟时，立即把对话交给真人。" },
         ],
       },
     },
@@ -462,6 +527,17 @@ export const SOLUTIONS: Record<string, SubPage> = {
           { title: "Tailored Messaging", body: "Integrate with leading CRMs, helpdesks & marketing apps for the right data at the right time." },
         ],
       },
+      zh: {
+        eyebrow: "用户互动聊天机器人",
+        title: "用互动式 AI 对话，持续留住你的用户",
+        subtitle:
+          "Chat2Sales AI 在用户旅程的每一个环节都与客户保持连接——即时回复、提醒、产品推荐和互动体验，持续增强品牌忠诚度。",
+        features: [
+          { title: "提升产品采用与发现", body: "通过网页与移动端的日常沟通，持续教育新用户。" },
+          { title: "智能通知", body: "自动发送服务更新、提醒和通知，减少客户咨询。" },
+          { title: "定制化沟通", body: "对接主流 CRM、客服与营销工具，让每条消息都带着正确的上下文。" },
+        ],
+      },
     },
   },
   "chatbot-for-customer-support": {
@@ -478,6 +554,17 @@ export const SOLUTIONS: Record<string, SubPage> = {
           { title: "Help Customers 24/7", body: "Empower customers to solve their own questions with automated FAQs, smart replies, and proactive notifications." },
           { title: "Shared Team Inbox", body: "Human takeover, automation tools, and shortcuts to manage complex queries in one place." },
           { title: "Tailored Messaging", body: "Integrate with CRMs, helpdesks, and marketing apps so every reply has the right context." },
+        ],
+      },
+      zh: {
+        eyebrow: "客服聊天机器人",
+        title: "提供五星级客服，建立更强客户关系",
+        subtitle:
+          "用 AI 聊天机器人自动化客服、节省时间、提供个性化支持——出现在客户本来就用的每一个渠道。",
+        features: [
+          { title: "7×24 小时响应客户", body: "通过自动常见问题、智能回复、主动通知，让客户自助解决大多数问题。" },
+          { title: "团队共享收件箱", body: "真人接手、自动化工具和快捷语集中管理复杂咨询。" },
+          { title: "定制化回复", body: "对接 CRM、客服系统和营销工具，让每条回复都带着正确上下文。" },
         ],
       },
     },
@@ -497,6 +584,18 @@ export const SOLUTIONS: Record<string, SubPage> = {
           { title: "Deliver Instant, 24/7 Customer Support", body: "Answer questions about products, pricing, or delivery any time of day." },
           { title: "Recover Abandoned Carts", body: "Human takeover, automation tools, and shortcuts for complex queries." },
           { title: "Recommend Products That Sell", body: "AI-driven recommendations to boost average order value." },
+        ],
+      },
+      zh: {
+        eyebrow: "电商聊天机器人",
+        title: "用 Chat2Sales AI 自动化电商的销售与客服",
+        subtitle:
+          "通过 WhatsApp、Instagram 和你的网站，即时接待购物者、推荐产品、挽回弃购，并提供 7×24 小时客服。",
+        features: [
+          { title: "自动挽回流失订单", body: "通过 WhatsApp 或 Instagram 发送个性化跟进。" },
+          { title: "即时、全天候客服", body: "随时回答关于产品、价格或配送的问题。" },
+          { title: "挽回弃购", body: "复杂咨询时可真人接手，还有自动化工具和快捷语辅助。" },
+          { title: "推荐卖得出去的产品", body: "用 AI 驱动的推荐提升客单价。" },
         ],
       },
     },
