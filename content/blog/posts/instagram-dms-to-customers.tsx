@@ -7,15 +7,15 @@ const post: BlogPost = {
   readMinutes: 4,
   locales: {
     en: {
-      title: "Turning Instagram DMs into paying customers — in under 3 minutes.",
+      title: "Turning Instagram DMs into paying customers, in under 3 minutes.",
       excerpt:
-        "Your best marketing channel is also your worst sales channel — because nobody's replying fast enough. Here's the playbook.",
+        "Your best marketing channel is also your worst sales channel, because nobody's replying fast enough. Here's the playbook.",
       body: () => (
         <>
           <p>
             Your Instagram is doing its job. Reels are getting views, Stories
             are getting replies, comments are flowing. And then the DM inbox
-            sits there — unread for hours.
+            sits there, unread for hours.
           </p>
           <p>
             Every hour you don&apos;t reply, the chance of that lead buying
@@ -44,7 +44,7 @@ const post: BlogPost = {
             </li>
             <li>
               <strong>Quick qualification.</strong> Ask one or two short
-              questions — what they&apos;re looking for, their budget,
+              questions, what they&apos;re looking for, their budget,
               timeline.
             </li>
             <li>
@@ -53,7 +53,7 @@ const post: BlogPost = {
             </li>
             <li>
               <strong>Human takeover when it matters.</strong> If the lead is
-              hot or asks something unusual, the real you steps in — with the
+              hot or asks something unusual, the real you steps in, with the
               full conversation already in front of you.
             </li>
           </ol>
@@ -76,11 +76,11 @@ const post: BlogPost = {
     zh: {
       title: "3 分钟内把 Instagram DM 变成付费客户。",
       excerpt:
-        "你最好的营销渠道，常常也是最烂的销售渠道——因为没人回得够快。给你一套可复用的打法。",
+        "你最好的营销渠道，常常也是最烂的销售渠道，因为没人回得够快。给你一套可复用的打法。",
       body: () => (
         <>
           <p>
-            你的 Instagram 做得很好。Reels 有流量、Stories 有人回复、评论区热闹。然后私信箱就那样放着——几个小时都没人看。
+            你的 Instagram 做得很好。Reels 有流量、Stories 有人回复、评论区热闹。然后私信箱就那样放着，几个小时都没人看。
           </p>
           <p>
             你每晚一小时回复，客户下单的概率就往下掉。速度永远比文案更重要。
@@ -107,7 +107,7 @@ const post: BlogPost = {
               <strong>发对的链接或产品。</strong>根据回答，精准推送相应的产品、落地页或预约链接。
             </li>
             <li>
-              <strong>关键时刻真人接手。</strong>遇到高意向客户或特别问题，你亲自上——所有上下文已经放在你面前。
+              <strong>关键时刻真人接手。</strong>遇到高意向客户或特别问题，你亲自上，所有上下文已经放在你面前。
             </li>
           </ol>
 

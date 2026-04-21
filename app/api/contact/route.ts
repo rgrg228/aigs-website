@@ -40,7 +40,7 @@ async function deliverEmail(payload: Payload): Promise<void> {
   const safeReq = escapeHtml(payload.requirement ?? "");
   const safeMsg = escapeHtml(payload.message ?? "").replace(/\n/g, "<br>");
 
-  const subject = `New demo request — ${payload.name ?? "unknown"}`;
+  const subject = `New demo request, ${payload.name ?? "unknown"}`;
   const html = `
     <h2>New Chat2Sales demo request</h2>
     <p><strong>Name:</strong> ${safeName}</p>
@@ -90,7 +90,7 @@ async function deliverEmail(payload: Payload): Promise<void> {
     return;
   }
 
-  console.log("[contact] no RESEND_API_KEY or CONTACT_WEBHOOK_URL set — dropping on floor", payload);
+  console.log("[contact] no RESEND_API_KEY or CONTACT_WEBHOOK_URL set, dropping on floor", payload);
 }
 
 export async function POST(req: Request) {

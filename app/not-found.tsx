@@ -14,7 +14,7 @@ export default function NotFound() {
             </h1>
             <p className="mt-4 text-base text-ink-900/70">
               The link might be broken, or the page may have moved. Head back
-              home and we&apos;ll get you sorted — or message us on WhatsApp,
+              home and we&apos;ll get you sorted, or message us on WhatsApp,
               we reply in a minute.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">

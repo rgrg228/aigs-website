@@ -35,12 +35,13 @@ export default function TermsPage({
         <div className="prose prose-slate mt-12 max-w-none text-ink-900/80 [&_h2]:mt-10 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-ink-900 [&_p]:mt-3 [&_p]:leading-relaxed [&_ul]:mt-3 [&_ul]:list-disc [&_ul]:pl-6 [&_li]:mt-1">
           <h2>1. Terminology</h2>
           <p>
-            &ldquo;Client&rdquo;, &ldquo;You&rdquo;, &ldquo;Your&rdquo; — the
-            person accessing this website. &ldquo;The Company&rdquo;,
-            &ldquo;Ourselves&rdquo;, &ldquo;We&rdquo;, &ldquo;Our&rdquo;,
-            &ldquo;Us&rdquo; — AI Growth Solution. &ldquo;Party&rdquo;,
-            &ldquo;Parties&rdquo;, or &ldquo;Us&rdquo; — both the Client and
-            the Company. All terms relate to offer, acceptance, and
+            The terms &ldquo;Client&rdquo;, &ldquo;You&rdquo;, and
+            &ldquo;Your&rdquo; refer to the person accessing this website. The
+            terms &ldquo;The Company&rdquo;, &ldquo;Ourselves&rdquo;,
+            &ldquo;We&rdquo;, &ldquo;Our&rdquo;, and &ldquo;Us&rdquo; refer to
+            AI Growth Solution. The terms &ldquo;Party&rdquo;,
+            &ldquo;Parties&rdquo;, and &ldquo;Us&rdquo; refer to both the Client
+            and the Company. All terms relate to offer, acceptance, and
             consideration necessary to undertake assistance under the prevailing
             laws of Malaysia.
           </p>

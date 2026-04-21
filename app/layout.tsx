@@ -14,12 +14,12 @@ export const metadata: Metadata = {
     template: "%s | Chat2Sales",
   },
   description:
-    "Turning every conversation into sales. AI chatbot for WhatsApp, Facebook, Instagram, Website, Telegram & more — Chat2Sales replies to customers, follows up leads, and books appointments, 24/7.",
+    "Turning every conversation into sales. AI chatbot for WhatsApp, Facebook, Instagram, Website, Telegram & more, Chat2Sales replies to customers, follows up leads, and books appointments, 24/7.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "Chat2Sales | Your AI Sales Agent",
     description:
-      "Turning every conversation into sales. AI chatbot across WhatsApp, Instagram, Website and more — built by AI Growth Solution (Kuala Lumpur).",
+      "Turning every conversation into sales. AI chatbot across WhatsApp, Instagram, Website and more, built by AI Growth Solution (Kuala Lumpur).",
     type: "website",
     url: SITE_URL,
     siteName: "Chat2Sales",

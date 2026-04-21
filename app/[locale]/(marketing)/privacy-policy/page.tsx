@@ -37,7 +37,7 @@ export default function PrivacyPolicyPage({
           <p>
             1.1. This Privacy Policy describes how AI Growth Solution collects,
             uses, stores, shares, and protects your information in connection
-            with services offered by AI Growth Solution — including services
+            with services offered by AI Growth Solution, including services
             provided at or using the domain https://chat2sales.ai (the
             &ldquo;Site&rdquo;); tools or applications related to the Site (the
             &ldquo;Applications&rdquo;); and any images, text, chatbot data,

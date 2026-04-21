@@ -18,7 +18,7 @@ const post: BlogPost = {
             You reply. Ten minutes later, another one asks the same thing.
           </p>
           <p>
-            It feels like good service. But look at the pattern — you're
+            It feels like good service. But look at the pattern, you're
             answering the same few questions every single night. You're not
             selling, you're copy-pasting.
           </p>
@@ -35,13 +35,13 @@ const post: BlogPost = {
           </ul>
           <p>
             These are the exact replies a chatbot should handle. Not complex
-            customer service — just the boring stuff that eats your evenings.
+            customer service, just the boring stuff that eats your evenings.
           </p>
 
           <h2>What a real AI chatbot does (and what it doesn&apos;t)</h2>
           <p>
             A good AI chatbot reads the question, checks your product catalog
-            or FAQ, and replies in seconds — in your brand voice, in the
+            or FAQ, and replies in seconds, in your brand voice, in the
             customer&apos;s language. When a real buyer shows up with a complex
             question, it hands the chat to you with full context.
           </p>
@@ -54,12 +54,12 @@ const post: BlogPost = {
           <p>
             Chat2Sales connects to your WhatsApp Business account, learns your
             FAQs and product list, and starts replying instantly. You stay in
-            control — when a lead is hot or a question is unusual, you get a
+            control, when a lead is hot or a question is unusual, you get a
             ping and jump in. Most of our customers go from &ldquo;always
             on&rdquo; to &ldquo;mornings only&rdquo; within the first week.
           </p>
           <p>
-            Book a quick demo and we&apos;ll set it up for you — no coding,
+            Book a quick demo and we&apos;ll set it up for you, no coding,
             no setup headaches.
           </p>
         </>
@@ -98,10 +98,10 @@ const post: BlogPost = {
           <h2>Chat2Sales 如何帮你搞定这件事</h2>
           <p>
             Chat2Sales 可以对接你的 WhatsApp Business
-            账号，学习你的常见问题和产品信息，立刻开始自动回复。你仍然是主导者——有高意向客户或不寻常的问题时，系统会提醒你亲自接手。大多数客户在第一周内，就从"随时待命"变成了"只在白天处理"。
+            账号，学习你的常见问题和产品信息，立刻开始自动回复。你仍然是主导者，有高意向客户或不寻常的问题时，系统会提醒你亲自接手。大多数客户在第一周内，就从"随时待命"变成了"只在白天处理"。
           </p>
           <p>
-            预约一次简短演示，我们帮你完成设置——零代码，零烦恼。
+            预约一次简短演示，我们帮你完成设置，零代码，零烦恼。
           </p>
         </>
       ),

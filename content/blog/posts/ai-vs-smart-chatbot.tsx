@@ -35,7 +35,7 @@ const post: BlogPost = {
             A generative AI chatbot actually reads what the customer wrote,
             understands the meaning, and writes a new reply in the moment. Ask
             it &ldquo;do you have this in blue, size M, under RM100?&rdquo; and
-            it checks your catalog and answers properly — not with a keyword
+            it checks your catalog and answers properly, not with a keyword
             fallback.
           </p>
           <p>It can:</p>
@@ -57,7 +57,7 @@ const post: BlogPost = {
           <p>
             Chat2Sales is built on generative AI, trained on your products,
             FAQs, and brand voice. It answers in real, human-sounding language
-            — in English, Mandarin, Bahasa, and 50+ other languages. And it
+            in English, Mandarin, Bahasa, and 50+ other languages. And it
             talks to customers on the channels they already use: WhatsApp,
             Instagram, Facebook, your website, and more.
           </p>

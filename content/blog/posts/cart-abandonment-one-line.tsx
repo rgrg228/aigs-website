@@ -26,7 +26,7 @@ const post: BlogPost = {
           <p>
             The average cart-recovery email gets opened by maybe 8% of people.
             It lands in Promotions. It&apos;s one of 40 emails they&apos;ll see
-            today. And it arrives too late — the shopping moment is gone.
+            today. And it arrives too late, the shopping moment is gone.
           </p>
           <p>
             WhatsApp messages get opened by around 98% of people, usually
@@ -45,7 +45,7 @@ const post: BlogPost = {
           </blockquote>
           <p>
             No 10% off. No urgency gimmicks. Just a human-sounding question. If
-            they don&apos;t reply in 24 hours, then — and only then — do you
+            they don&apos;t reply in 24 hours, then, and only then, do you
             bring out a small incentive.
           </p>
 
@@ -53,13 +53,13 @@ const post: BlogPost = {
           <p>
             Chat2Sales connects to your Shopify or WooCommerce store, spots
             abandoned carts in real time, and sends the right message on
-            WhatsApp — in your customer&apos;s language, at the right moment.
+            WhatsApp, in your customer&apos;s language, at the right moment.
             When they reply, the AI keeps the conversation going, answers
             questions, and guides them back to checkout.
           </p>
           <p>
             Our customers typically recover <strong>20% to 40%</strong> of
-            abandoned carts this way — without touching discount codes.
+            abandoned carts this way, without touching discount codes.
           </p>
           <p>
             Book a demo and we&apos;ll show you the full flow, with examples
@@ -84,7 +84,7 @@ const post: BlogPost = {
 
           <h2>为什么邮件挽回几乎没用了</h2>
           <p>
-            一封普通弃购邮件的打开率大约只有 8%。它掉进"促销"分类里，被埋在几十封邮件中间，而且来得太晚——购物冲动早就没了。
+            一封普通弃购邮件的打开率大约只有 8%。它掉进"促销"分类里，被埋在几十封邮件中间，而且来得太晚，购物冲动早就没了。
           </p>
           <p>
             WhatsApp 消息的打开率大约 98%，而且通常在几分钟内就被看到。买家本来就活跃在这个渠道。
@@ -107,7 +107,7 @@ const post: BlogPost = {
             WhatsApp 上发出合适的消息。客户一回复，AI 会继续对话、回答疑问，把他们引回结账页面。
           </p>
           <p>
-            大多数客户用这种方式能挽回 <strong>20% 到 40%</strong> 的弃购订单——完全不靠折扣码。
+            大多数客户用这种方式能挽回 <strong>20% 到 40%</strong> 的弃购订单，完全不靠折扣码。
           </p>
           <p>
             预约一次演示，我们给你看完整的流程和同行业的真实案例。
