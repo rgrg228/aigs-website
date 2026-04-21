@@ -58,6 +58,7 @@ export type Dictionary = {
     titleHighlight: string;
     subtitle: string;
     primaryCta: string;
+    reassurance: string;
   };
   footer: {
     tagline: string;

@@ -4,7 +4,7 @@ const dict: Dictionary = {
   common: {
     bookDemo: "预约演示",
     contact: "联系我们",
-    tryItOut: "立即试用",
+    tryItOut: "预约演示",
     seeAllChannels: "查看所有渠道",
     close: "关闭",
     languageSwitcher: "语言",
@@ -54,7 +54,7 @@ const dict: Dictionary = {
     titleHighlight: "都变成成交。",
     subtitle:
       "覆盖 WhatsApp、Facebook、Instagram、网站、Telegram 等渠道的 AI 聊天机器人。以极低成本雇用你的第一位 AI 员工——Chat2Sales 会像你最得力的员工一样回复客户、跟进线索、预约客户，不同的是它从不下班。",
-    primaryCta: "立即试用",
+    primaryCta: "预约演示",
     secondaryCta: "看它能做什么",
     stats: [
       { v: "10 倍", l: "线索" },
@@ -73,23 +73,24 @@ const dict: Dictionary = {
       "Chat2Sales 回复客户、跟进线索、预约客户——就像你最得力的员工，但从不停歇。",
     items: [
       {
-        title: "10 倍线索量",
+        title: "永远不漏掉一条消息",
         body:
-          "用智能 AI 对话即时回应每一位潜在客户，获取更多线索——无需增加广告预算。",
+          "每一条私信、评论和网站对话，1 秒内都会收到回复——哪怕是凌晨三点。",
       },
       {
-        title: "10 倍预约量",
-        body: "自动筛选意向客户、自动预约——你睡觉时也在工作。",
+        title: "睡觉时也在成交",
+        body:
+          "AI 自动筛选意向、回答价格问题、直接帮你预约——完全不用真人参与。",
       },
       {
-        title: "全天候即时支持",
+        title: "客服时间砍掉 80%",
         body:
-          "AI 与你的团队配合，秒回客户、解决问题，全天提升客户满意度。",
+          "AI 处理那些重复无聊的问题，团队只处理真正重要的事。",
       },
       {
-        title: "全平台更聪明地成交",
+        title: "一个收件箱，所有渠道",
         body:
-          "从 WhatsApp、Facebook 到 LINE，Chat2Sales 帮你自动回复、跟进、成交——一个平台搞定全部。",
+          "WhatsApp、Facebook、Instagram、LINE、你的网站，所有回复集中在一个地方——告别到处切换。",
       },
     ],
   },
@@ -195,7 +196,8 @@ const dict: Dictionary = {
     titleHighlight: "轻松提升营收。",
     subtitle:
       "免费预约一次专家演示与咨询。我们帮你把第一个 AI 助理设置好——零代码、零麻烦，直接看到结果。",
-    primaryCta: "立即试用",
+    primaryCta: "预约演示",
+    reassurance: "按年付费享 2 个月免费 · 零设置费 · 由我们帮你设置",
   },
   footer: {
     tagline:
@@ -271,7 +273,7 @@ const dict: Dictionary = {
       "覆盖 WhatsApp、FB、IG 与 Shopify",
       "含设置与培训",
     ],
-    recommendedCta: "立即试用",
+    recommendedCta: "预约演示",
     inputPlaceholder: "输入消息…",
   },
   contact: {
@@ -296,23 +298,24 @@ const dict: Dictionary = {
     ],
     form: {
       heading: "取得联系",
-      subtext: "填写表单，我们的团队会在 24 小时内回复你。",
+      subtext: "30 秒就能填完。我们通常几小时内就会回复你——多半直接在 WhatsApp 上。",
       nameLabel: "姓名",
       namePlaceholder: "王小明",
-      phoneLabel: "电话",
+      phoneLabel: "电话或 WhatsApp",
       phonePlaceholder: "+60 12 345 6789",
-      emailLabel: "电子邮件",
+      emailLabel: "电子邮件（选填）",
       emailPlaceholder: "name@company.com",
-      requirementLabel: "选择你的需求",
+      requirementLabel: "你想了解什么？（选填）",
       requirementPlaceholderOption: "请选择…",
       requirementOptions: [
+        "AI 聊天机器人",
         "联盟合作伙伴",
         "定制聊天机器人开发",
         "其他",
       ],
-      messageLabel: "在下方填写你的信息",
+      messageLabel: "我们可以怎么帮你？",
       messagePlaceholder: "告诉我们你的使用场景…",
-      submit: "提交",
+      submit: "预约演示",
       submitting: "发送中…",
       success: "收到了——我们会在 24 小时内回复你。",
       errorDefault:
@@ -339,7 +342,7 @@ const dict: Dictionary = {
       heading: "在你自己的业务上看效果。",
       subtitle:
         "预约一次免费演示，我们直接用你店铺的场景演示 Chat2Sales 如何运作。",
-      button: "立即试用",
+      button: "预约演示",
     },
   },
   affiliate: {

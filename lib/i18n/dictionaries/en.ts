@@ -2,16 +2,16 @@ import type { Dictionary } from "../types";
 
 const dict: Dictionary = {
   common: {
-    bookDemo: "Book a demo",
+    bookDemo: "Book a Demo",
     contact: "Contact",
-    tryItOut: "Let's Try It Out",
+    tryItOut: "Book a Demo",
     seeAllChannels: "See all channels",
     close: "Close",
     languageSwitcher: "Language",
   },
   header: {
     contactCta: "Contact",
-    bookDemo: "Book a demo",
+    bookDemo: "Book a Demo",
     groups: [
       {
         label: "AI Bots",
@@ -54,7 +54,7 @@ const dict: Dictionary = {
     titleHighlight: "Into Sales.",
     subtitle:
       "AI Chatbot for WhatsApp, Facebook, Instagram, Website, Telegram & more. Hire your first AI employee for a fraction of the cost — Chat2Sales replies to customers, follows up leads, and books appointments, just like your best staff, but works non-stop.",
-    primaryCta: "Let's Try It Out",
+    primaryCta: "Book a Demo",
     secondaryCta: "See what it does",
     stats: [
       { v: "10x", l: "More leads" },
@@ -73,23 +73,23 @@ const dict: Dictionary = {
       "Chat2Sales replies to customers, follows up leads, and books appointments — just like your best staff, but works non-stop.",
     items: [
       {
-        title: "Generate 10x more leads",
+        title: "Never miss a message again",
         body:
-          "Engage prospects instantly with smart AI chats that capture more leads — without extra ad spend.",
+          "Every DM, comment, and website chat gets a reply in under 1 second — even at 3am.",
       },
       {
-        title: "Book 10x more appointments",
-        body: "Qualify leads and auto-book meetings — even while you sleep.",
+        title: "Close sales while you sleep",
+        body: "AI qualifies the lead, answers price questions, and auto-books the meeting — no human needed.",
       },
       {
-        title: "Provide 24/7 instant support",
+        title: "Cut customer service time by 80%",
         body:
-          "Combines AI and your team to respond instantly, solve problems, and boost satisfaction around the clock.",
+          "AI handles the boring repeat questions so your team only jumps in when it really matters.",
       },
       {
-        title: "Sell smarter on every platform",
+        title: "One inbox, every channel",
         body:
-          "From WhatsApp to Facebook to LINE, Chat2Sales helps you reply, follow up, and sell — automatically, all in one place.",
+          "Reply on WhatsApp, Facebook, Instagram, LINE, and your website from one place. No more app-hopping.",
       },
     ],
   },
@@ -195,7 +195,8 @@ const dict: Dictionary = {
     titleHighlight: "AI automation.",
     subtitle:
       "Get a free live demo and consultation with our experts. We'll set up your first AI agent — no coding, no setup headaches. Just results.",
-    primaryCta: "Let's Try It Out",
+    primaryCta: "Book a Demo",
+    reassurance: "Free 2 months on yearly · No setup fee · We set it up for you",
   },
   footer: {
     tagline:
@@ -271,7 +272,7 @@ const dict: Dictionary = {
       "WhatsApp, FB, IG & Shopify",
       "Setup & training included",
     ],
-    recommendedCta: "Let's Try It Out",
+    recommendedCta: "Book a Demo",
     inputPlaceholder: "Type a message…",
   },
   contact: {
@@ -296,29 +297,30 @@ const dict: Dictionary = {
     ],
     form: {
       heading: "Let's get in touch",
-      subtext: "Fill up the form and our team will get back to you within 24 hours.",
+      subtext: "Takes less than 30 seconds. We'll reply within a few hours — often on WhatsApp.",
       nameLabel: "Full Name",
       namePlaceholder: "Jane Doe",
-      phoneLabel: "Phone",
+      phoneLabel: "Phone or WhatsApp",
       phonePlaceholder: "+60 12 345 6789",
-      emailLabel: "Email",
+      emailLabel: "Email (optional)",
       emailPlaceholder: "jane@company.com",
-      requirementLabel: "Select Your Requirement",
-      requirementPlaceholderOption: "Choose an option…",
+      requirementLabel: "What are you interested in? (optional)",
+      requirementPlaceholderOption: "Choose one…",
       requirementOptions: [
+        "AI Chatbot for my business",
         "Affiliate Partner",
         "Custom ChatBot Development",
         "Others",
       ],
-      messageLabel: "Enter Your Message Below",
+      messageLabel: "How can we help?",
       messagePlaceholder: "Tell us about your use case…",
-      submit: "Submit",
+      submit: "Book a Demo",
       submitting: "Sending…",
       success:
         "Thanks — we've received your message and will reply within 24 hours.",
       errorDefault:
         "Something went wrong. Please email hello@chat2sales.ai.",
-      consentBefore: "By submitting the form you agree to the ",
+      consentBefore: "By submitting you agree to our ",
       consentTerms: "Terms",
       consentMiddle: " and ",
       consentPrivacy: "Privacy Policy",
@@ -340,7 +342,7 @@ const dict: Dictionary = {
       heading: "See it on your own business.",
       subtitle:
         "Book a free demo and we'll show you exactly how Chat2Sales would run for your store.",
-      button: "Let's Try It Out",
+      button: "Book a Demo",
     },
   },
   affiliate: {
@@ -377,7 +379,7 @@ const dict: Dictionary = {
     whatYouGetTitle: "Built for the way your team actually sells.",
     faqsEyebrow: "FAQs",
     faqsTitle: "Frequently asked questions",
-    bookDemo: "Book a demo",
+    bookDemo: "Book a Demo",
     seeAllChannels: "See all channels",
   },
   legal: {

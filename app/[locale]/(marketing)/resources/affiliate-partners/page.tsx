@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { isLocale } from "@/lib/i18n/config";
 import { localeHref } from "@/lib/i18n/href";
+import { alternatesFor } from "@/lib/i18n/alternates";
 
 export function generateMetadata(
   { params }: { params: { locale: string } },
@@ -12,6 +13,7 @@ export function generateMetadata(
   return {
     title: dict.affiliate.metaTitle,
     description: dict.affiliate.metaDescription,
+    alternates: alternatesFor(params.locale, "/resources/affiliate-partners"),
   };
 }
 

@@ -4,6 +4,8 @@ import { POSTS, getPost, listPostSlugs } from "@/content/blog";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { LOCALES, isLocale, type Locale } from "@/lib/i18n/config";
 import { localeHref } from "@/lib/i18n/href";
+import { alternatesFor } from "@/lib/i18n/alternates";
+import { BlogPostingJsonLd, BreadcrumbJsonLd } from "@/components/StructuredData";
 
 export function generateStaticParams() {
   return LOCALES.flatMap((locale) =>
@@ -21,6 +23,7 @@ export function generateMetadata(
   return {
     title: `${content.title} | Chat2Sales`,
     description: content.excerpt,
+    alternates: alternatesFor(params.locale, `/resources/blogs/${post.slug}`),
     openGraph: {
       title: content.title,
       description: content.excerpt,
@@ -60,6 +63,26 @@ export default function BlogPostPage({
 
   return (
     <article className="section">
+      <BlogPostingJsonLd
+        locale={locale}
+        slug={post.slug}
+        title={content.title}
+        excerpt={content.excerpt}
+        date={post.date}
+      />
+      <BreadcrumbJsonLd
+        crumbs={[
+          { name: locale === "zh" ? "首页" : "Home", href: `/${locale}` },
+          {
+            name: dict.blog.eyebrow,
+            href: `/${locale}/resources/blogs`,
+          },
+          {
+            name: content.title,
+            href: `/${locale}/resources/blogs/${post.slug}`,
+          },
+        ]}
+      />
       <div className="container-xl max-w-3xl">
         <a
           href={localeHref(locale, "/resources/blogs")}

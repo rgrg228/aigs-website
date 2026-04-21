@@ -6,6 +6,7 @@ export type SubPageContent = {
   eyebrow: string;
   title: string;
   subtitle: string;
+  explainer?: { heading: string; body: string };
   features: { title: string; body: string }[];
   faq?: { q: string; a: string }[];
 };
@@ -356,6 +357,11 @@ export const SOLUTIONS: Record<string, SubPage> = {
         title: "Multiply Sales Conversions with an AI Sales Agent That Works 24/7",
         subtitle:
           "Empower your team with an AI sales agent that automates lead follow-ups, personalizes conversations, and closes deals faster — while you focus on strategy and growth.",
+        explainer: {
+          heading: "What is an AI Sales Agent?",
+          body:
+            "An AI Sales Agent is your always-on virtual sales assistant that automates lead generation, personalized conversations, and smart follow-ups with human-like precision. Working 24/7, it never misses a lead — qualifying prospects, nurturing relationships, and syncing seamlessly with your CRM to boost efficiency and close deals faster. From small businesses to large enterprises, AI Sales Agents help you scale sales operations, reduce manual workload, and maximize profitability through intelligent automation.",
+        },
         features: [
           { title: "24/7 Availability", body: "Continuous support for your customers across all timezones." },
           { title: "AI-Driven Insights", body: "Performance data analysis across your entire sales pipeline." },
@@ -370,6 +376,11 @@ export const SOLUTIONS: Record<string, SubPage> = {
         title: "用 7×24 小时在线的 AI 销售助理，数倍提升成交",
         subtitle:
           "让 AI 销售助理帮团队自动化跟进线索、个性化对话、更快完成成交——你专心做战略与增长。",
+        explainer: {
+          heading: "什么是 AI 销售助理？",
+          body:
+            "AI 销售助理是你永不下线的虚拟销售助手，以接近真人的精准度，自动化获客、个性化对话和智能跟进。它 7×24 小时在岗，绝不漏掉任何一条线索——筛选客户、养熟关系、无缝同步到你的 CRM，让效率更高、成交更快。无论是中小企业还是大型企业，AI 销售助理都能帮你扩大销售运营、减少人工、用智能自动化最大化利润。",
+        },
         features: [
           { title: "7×24 小时在线", body: "跨时区持续为客户提供支持。" },
           { title: "数据驱动洞察", body: "覆盖整个销售漏斗的绩效分析。" },
@@ -391,6 +402,11 @@ export const SOLUTIONS: Record<string, SubPage> = {
         title: "Supercharge Your Marketing with an AI Marketing Agent",
         subtitle:
           "Leverage AI-driven automation, personalization, and seamless integration to optimize every campaign — smarter execution, faster decisions, higher ROI.",
+        explainer: {
+          heading: "What is an AI Marketing Agent?",
+          body:
+            "An AI Marketing Agent is your always-on digital marketer that automates campaign management, personalized communication, and data-driven optimization with unmatched precision. Available 24/7, it engages your audience continuously, adapts to your strategies, analyzes customer behavior in real time, and integrates seamlessly with your favorite marketing tools. The result is smarter execution, faster decision-making, and higher ROI. Whether you run a growing small business or manage global campaigns, the Chat2Sales AI Marketing Agent helps you scale effortlessly, boost campaign performance, and lower operational costs.",
+        },
         features: [
           { title: "Targeted Campaigns", body: "AI segmentation by behavior, interests, and intent." },
           { title: "Lead Scoring", body: "Prioritize high-quality leads automatically." },
@@ -407,6 +423,11 @@ export const SOLUTIONS: Record<string, SubPage> = {
         title: "用 AI 营销助理，把你的营销推上新高度",
         subtitle:
           "用 AI 驱动的自动化、个性化和无缝集成，优化每一场营销活动——更聪明的执行、更快的决策、更高的 ROI。",
+        explainer: {
+          heading: "什么是 AI 营销助理？",
+          body:
+            "AI 营销助理是你永不下线的数字营销员，以无与伦比的精度自动化管理活动、个性化沟通和数据驱动的优化。它 7×24 小时持续吸引你的用户、适配你的策略、实时分析客户行为，并无缝对接你常用的营销工具。带来的结果是更聪明的执行、更快的决策、更高的 ROI。无论你是中小企业还是全球化品牌，Chat2Sales AI 营销助理都能帮你轻松扩张、提升活动表现、降低运营成本。",
+        },
         features: [
           { title: "精准活动", body: "基于行为、兴趣和意图进行 AI 分群。" },
           { title: "线索评分", body: "自动把高质量线索排在最前面。" },
@@ -461,6 +482,11 @@ export const SOLUTIONS: Record<string, SubPage> = {
         title: "Automate Tedious Tasks and Focus on Closing More Deals",
         subtitle:
           "Chat2Sales AI empowers your sales team with smart assistants and chatbots that boost productivity, streamline workflows, and drive consistent revenue growth.",
+        explainer: {
+          heading: "What is an AI Sales Agent?",
+          body:
+            "An AI Sales Agent is your always-on virtual sales assistant that automates lead generation, personalized conversations, and smart follow-ups with human-like precision. Working 24/7, it never misses a lead — qualifying prospects, nurturing relationships, and syncing seamlessly with your CRM to boost efficiency and close deals faster. From small businesses to large enterprises, AI Sales Agents help you scale sales operations, reduce manual workload, and maximize profitability through intelligent automation.",
+        },
         features: [
           { title: "Align the Chatbot with Your Sales Strategy", body: "Identify key touchpoints and align with your sales process." },
           { title: "Train It with Your Sales Qualification Criteria", body: "Teach the bot to qualify prospects based on your unique rules." },
@@ -473,6 +499,11 @@ export const SOLUTIONS: Record<string, SubPage> = {
         title: "把琐事交给机器人，专心成交更多订单",
         subtitle:
           "Chat2Sales AI 为销售团队带来智能助手与聊天机器人，提升效率、简化流程、稳定带来营收增长。",
+        explainer: {
+          heading: "什么是 AI 销售助理？",
+          body:
+            "AI 销售助理是你永不下线的虚拟销售助手，以接近真人的精准度，自动化获客、个性化对话和智能跟进。它 7×24 小时在岗，绝不漏掉任何一条线索——筛选客户、养熟关系、无缝同步到你的 CRM，让效率更高、成交更快。无论是中小企业还是大型企业，AI 销售助理都能帮你扩大销售运营、减少人工、用智能自动化最大化利润。",
+        },
         features: [
           { title: "让机器人匹配你的销售策略", body: "识别关键触点，把机器人流程和销售流程对齐。" },
           { title: "按你的筛选标准训练它", body: "按照你的规则教机器人如何筛选客户。" },

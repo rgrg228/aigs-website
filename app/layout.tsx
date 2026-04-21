@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { headers } from "next/headers";
+import Analytics from "@/components/Analytics";
+import OrganizationJsonLd from "@/components/OrganizationJsonLd";
 import { LOCALE_HTML_LANG, DEFAULT_LOCALE, isLocale } from "@/lib/i18n/config";
 import "./globals.css";
 
@@ -52,7 +54,11 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <OrganizationJsonLd />
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }

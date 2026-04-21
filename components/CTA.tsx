@@ -39,6 +39,9 @@ export default function CTA({
                 hello@chat2sales.ai
               </a>
             </div>
+            <p className="mt-5 text-xs font-medium uppercase tracking-wider text-white/60">
+              {dict.reassurance}
+            </p>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import Logo from "./Logo";
 import LanguageSwitcher from "./LanguageSwitcher";
 import type { Dictionary } from "@/lib/i18n/types";
@@ -16,6 +17,20 @@ export default function Header({
 }) {
   const [open, setOpen] = useState(false);
   const [dropdown, setDropdown] = useState<string | null>(null);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    if (!open) return;
+    function onKey(e: KeyboardEvent) {
+      if (e.key === "Escape") setOpen(false);
+    }
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [open]);
 
   return (
     <header className="sticky top-0 z-50 border-b border-ink-900/[0.06] bg-white/85 backdrop-blur">
@@ -85,7 +100,13 @@ export default function Header({
       </div>
 
       {open && (
-        <div className="border-t border-ink-900/[0.06] bg-white lg:hidden">
+        <>
+          <div
+            className="fixed inset-0 top-16 z-40 bg-ink-900/30 backdrop-blur-sm lg:hidden"
+            aria-hidden="true"
+            onClick={() => setOpen(false)}
+          />
+          <div className="relative z-50 border-t border-ink-900/[0.06] bg-white lg:hidden">
           <div className="container-xl flex flex-col gap-1 py-4">
             {dict.groups.map((group) => (
               <details key={group.label} className="group">
@@ -121,7 +142,8 @@ export default function Header({
               </a>
             </div>
           </div>
-        </div>
+          </div>
+        </>
       )}
     </header>
   );

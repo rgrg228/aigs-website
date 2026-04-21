@@ -7,6 +7,26 @@ import { localeHref } from "@/lib/i18n/href";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+    fbq?: (...args: unknown[]) => void;
+  }
+}
+
+function trackConversion() {
+  if (typeof window === "undefined") return;
+  try {
+    window.gtag?.("event", "generate_lead", {
+      event_category: "engagement",
+      event_label: "contact_form",
+    });
+    window.fbq?.("track", "Lead");
+  } catch {
+    /* ignore analytics errors */
+  }
+}
+
 export default function ContactForm({
   dict,
   locale,
@@ -33,6 +53,7 @@ export default function ContactForm({
       });
       const json = await res.json();
       if (!res.ok || !json.ok) throw new Error(json.error || "Something went wrong");
+      trackConversion();
       setStatus("success");
       form.reset();
     } catch (err) {
@@ -76,21 +97,17 @@ export default function ContactForm({
           name="email"
           type="email"
           placeholder={dict.emailPlaceholder}
-          required
         />
         <label className="block">
           <span className="text-sm font-semibold text-ink-900">
-            {dict.requirementLabel} <span className="text-rose-500">*</span>
+            {dict.requirementLabel}
           </span>
           <select
             name="requirement"
-            required
             defaultValue=""
             className="mt-2 w-full rounded-xl border border-ink-900/10 bg-white px-4 py-3 text-sm text-ink-900 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/30"
           >
-            <option value="" disabled>
-              {dict.requirementPlaceholderOption}
-            </option>
+            <option value="">{dict.requirementPlaceholderOption}</option>
             {dict.requirementOptions.map((r) => (
               <option key={r} value={r}>
                 {r}

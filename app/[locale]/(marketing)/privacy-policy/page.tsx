@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { isLocale } from "@/lib/i18n/config";
+import { alternatesFor } from "@/lib/i18n/alternates";
 
 export function generateMetadata(
   { params }: { params: { locale: string } },
@@ -11,6 +12,7 @@ export function generateMetadata(
   return {
     title: dict.legal.privacyMetaTitle,
     description: dict.legal.privacyMetaDescription,
+    alternates: alternatesFor(params.locale, "/privacy-policy"),
   };
 }
 

@@ -73,6 +73,19 @@ export default function SubPageTemplate({
 
       <Partners dict={dict.partners} />
 
+      {page.explainer && (
+        <section className="section">
+          <div className="container-xl max-w-3xl">
+            <h2 className="text-3xl font-extrabold tracking-tight text-ink-900 sm:text-4xl">
+              {page.explainer.heading}
+            </h2>
+            <p className="mt-5 text-lg leading-relaxed text-ink-900/75">
+              {page.explainer.body}
+            </p>
+          </div>
+        </section>
+      )}
+
       <section className="section">
         <div className="container-xl">
           <div className="mx-auto max-w-2xl text-center">
