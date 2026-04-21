@@ -21,7 +21,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: true });
   }
 
-  const missing = (["name", "phone", "email", "requirement", "message"] as const).filter(
+  const missing = (["name", "phone", "message"] as const).filter(
     (k) => !body[k]?.toString().trim(),
   );
   if (missing.length) {
@@ -32,7 +32,8 @@ export async function POST(req: Request) {
   }
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(body.email!.trim())) {
+  const email = body.email?.toString().trim();
+  if (email && !emailRegex.test(email)) {
     return NextResponse.json(
       { ok: false, error: "Invalid email address" },
       { status: 400 },

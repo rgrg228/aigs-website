@@ -76,21 +76,17 @@ export default function ContactForm({
           name="email"
           type="email"
           placeholder={dict.emailPlaceholder}
-          required
         />
         <label className="block">
           <span className="text-sm font-semibold text-ink-900">
-            {dict.requirementLabel} <span className="text-rose-500">*</span>
+            {dict.requirementLabel}
           </span>
           <select
             name="requirement"
-            required
             defaultValue=""
             className="mt-2 w-full rounded-xl border border-ink-900/10 bg-white px-4 py-3 text-sm text-ink-900 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/30"
           >
-            <option value="" disabled>
-              {dict.requirementPlaceholderOption}
-            </option>
+            <option value="">{dict.requirementPlaceholderOption}</option>
             {dict.requirementOptions.map((r) => (
               <option key={r} value={r}>
                 {r}
