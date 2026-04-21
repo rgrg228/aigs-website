@@ -36,13 +36,15 @@ export default function ChatMockup() {
 
         <div className="rounded-2xl border border-ink-900/10 bg-white p-4 shadow-sm">
           <p className="text-xs font-semibold uppercase tracking-wide text-brand-700">
-            Suggested Plan
+            Recommended
           </p>
-          <p className="mt-1 text-lg font-bold text-ink-900">AI Smart · RM699/mo</p>
+          <p className="mt-1 text-lg font-bold text-ink-900">
+            Custom plan · Tailored to your volume
+          </p>
           <ul className="mt-2 space-y-1 text-sm text-ink-900/70">
-            <li>• Unlimited messages</li>
+            <li>• Built around your team size</li>
             <li>• WhatsApp, FB, IG &amp; Shopify</li>
-            <li>• 5 team seats · 3 agents</li>
+            <li>• Setup &amp; training included</li>
           </ul>
           <button className="mt-3 w-full rounded-full bg-brand-600 py-2 text-sm font-semibold text-white hover:bg-brand-700">
             Let&apos;s Try It Out
