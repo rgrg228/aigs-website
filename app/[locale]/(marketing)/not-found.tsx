@@ -32,7 +32,7 @@ function resolveLocale(): Locale {
   const url = headerList.get("x-url") ?? headerList.get("referer") ?? "";
   const match = url.match(/\/(en|zh)(\/|$)/);
   if (match && isLocale(match[1])) return match[1];
-  const xLocale = headerList.get("x-locale");
+  const xLocale = headerList.get("x-locale") ?? undefined;
   if (isLocale(xLocale)) return xLocale;
   return DEFAULT_LOCALE;
 }
