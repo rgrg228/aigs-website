@@ -1,25 +1,34 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { getDictionary } from "@/lib/i18n/get-dictionary";
+import { isLocale } from "@/lib/i18n/config";
 
-export const metadata: Metadata = {
-  title: "Terms & Conditions | Chat2Sales",
-  description:
-    "The rules and regulations for the use of AI Growth Solution's website located at https://chat2sales.ai.",
-};
+export function generateMetadata(
+  { params }: { params: { locale: string } },
+): Metadata {
+  if (!isLocale(params.locale)) return {};
+  const dict = getDictionary(params.locale);
+  return {
+    title: dict.legal.termsMetaTitle,
+    description: dict.legal.termsMetaDescription,
+  };
+}
 
-export default function TermsPage() {
+export default function TermsPage({
+  params,
+}: {
+  params: { locale: string };
+}) {
+  if (!isLocale(params.locale)) notFound();
+  const t = getDictionary(params.locale).legal;
   return (
     <section className="section">
       <div className="container-xl max-w-3xl">
-        <span className="eyebrow">Legal</span>
+        <span className="eyebrow">{t.eyebrow}</span>
         <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-ink-900 sm:text-5xl">
-          Terms &amp; Conditions
+          {t.termsIntroTitle}
         </h1>
-        <p className="mt-4 text-lg text-ink-900/70">
-          These Terms and Conditions outline the rules and regulations for the
-          use of AI Growth Solution&apos;s website, located at
-          https://chat2sales.ai. By accessing this website, you accept these
-          terms. Do not continue to use Chat2SalesAI if you do not agree.
-        </p>
+        <p className="mt-4 text-lg text-ink-900/70">{t.termsIntroBody}</p>
 
         <div className="prose prose-slate mt-12 max-w-none text-ink-900/80 [&_h2]:mt-10 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-ink-900 [&_p]:mt-3 [&_p]:leading-relaxed [&_ul]:mt-3 [&_ul]:list-disc [&_ul]:pl-6 [&_li]:mt-1">
           <h2>1. Terminology</h2>

@@ -42,16 +42,17 @@ app/
   globals.css     # Tailwind directives + components
 components/
   Header.tsx       # Sticky nav with mobile menu
-  Hero.tsx         # Headline, CTAs, stats, logo wall
+  Hero.tsx         # Headline, CTAs, stats, chat mockup
   ChatMockup.tsx   # Animated chat demo UI
-  Features.tsx     # 6-card feature grid
-  Integrations.tsx # CRM/channel integrations grid
-  HowItWorks.tsx   # 4-step onboarding flow
-  UseCases.tsx     # Industry-specific outcomes
-  Testimonials.tsx # Customer quotes
-  Pricing.tsx      # 3-tier pricing with monthly/yearly toggle
+  Features.tsx     # Core benefit cards
+  Pillars.tsx      # Sales / Marketing / Support agents
+  Channels.tsx     # Supported messaging channels
+  Partners.tsx     # Accreditation / partner logos
+  ContactForm.tsx  # Lead-capture form (posts to /api/contact)
   FAQ.tsx          # Accordion FAQ
   CTA.tsx          # Final conversion block
-  Footer.tsx       # Multi-column footer + newsletter
+  Footer.tsx       # Multi-column footer with legal links
+  Header.tsx       # Sticky nav with dropdowns
   Logo.tsx         # Inline SVG brand mark
+  SubPageTemplate.tsx # Shared layout for AI bot / solution pages
 ```

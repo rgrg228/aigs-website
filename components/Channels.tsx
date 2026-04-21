@@ -1,66 +1,37 @@
 /* eslint-disable @next/next/no-img-element */
+import type { Dictionary } from "@/lib/i18n/types";
 
-const CHANNELS = [
-  {
-    name: "WhatsApp",
-    logo: "/images/channel-whatsapp.webp",
-    body: "Automates replies, qualifies leads, and closes sales — all through personalized, human-like chats.",
-  },
-  {
-    name: "Instagram",
-    logo: "/images/channel-instagram.webp",
-    body: "Replies instantly, follows up leads, and drives conversions — while you focus on creating content.",
-  },
-  {
-    name: "Facebook Messenger",
-    logo: "/images/channel-messenger.webp",
-    body: "Engages instantly, answers FAQs, and books appointments 24/7 — boosting conversions and customer trust.",
-  },
-  {
-    name: "Website Embed",
-    logo: "/images/channel-website.webp",
-    body: "A smart website widget that resolves FAQs, recommends products, and nudges checkout 24/7.",
-  },
-  {
-    name: "Telegram",
-    logo: "/images/channel-telegram.webp",
-    body: "Builds a custom AI assistant that engages your audience and turns chats into loyal customers.",
-  },
-  {
-    name: "WeChat",
-    logo: "/images/channel-wechat.webp",
-    body: "Connects, engages, and closes deals — delivering personalized experiences at every touchpoint.",
-  },
+const LOGOS = [
+  "/images/channel-whatsapp.webp",
+  "/images/channel-instagram.webp",
+  "/images/channel-messenger.webp",
+  "/images/channel-website.webp",
+  "/images/channel-telegram.webp",
+  "/images/channel-wechat.webp",
 ];
 
-export default function Channels() {
+export default function Channels({ dict }: { dict: Dictionary["channels"] }) {
   return (
     <section id="channels" className="section bg-brand-50/40">
       <div className="container-xl">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow">Sell Smarter on Every Platform</span>
+          <span className="eyebrow">{dict.eyebrow}</span>
           <h2 className="mt-4 text-4xl font-extrabold tracking-tight text-ink-900 sm:text-5xl">
-            From WhatsApp to Facebook to LINE — one AI, every channel.
+            {dict.title}
           </h2>
-          <p className="mt-4 text-lg text-ink-900/70">
-            Chat2Sales helps you reply, follow up, and sell — automatically, all
-            in one place. Add an AI chatbot to your website, LiveChat, Messenger,
-            or Slack to handle every conversation 24/7.
-          </p>
+          <p className="mt-4 text-lg text-ink-900/70">{dict.subtitle}</p>
         </div>
 
         <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {CHANNELS.map((c) => (
+          {dict.items.map((c, i) => (
             <div key={c.name} className="card flex gap-4">
               <img
-                src={c.logo}
+                src={LOGOS[i % LOGOS.length]}
                 alt={c.name}
                 className="h-12 w-12 flex-shrink-0 rounded-xl object-contain"
               />
               <div>
-                <h3 className="text-base font-semibold text-ink-900">
-                  {c.name}
-                </h3>
+                <h3 className="text-base font-semibold text-ink-900">{c.name}</h3>
                 <p className="mt-1 text-sm leading-relaxed text-ink-900/65">
                   {c.body}
                 </p>
@@ -72,7 +43,7 @@ export default function Channels() {
         <div className="mt-14 flex justify-center">
           <img
             src="/images/multichannel.webp"
-            alt="Chat2Sales routes every conversation to the right tool"
+            alt={dict.multichannelAlt}
             className="w-full max-w-3xl rounded-3xl border border-ink-900/[0.08] bg-white p-4 shadow-sm"
           />
         </div>

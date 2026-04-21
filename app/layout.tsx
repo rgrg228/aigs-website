@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
+import { LOCALE_HTML_LANG, DEFAULT_LOCALE, isLocale } from "@/lib/i18n/config";
 import "./globals.css";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://chat2sales.ai";
@@ -19,7 +21,6 @@ export const metadata: Metadata = {
     type: "website",
     url: SITE_URL,
     siteName: "Chat2Sales",
-    locale: "en_MY",
   },
   twitter: {
     card: "summary_large_image",
@@ -37,8 +38,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const headerLocale = headers().get("x-locale") ?? undefined;
+  const locale = isLocale(headerLocale) ? headerLocale : DEFAULT_LOCALE;
+  const htmlLang = LOCALE_HTML_LANG[locale];
+
   return (
-    <html lang="en">
+    <html lang={htmlLang}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

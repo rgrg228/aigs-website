@@ -1,4 +1,14 @@
-export default function CTA() {
+import type { Dictionary } from "@/lib/i18n/types";
+import type { Locale } from "@/lib/i18n/config";
+import { localeHref } from "@/lib/i18n/href";
+
+export default function CTA({
+  dict,
+  locale,
+}: {
+  dict: Dictionary["cta"];
+  locale: Locale;
+}) {
   return (
     <section className="section">
       <div className="container-xl">
@@ -9,17 +19,18 @@ export default function CTA() {
           </div>
           <div className="relative">
             <h2 className="mx-auto max-w-3xl text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-              Boost revenue effortlessly with{" "}
-              <span className="gradient-text">AI automation.</span>
+              {dict.titleLine1}{" "}
+              <span className="gradient-text">{dict.titleHighlight}</span>
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-lg text-white/70">
-              Get a free live demo and consultation with our experts. We&apos;ll
-              set up your first AI agent — no coding, no setup headaches. Just
-              results.
+              {dict.subtitle}
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-              <a href="/contact" className="btn-primary bg-white text-brand-700 shadow-none hover:bg-white/90">
-                Let&apos;s Try It Out
+              <a
+                href={localeHref(locale, "/contact")}
+                className="btn-primary bg-white text-brand-700 shadow-none hover:bg-white/90"
+              >
+                {dict.primaryCta}
               </a>
               <a
                 href="mailto:hello@chat2sales.ai"
