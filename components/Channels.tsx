@@ -3,13 +3,9 @@ import type { Dictionary } from "@/lib/i18n/types";
 
 type ChannelStyle = {
   logo: string;
-  // gradient used as the logo chip background
   chipBg: string;
-  // soft wash behind the whole card
   cardWash: string;
   ring: string;
-  // animated accent bar at the bottom
-  bar: string;
   glow: string;
 };
 
@@ -20,7 +16,6 @@ const STYLES: ChannelStyle[] = [
     chipBg: "bg-[#25D366]/10",
     cardWash: "from-emerald-400/10 via-emerald-200/5 to-transparent",
     ring: "ring-emerald-500/15 hover:ring-emerald-500/40",
-    bar: "bg-[#25D366]",
     glow: "bg-[#25D366]/25",
   },
   // Instagram
@@ -30,7 +25,6 @@ const STYLES: ChannelStyle[] = [
     cardWash:
       "from-[#DD2A7B]/10 via-[#F58529]/5 to-transparent",
     ring: "ring-[#DD2A7B]/15 hover:ring-[#DD2A7B]/40",
-    bar: "bg-gradient-to-r from-[#F58529] via-[#DD2A7B] to-[#8134AF]",
     glow: "bg-[#DD2A7B]/25",
   },
   // Facebook Messenger
@@ -39,7 +33,6 @@ const STYLES: ChannelStyle[] = [
     chipBg: "bg-[#0084FF]/10",
     cardWash: "from-[#0084FF]/10 via-[#0084FF]/5 to-transparent",
     ring: "ring-[#0084FF]/15 hover:ring-[#0084FF]/40",
-    bar: "bg-[#0084FF]",
     glow: "bg-[#0084FF]/25",
   },
   // Website Embed
@@ -48,7 +41,6 @@ const STYLES: ChannelStyle[] = [
     chipBg: "bg-brand-500/10",
     cardWash: "from-brand-500/10 via-brand-300/5 to-transparent",
     ring: "ring-brand-500/15 hover:ring-brand-500/40",
-    bar: "bg-brand-600",
     glow: "bg-brand-400/25",
   },
   // Telegram
@@ -57,7 +49,6 @@ const STYLES: ChannelStyle[] = [
     chipBg: "bg-[#0088CC]/10",
     cardWash: "from-sky-500/10 via-cyan-300/5 to-transparent",
     ring: "ring-sky-500/15 hover:ring-sky-500/40",
-    bar: "bg-[#0088CC]",
     glow: "bg-sky-400/25",
   },
   // WeChat
@@ -66,7 +57,6 @@ const STYLES: ChannelStyle[] = [
     chipBg: "bg-[#07C160]/10",
     cardWash: "from-[#07C160]/10 via-emerald-200/5 to-transparent",
     ring: "ring-[#07C160]/15 hover:ring-[#07C160]/40",
-    bar: "bg-[#07C160]",
     glow: "bg-[#07C160]/25",
   },
 ];
@@ -120,10 +110,6 @@ export default function Channels({ dict }: { dict: Dictionary["channels"] }) {
                   </div>
                 </div>
 
-                <span
-                  className={`pointer-events-none absolute inset-x-0 bottom-0 h-1 origin-left scale-x-0 transition-transform duration-500 group-hover:scale-x-100 ${style.bar}`}
-                  aria-hidden="true"
-                />
               </article>
             );
           })}
