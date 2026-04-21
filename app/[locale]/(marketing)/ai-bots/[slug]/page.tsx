@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import SubPageTemplate from "@/components/SubPageTemplate";
-import { AI_BOTS, listSubPageSlugs } from "@/lib/sub-pages";
+import { getSubPageView, listSubPageSlugs } from "@/lib/sub-pages";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { LOCALES, isLocale } from "@/lib/i18n/config";
 
@@ -14,7 +14,8 @@ export function generateStaticParams() {
 export function generateMetadata(
   { params }: { params: { locale: string; slug: string } },
 ): Metadata {
-  const page = AI_BOTS[params.slug];
+  if (!isLocale(params.locale)) return {};
+  const page = getSubPageView("ai-bots", params.slug, params.locale);
   if (!page) return {};
   return {
     title: `${page.eyebrow} | Chat2Sales`,
@@ -28,7 +29,7 @@ export default function AiBotPage({
   params: { locale: string; slug: string };
 }) {
   if (!isLocale(params.locale)) notFound();
-  const page = AI_BOTS[params.slug];
+  const page = getSubPageView("ai-bots", params.slug, params.locale);
   if (!page) notFound();
   const dict = getDictionary(params.locale);
   return <SubPageTemplate page={page} dict={dict} locale={params.locale} />;

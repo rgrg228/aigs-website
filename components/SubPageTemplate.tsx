@@ -2,7 +2,7 @@
 import CTA from "@/components/CTA";
 import Channels from "@/components/Channels";
 import Partners from "@/components/Partners";
-import type { SubPage } from "@/lib/sub-pages";
+import type { SubPageView } from "@/lib/sub-pages";
 import type { Dictionary } from "@/lib/i18n/types";
 import type { Locale } from "@/lib/i18n/config";
 import { localeHref } from "@/lib/i18n/href";
@@ -12,7 +12,7 @@ export default function SubPageTemplate({
   dict,
   locale,
 }: {
-  page: SubPage;
+  page: SubPageView;
   dict: Dictionary;
   locale: Locale;
 }) {
