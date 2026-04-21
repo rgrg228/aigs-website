@@ -121,13 +121,26 @@ export default function SubPageTemplate({
 
       {page.explainer && (
         <section className="section">
-          <div className="container-xl max-w-3xl">
-            <h2 className="text-3xl font-extrabold tracking-tight text-ink-900 sm:text-4xl">
-              {page.explainer.heading}
-            </h2>
-            <p className="mt-5 text-lg leading-relaxed text-ink-900/75">
-              {page.explainer.body}
-            </p>
+          <div className="container-xl max-w-4xl">
+            <div className="relative overflow-hidden rounded-[32px] bg-gradient-to-br from-brand-50 via-white to-accent-50 p-8 ring-1 ring-brand-500/15 sm:p-14">
+              <div
+                className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-brand-400/25 blur-3xl"
+                aria-hidden="true"
+              />
+              <div
+                className="pointer-events-none absolute -left-16 bottom-0 h-56 w-56 rounded-full bg-accent-400/20 blur-3xl"
+                aria-hidden="true"
+              />
+              <div className="relative">
+                <span className="eyebrow">{locale === "zh" ? "概念" : "The basics"}</span>
+                <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-ink-900 sm:text-4xl">
+                  {page.explainer.heading}
+                </h2>
+                <p className="mt-5 text-lg leading-relaxed text-ink-900/75">
+                  {page.explainer.body}
+                </p>
+              </div>
+            </div>
           </div>
         </section>
       )}
