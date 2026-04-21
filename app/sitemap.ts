@@ -7,7 +7,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const staticRoutes = [
     "",
-    "/pricing",
     "/contact",
     "/resources/affiliate-partners",
     "/resources/blogs",

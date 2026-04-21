@@ -30,7 +30,6 @@ const GROUPS = [
     title: "Quick Links",
     items: [
       { label: "Home", href: "/" },
-      { label: "Pricing", href: "/pricing" },
       { label: "Affiliate Partners", href: "/resources/affiliate-partners" },
       { label: "Blogs", href: "/resources/blogs" },
       { label: "Contact Us", href: "/contact" },
