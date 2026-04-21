@@ -1,16 +1,19 @@
 "use client";
 
 import { useState } from "react";
-
-const REQUIREMENTS = [
-  "Affiliate Partner",
-  "Custom ChatBot Development",
-  "Others",
-];
+import type { Dictionary } from "@/lib/i18n/types";
+import type { Locale } from "@/lib/i18n/config";
+import { localeHref } from "@/lib/i18n/href";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
-export default function ContactForm() {
+export default function ContactForm({
+  dict,
+  locale,
+}: {
+  dict: Dictionary["contact"]["form"];
+  locale: Locale;
+}) {
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<string | null>(null);
 
@@ -43,10 +46,8 @@ export default function ContactForm() {
       onSubmit={handleSubmit}
       className="rounded-3xl border border-ink-900/[0.08] bg-white p-8 shadow-sm"
     >
-      <h2 className="text-2xl font-bold text-ink-900">Let&apos;s get in touch</h2>
-      <p className="mt-2 text-sm text-ink-900/65">
-        Fill up the form and our team will get back to you within 24 hours.
-      </p>
+      <h2 className="text-2xl font-bold text-ink-900">{dict.heading}</h2>
+      <p className="mt-2 text-sm text-ink-900/65">{dict.subtext}</p>
 
       <input
         type="text"
@@ -58,12 +59,28 @@ export default function ContactForm() {
       />
 
       <div className="mt-6 grid gap-4">
-        <Field label="Full Name" name="name" placeholder="Jane Doe" required />
-        <Field label="Phone" name="phone" placeholder="+60 12 345 6789" required />
-        <Field label="Email" name="email" type="email" placeholder="jane@company.com" required />
+        <Field
+          label={dict.nameLabel}
+          name="name"
+          placeholder={dict.namePlaceholder}
+          required
+        />
+        <Field
+          label={dict.phoneLabel}
+          name="phone"
+          placeholder={dict.phonePlaceholder}
+          required
+        />
+        <Field
+          label={dict.emailLabel}
+          name="email"
+          type="email"
+          placeholder={dict.emailPlaceholder}
+          required
+        />
         <label className="block">
           <span className="text-sm font-semibold text-ink-900">
-            Select Your Requirement <span className="text-rose-500">*</span>
+            {dict.requirementLabel} <span className="text-rose-500">*</span>
           </span>
           <select
             name="requirement"
@@ -72,9 +89,9 @@ export default function ContactForm() {
             className="mt-2 w-full rounded-xl border border-ink-900/10 bg-white px-4 py-3 text-sm text-ink-900 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/30"
           >
             <option value="" disabled>
-              Choose an option…
+              {dict.requirementPlaceholderOption}
             </option>
-            {REQUIREMENTS.map((r) => (
+            {dict.requirementOptions.map((r) => (
               <option key={r} value={r}>
                 {r}
               </option>
@@ -83,13 +100,13 @@ export default function ContactForm() {
         </label>
         <label className="block">
           <span className="text-sm font-semibold text-ink-900">
-            Enter Your Message Below <span className="text-rose-500">*</span>
+            {dict.messageLabel} <span className="text-rose-500">*</span>
           </span>
           <textarea
             name="message"
             rows={4}
             required
-            placeholder="Tell us about your use case…"
+            placeholder={dict.messagePlaceholder}
             className="mt-2 w-full rounded-xl border border-ink-900/10 bg-white px-4 py-3 text-sm placeholder:text-ink-900/40 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/30"
           />
         </label>
@@ -98,30 +115,36 @@ export default function ContactForm() {
           disabled={status === "submitting"}
           className="btn-primary mt-2 justify-center disabled:cursor-not-allowed disabled:opacity-60"
         >
-          {status === "submitting" ? "Sending…" : "Submit"}
+          {status === "submitting" ? dict.submitting : dict.submit}
         </button>
 
         {status === "success" && (
           <p className="rounded-xl bg-emerald-50 px-4 py-3 text-sm font-semibold text-emerald-700">
-            Thanks — we&apos;ve received your message and will reply within 24 hours.
+            {dict.success}
           </p>
         )}
         {status === "error" && (
           <p className="rounded-xl bg-rose-50 px-4 py-3 text-sm font-semibold text-rose-700">
-            {error || "Something went wrong. Please email hello@chat2sales.ai."}
+            {error || dict.errorDefault}
           </p>
         )}
 
         <p className="text-xs text-ink-900/50">
-          By submitting the form you agree to the{" "}
-          <a href="/terms-and-conditions" className="underline hover:text-ink-900">
-            Terms
-          </a>{" "}
-          and{" "}
-          <a href="/privacy-policy" className="underline hover:text-ink-900">
-            Privacy Policy
+          {dict.consentBefore}
+          <a
+            href={localeHref(locale, "/terms-and-conditions")}
+            className="underline hover:text-ink-900"
+          >
+            {dict.consentTerms}
           </a>
-          .
+          {dict.consentMiddle}
+          <a
+            href={localeHref(locale, "/privacy-policy")}
+            className="underline hover:text-ink-900"
+          >
+            {dict.consentPrivacy}
+          </a>
+          {dict.consentAfter}
         </p>
       </div>
     </form>

@@ -3,8 +3,20 @@ import CTA from "@/components/CTA";
 import Channels from "@/components/Channels";
 import Partners from "@/components/Partners";
 import type { SubPage } from "@/lib/sub-pages";
+import type { Dictionary } from "@/lib/i18n/types";
+import type { Locale } from "@/lib/i18n/config";
+import { localeHref } from "@/lib/i18n/href";
 
-export default function SubPageTemplate({ page }: { page: SubPage }) {
+export default function SubPageTemplate({
+  page,
+  dict,
+  locale,
+}: {
+  page: SubPage;
+  dict: Dictionary;
+  locale: Locale;
+}) {
+  const t = dict.subPage;
   return (
     <>
       <section className="relative overflow-hidden">
@@ -30,11 +42,17 @@ export default function SubPageTemplate({ page }: { page: SubPage }) {
                 {page.subtitle}
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-3">
-                <a href="/contact" className="btn-primary text-base">
-                  Book a demo
+                <a
+                  href={localeHref(locale, "/contact")}
+                  className="btn-primary text-base"
+                >
+                  {t.bookDemo}
                 </a>
-                <a href="/#channels" className="btn-secondary text-base">
-                  See all channels
+                <a
+                  href={localeHref(locale, "/#channels")}
+                  className="btn-secondary text-base"
+                >
+                  {t.seeAllChannels}
                 </a>
               </div>
             </div>
@@ -53,14 +71,14 @@ export default function SubPageTemplate({ page }: { page: SubPage }) {
         </div>
       </section>
 
-      <Partners />
+      <Partners dict={dict.partners} />
 
       <section className="section">
         <div className="container-xl">
           <div className="mx-auto max-w-2xl text-center">
-            <span className="eyebrow">What you get</span>
+            <span className="eyebrow">{t.whatYouGet}</span>
             <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-ink-900 sm:text-4xl">
-              Built for the way your team actually sells.
+              {t.whatYouGetTitle}
             </h2>
           </div>
           <div className="mt-14 grid gap-6 md:grid-cols-3">
@@ -76,15 +94,15 @@ export default function SubPageTemplate({ page }: { page: SubPage }) {
         </div>
       </section>
 
-      <Channels />
+      <Channels dict={dict.channels} />
 
       {page.faq && page.faq.length > 0 && (
         <section className="section">
           <div className="container-xl max-w-3xl">
             <div className="text-center">
-              <span className="eyebrow">FAQs</span>
+              <span className="eyebrow">{t.faqsEyebrow}</span>
               <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-ink-900 sm:text-4xl">
-                Frequently asked questions
+                {t.faqsTitle}
               </h2>
             </div>
             <div className="mt-10 divide-y divide-ink-900/10 rounded-3xl border border-ink-900/[0.08] bg-white">
@@ -112,7 +130,7 @@ export default function SubPageTemplate({ page }: { page: SubPage }) {
         </section>
       )}
 
-      <CTA />
+      <CTA dict={dict.cta} locale={locale} />
     </>
   );
 }

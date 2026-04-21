@@ -2,56 +2,30 @@
 
 import { useState } from "react";
 import Logo from "./Logo";
+import LanguageSwitcher from "./LanguageSwitcher";
+import type { Dictionary } from "@/lib/i18n/types";
+import type { Locale } from "@/lib/i18n/config";
+import { localeHref } from "@/lib/i18n/href";
 
-const NAV: { label: string; items: { label: string; href: string }[] }[] = [
-  {
-    label: "AI Bots",
-    items: [
-      { label: "AI Instagram Chatbot", href: "/ai-bots/instagram" },
-      { label: "AI WhatsApp Chatbot", href: "/ai-bots/whatsapp" },
-      { label: "AI Facebook Chatbot", href: "/ai-bots/facebook" },
-      { label: "AI Websites Chatbot", href: "/ai-bots/websites" },
-      { label: "AI Shopify Chatbot", href: "/ai-bots/shopify" },
-      { label: "AI WooCommerce Chatbot", href: "/ai-bots/woocommerce" },
-      { label: "AI Telegram Chatbot", href: "/ai-bots/telegram" },
-    ],
-  },
-  {
-    label: "Solutions",
-    items: [
-      { label: "AI Sales Agents Chatbot", href: "/solutions/ai-sales-agents" },
-      { label: "AI Marketing Agents Chatbot", href: "/solutions/ai-marketing-agents" },
-      { label: "Chatbot for Marketing", href: "/solutions/chatbot-for-marketing" },
-      { label: "Chatbot for Sales", href: "/solutions/chatbot-for-sales" },
-      { label: "Chatbot for Lead Generation", href: "/solutions/chatbot-for-lead-generation" },
-      { label: "Chatbot for Engagement", href: "/solutions/chatbot-for-engagement" },
-      { label: "Chatbot for Customer Support", href: "/solutions/chatbot-for-customer-support" },
-      { label: "Chatbot for Ecommerce", href: "/solutions/chatbot-for-ecommerce" },
-    ],
-  },
-  {
-    label: "Resources",
-    items: [
-      { label: "Affiliate Partners", href: "/resources/affiliate-partners" },
-      { label: "Blogs", href: "/resources/blogs" },
-      { label: "Contact Us", href: "/contact" },
-    ],
-  },
-];
-
-export default function Header() {
+export default function Header({
+  dict,
+  locale,
+}: {
+  dict: Dictionary["header"];
+  locale: Locale;
+}) {
   const [open, setOpen] = useState(false);
   const [dropdown, setDropdown] = useState<string | null>(null);
 
   return (
     <header className="sticky top-0 z-50 border-b border-ink-900/[0.06] bg-white/85 backdrop-blur">
       <div className="container-xl flex h-16 items-center justify-between">
-        <a href="#" className="flex items-center gap-2">
+        <a href={localeHref(locale, "/")} className="flex items-center gap-2">
           <Logo className="h-8" />
         </a>
 
         <nav className="hidden items-center gap-1 lg:flex">
-          {NAV.map((group) => (
+          {dict.groups.map((group) => (
             <div
               key={group.label}
               className="relative"
@@ -72,7 +46,7 @@ export default function Header() {
                   {group.items.map((i) => (
                     <a
                       key={i.label}
-                      href={i.href}
+                      href={localeHref(locale, i.href)}
                       className="block rounded-lg px-3 py-2 text-sm text-ink-900/75 transition hover:bg-brand-50 hover:text-brand-700"
                     >
                       {i.label}
@@ -85,11 +59,12 @@ export default function Header() {
         </nav>
 
         <div className="hidden items-center gap-2 lg:flex">
-          <a href="/contact" className="btn-ghost">
-            Contact
+          <LanguageSwitcher current={locale} />
+          <a href={localeHref(locale, "/contact")} className="btn-ghost">
+            {dict.contactCta}
           </a>
-          <a href="/contact" className="btn-primary">
-            Book a demo
+          <a href={localeHref(locale, "/contact")} className="btn-primary">
+            {dict.bookDemo}
           </a>
         </div>
 
@@ -112,7 +87,7 @@ export default function Header() {
       {open && (
         <div className="border-t border-ink-900/[0.06] bg-white lg:hidden">
           <div className="container-xl flex flex-col gap-1 py-4">
-            {NAV.map((group) => (
+            {dict.groups.map((group) => (
               <details key={group.label} className="group">
                 <summary className="flex cursor-pointer items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-ink-900 hover:bg-brand-50">
                   {group.label}
@@ -124,7 +99,7 @@ export default function Header() {
                   {group.items.map((i) => (
                     <a
                       key={i.label}
-                      href={i.href}
+                      href={localeHref(locale, i.href)}
                       onClick={() => setOpen(false)}
                       className="rounded-lg px-4 py-2 text-sm text-ink-900/70 hover:bg-brand-50"
                     >
@@ -134,12 +109,15 @@ export default function Header() {
                 </div>
               </details>
             ))}
+            <div className="mt-3 flex items-center justify-center">
+              <LanguageSwitcher current={locale} />
+            </div>
             <div className="mt-2 flex flex-col gap-2">
-              <a href="/contact" className="btn-secondary w-full">
-                Contact
+              <a href={localeHref(locale, "/contact")} className="btn-secondary w-full">
+                {dict.contactCta}
               </a>
-              <a href="/contact" className="btn-primary w-full">
-                Book a demo
+              <a href={localeHref(locale, "/contact")} className="btn-primary w-full">
+                {dict.bookDemo}
               </a>
             </div>
           </div>

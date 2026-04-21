@@ -2,14 +2,18 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import SubPageTemplate from "@/components/SubPageTemplate";
 import { AI_BOTS, listSubPageSlugs } from "@/lib/sub-pages";
+import { getDictionary } from "@/lib/i18n/get-dictionary";
+import { LOCALES, isLocale } from "@/lib/i18n/config";
 
 export function generateStaticParams() {
-  return listSubPageSlugs("ai-bots").map((slug) => ({ slug }));
+  return LOCALES.flatMap((locale) =>
+    listSubPageSlugs("ai-bots").map((slug) => ({ locale, slug })),
+  );
 }
 
-export async function generateMetadata(
-  { params }: { params: { slug: string } },
-): Promise<Metadata> {
+export function generateMetadata(
+  { params }: { params: { locale: string; slug: string } },
+): Metadata {
   const page = AI_BOTS[params.slug];
   if (!page) return {};
   return {
@@ -18,8 +22,14 @@ export async function generateMetadata(
   };
 }
 
-export default function AiBotPage({ params }: { params: { slug: string } }) {
+export default function AiBotPage({
+  params,
+}: {
+  params: { locale: string; slug: string };
+}) {
+  if (!isLocale(params.locale)) notFound();
   const page = AI_BOTS[params.slug];
   if (!page) notFound();
-  return <SubPageTemplate page={page} />;
+  const dict = getDictionary(params.locale);
+  return <SubPageTemplate page={page} dict={dict} locale={params.locale} />;
 }
