@@ -4,6 +4,7 @@ import SubPageTemplate from "@/components/SubPageTemplate";
 import { getSubPageView, listSubPageSlugs } from "@/lib/sub-pages";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { LOCALES, isLocale } from "@/lib/i18n/config";
+import { alternatesFor } from "@/lib/i18n/alternates";
 
 export function generateStaticParams() {
   return LOCALES.flatMap((locale) =>
@@ -20,6 +21,7 @@ export function generateMetadata(
   return {
     title: `${page.eyebrow} | Chat2Sales`,
     description: page.subtitle,
+    alternates: alternatesFor(params.locale, `/ai-bots/${params.slug}`),
   };
 }
 

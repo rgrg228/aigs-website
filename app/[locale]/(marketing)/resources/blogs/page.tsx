@@ -4,6 +4,7 @@ import { POSTS } from "@/content/blog";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { isLocale, type Locale } from "@/lib/i18n/config";
 import { localeHref } from "@/lib/i18n/href";
+import { alternatesFor } from "@/lib/i18n/alternates";
 
 export function generateMetadata(
   { params }: { params: { locale: string } },
@@ -13,6 +14,7 @@ export function generateMetadata(
   return {
     title: dict.blog.metaTitle,
     description: dict.blog.metaDescription,
+    alternates: alternatesFor(params.locale, "/resources/blogs"),
   };
 }
 

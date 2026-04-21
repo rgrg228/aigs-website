@@ -4,6 +4,7 @@ import { POSTS, getPost, listPostSlugs } from "@/content/blog";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { LOCALES, isLocale, type Locale } from "@/lib/i18n/config";
 import { localeHref } from "@/lib/i18n/href";
+import { alternatesFor } from "@/lib/i18n/alternates";
 
 export function generateStaticParams() {
   return LOCALES.flatMap((locale) =>
@@ -21,6 +22,7 @@ export function generateMetadata(
   return {
     title: `${content.title} | Chat2Sales`,
     description: content.excerpt,
+    alternates: alternatesFor(params.locale, `/resources/blogs/${post.slug}`),
     openGraph: {
       title: content.title,
       description: content.excerpt,
