@@ -1,53 +1,45 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { getDictionary } from "@/lib/i18n/get-dictionary";
+import { isLocale } from "@/lib/i18n/config";
+import { localeHref } from "@/lib/i18n/href";
 
-export const metadata: Metadata = {
-  title: "Affiliate Partners | Chat2Sales",
-  description:
-    "Become a Chat2Sales Affiliate Partner and earn up to 30% lifetime recurring commission promoting AI-powered chatbots.",
-};
+export function generateMetadata(
+  { params }: { params: { locale: string } },
+): Metadata {
+  if (!isLocale(params.locale)) return {};
+  const dict = getDictionary(params.locale);
+  return {
+    title: dict.affiliate.metaTitle,
+    description: dict.affiliate.metaDescription,
+  };
+}
 
-const PERKS = [
-  {
-    title: "Up to 30% recurring",
-    body: "Earn up to 30% recurring commission — for life — on every license you help sell.",
-  },
-  {
-    title: "Promote anywhere",
-    body: "Share on social media, blogs, YouTube, or tech forums — wherever your audience lives.",
-  },
-  {
-    title: "Product built to convert",
-    body: "AI-powered chatbots that customers already want — sell the future of conversation.",
-  },
-  {
-    title: "Dedicated support",
-    body: "Our team backs you up with assets, playbooks, and real humans to help you close.",
-  },
-];
+export default function AffiliatePartnersPage({
+  params,
+}: {
+  params: { locale: string };
+}) {
+  if (!isLocale(params.locale)) notFound();
+  const locale = params.locale;
+  const t = getDictionary(locale).affiliate;
 
-export default function AffiliatePartnersPage() {
   return (
     <section className="section">
       <div className="container-xl max-w-4xl">
         <div className="text-center">
-          <span className="eyebrow">Affiliate Partners</span>
+          <span className="eyebrow">{t.eyebrow}</span>
           <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-ink-900 sm:text-5xl">
-            Become a Chatbot Affiliate Partner and earn up to 30% lifetime
-            recurring commission.
+            {t.title}
           </h1>
-          <p className="mt-4 text-lg text-ink-900/70">
-            Join the Chat2Sales Affiliate Program and promote AI-powered
-            chatbots to your audience. Share on social media, blogs, YouTube,
-            or tech forums — and earn up to 30% recurring commission for life
-            on every license you help sell.
-          </p>
-          <a href="/contact" className="btn-primary mt-8">
-            Contact Us To Know More
+          <p className="mt-4 text-lg text-ink-900/70">{t.subtitle}</p>
+          <a href={localeHref(locale, "/contact")} className="btn-primary mt-8">
+            {t.cta}
           </a>
         </div>
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2">
-          {PERKS.map((p) => (
+          {t.perks.map((p) => (
             <div key={p.title} className="card">
               <h3 className="text-lg font-semibold text-ink-900">{p.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-ink-900/65">
