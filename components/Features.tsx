@@ -75,14 +75,11 @@ export default function Features({ dict }: { dict: Dictionary["features"] }) {
                 />
                 <div className="pointer-events-none absolute -right-16 -top-16 h-64 w-64 rounded-full bg-white/40 blur-3xl opacity-0 transition duration-500 group-hover:opacity-100" />
 
-                <div className="relative flex items-center gap-3">
+                <div className="relative flex items-center">
                   <span
-                    className={`inline-flex h-7 items-center justify-center rounded-full px-2.5 text-[11px] font-bold uppercase tracking-wider ${style.badge}`}
+                    className={`inline-flex h-8 w-8 items-center justify-center rounded-full text-[12px] font-bold tracking-wide ${style.badge}`}
                   >
                     {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <span className="text-xs font-semibold uppercase tracking-wider text-ink-900/45">
-                    {dict.eyebrow}
                   </span>
                 </div>
 
