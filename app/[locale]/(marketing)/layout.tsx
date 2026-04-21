@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { isLocale } from "@/lib/i18n/config";
 import { notFound } from "next/navigation";
@@ -20,6 +21,7 @@ export default function MarketingLayout({
       <Header dict={dict.header} locale={locale} />
       <main>{children}</main>
       <Footer dict={dict.footer} locale={locale} />
+      <WhatsAppButton locale={locale} />
     </>
   );
 }
