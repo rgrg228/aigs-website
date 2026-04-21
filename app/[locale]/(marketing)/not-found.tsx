@@ -13,7 +13,7 @@ const COPY: Record<Locale, {
     eyebrow: "404 · Not found",
     title: "This page went offline.",
     body:
-      "The link might be broken, or the page may have moved. Head back home and we'll get you sorted — or message us on WhatsApp, we reply in a minute.",
+      "The link might be broken, or the page may have moved. Head back home and we'll get you sorted, or message us on WhatsApp, we reply in a minute.",
     home: "Back to home",
     whatsapp: "Chat on WhatsApp",
   },
@@ -21,7 +21,7 @@ const COPY: Record<Locale, {
     eyebrow: "404 · 未找到",
     title: "这个页面暂时离线了。",
     body:
-      "链接可能坏了，或者页面已经移动。点下面回到首页，我们帮你搞定——也可以直接在 WhatsApp 上找我们，一分钟内回复。",
+      "链接可能坏了，或者页面已经移动。点下面回到首页，我们帮你搞定，也可以直接在 WhatsApp 上找我们，一分钟内回复。",
     home: "回到首页",
     whatsapp: "WhatsApp 联系",
   },

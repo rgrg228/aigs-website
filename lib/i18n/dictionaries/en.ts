@@ -53,7 +53,7 @@ const dict: Dictionary = {
     titleLine1: "Turning Every Conversation",
     titleHighlight: "Into Sales.",
     subtitle:
-      "AI Chatbot for WhatsApp, Facebook, Instagram, Website, Telegram & more. Hire your first AI employee for a fraction of the cost — Chat2Sales replies to customers, follows up leads, and books appointments, just like your best staff, but works non-stop.",
+      "AI Chatbot for WhatsApp, Facebook, Instagram, Website, Telegram & more. Hire your first AI employee for a fraction of the cost. Chat2Sales replies to customers, follows up leads, and books appointments, just like your best staff, but works non-stop.",
     primaryCta: "Book a Demo",
     secondaryCta: "See what it does",
     stats: [
@@ -70,16 +70,16 @@ const dict: Dictionary = {
     eyebrow: "Why Chat2Sales",
     title: "Hire your first AI employee for a fraction of the cost.",
     subtitle:
-      "Chat2Sales replies to customers, follows up leads, and books appointments — just like your best staff, but works non-stop.",
+      "Chat2Sales replies to customers, follows up leads, and books appointments, just like your best staff. But it works non-stop.",
     items: [
       {
         title: "Never miss a message again",
         body:
-          "Every DM, comment, and website chat gets a reply in under 1 second — even at 3am.",
+          "Every DM, comment, and website chat gets a reply in under 1 second, even at 3am.",
       },
       {
         title: "Close sales while you sleep",
-        body: "AI qualifies the lead, answers price questions, and auto-books the meeting — no human needed.",
+        body: "AI qualifies the lead, answers price questions, and auto-books the meeting. No human needed.",
       },
       {
         title: "Cut customer service time by 80%",
@@ -103,42 +103,42 @@ const dict: Dictionary = {
         tag: "Sales 💰",
         title: "AI Sales Agent",
         body:
-          "Your always-on virtual sales assistant — automates lead generation, personalized conversations, and smart follow-ups with human-like precision, 24/7.",
+          "Your always-on virtual sales assistant. Automates lead generation, personalized conversations, and smart follow-ups with human-like precision, 24/7.",
       },
       {
         tag: "Marketing 🚀",
         title: "AI Marketing Agent",
         body:
-          "Your always-on digital marketer — automates campaign management, personalized communication, and data-driven optimization to lift ROI.",
+          "Your always-on digital marketer. Automates campaign management, personalized communication, and data-driven optimization to lift ROI.",
       },
       {
         tag: "Customer Service 💬",
         title: "AI Support Agent",
         body:
-          "Combines AI and your team to respond instantly, solve problems, and boost satisfaction around the clock — on every channel.",
+          "AI and your team respond instantly, solve problems, and keep customers happy around the clock, on every channel.",
       },
     ],
   },
   channels: {
     eyebrow: "Sell Smarter on Every Platform",
-    title: "From WhatsApp to Facebook to LINE — one AI, every channel.",
+    title: "From WhatsApp to Facebook to LINE. One AI, every channel.",
     subtitle:
-      "Chat2Sales helps you reply, follow up, and sell — automatically, all in one place. Add an AI chatbot to your website, LiveChat, Messenger, or Slack to handle every conversation 24/7.",
+      "Chat2Sales helps you reply, follow up, and sell automatically, all in one place. Add an AI chatbot to your website, LiveChat, Messenger, or Slack to handle every conversation 24/7.",
     items: [
       {
         name: "WhatsApp",
         body:
-          "Automates replies, qualifies leads, and closes sales — all through personalized, human-like chats.",
+          "Automates replies, qualifies leads, and closes sales, all through personalized, human-like chats.",
       },
       {
         name: "Instagram",
         body:
-          "Replies instantly, follows up leads, and drives conversions — while you focus on creating content.",
+          "Replies instantly, follows up leads, and drives conversions while you focus on creating content.",
       },
       {
         name: "Facebook Messenger",
         body:
-          "Engages instantly, answers FAQs, and books appointments 24/7 — boosting conversions and customer trust.",
+          "Engages instantly, answers FAQs, and books appointments 24/7. Boosts conversions and customer trust.",
       },
       {
         name: "Website Embed",
@@ -153,7 +153,7 @@ const dict: Dictionary = {
       {
         name: "WeChat",
         body:
-          "Connects, engages, and closes deals — delivering personalized experiences at every touchpoint.",
+          "Connects, engages, and closes deals, delivering personalized experiences at every touchpoint.",
       },
     ],
     multichannelAlt: "Chat2Sales routes every conversation to the right tool",
@@ -161,7 +161,7 @@ const dict: Dictionary = {
   faq: {
     eyebrow: "FAQs",
     title: "Frequently Asked Questions",
-    subtitle: "Still curious? We reply personally — usually within a few hours.",
+    subtitle: "Still curious? We reply personally, usually within a few hours.",
     contactLink: "Contact us →",
     items: [
       {
@@ -182,7 +182,7 @@ const dict: Dictionary = {
       },
       {
         q: "Can I still chat manually if I want to?",
-        a: "Of course. You can jump into any conversation anytime — your AI will pause automatically.",
+        a: "Of course. You can jump into any conversation anytime. Your AI will pause automatically.",
       },
       {
         q: "Difference between an AI chatbot and a chatbot?",
@@ -194,7 +194,7 @@ const dict: Dictionary = {
     titleLine1: "Boost revenue effortlessly with",
     titleHighlight: "AI automation.",
     subtitle:
-      "Get a free live demo and consultation with our experts. We'll set up your first AI agent — no coding, no setup headaches. Just results.",
+      "Get a free live demo and consultation with our experts. We'll set up your first AI agent. No coding, no setup headaches. Just results.",
     primaryCta: "Book a Demo",
     reassurance: "Free 2 months on yearly · No setup fee · We set it up for you",
   },
@@ -278,7 +278,7 @@ const dict: Dictionary = {
   contact: {
     metaTitle: "Contact Us | Chat2Sales",
     metaDescription:
-      "Boost revenue effortlessly with AI automation. Get a free live demo and consultation with the Chat2Sales team — based in Kuala Lumpur, Malaysia.",
+      "Boost revenue effortlessly with AI automation. Get a free live demo and consultation with the Chat2Sales team, based in Kuala Lumpur, Malaysia.",
     eyebrow: "Contact Us",
     title: "Boost Revenue Effortlessly with AI Automation.",
     subtitle:
@@ -297,7 +297,7 @@ const dict: Dictionary = {
     ],
     form: {
       heading: "Let's get in touch",
-      subtext: "Takes less than 30 seconds. We'll reply within a few hours — often on WhatsApp.",
+      subtext: "Takes less than 30 seconds. We'll reply within a few hours, often on WhatsApp.",
       nameLabel: "Full Name",
       namePlaceholder: "Jane Doe",
       phoneLabel: "Phone or WhatsApp",
@@ -317,7 +317,7 @@ const dict: Dictionary = {
       submit: "Book a Demo",
       submitting: "Sending…",
       success:
-        "Thanks — we've received your message and will reply within 24 hours.",
+        "Thanks! We've received your message and will reply within 24 hours.",
       errorDefault:
         "Something went wrong. Please email hello@chat2sales.ai.",
       consentBefore: "By submitting you agree to our ",
@@ -334,7 +334,7 @@ const dict: Dictionary = {
     eyebrow: "Resources",
     title: "Insights and Strategies to Grow Your Business with AI Chatbots",
     subtitle:
-      "Simple playbooks on AI-powered sales, marketing, and support — written for busy operators.",
+      "Simple playbooks on AI-powered sales, marketing, and support. Written for busy operators.",
     readMore: "Read more →",
     minReadTemplate: "{n} min read",
     backToIndex: "← All articles",
@@ -353,20 +353,20 @@ const dict: Dictionary = {
     title:
       "Become a Chatbot Affiliate Partner and earn up to 30% lifetime recurring commission.",
     subtitle:
-      "Join the Chat2Sales Affiliate Program and promote AI-powered chatbots to your audience. Share on social media, blogs, YouTube, or tech forums — and earn up to 30% recurring commission for life on every license you help sell.",
+      "Join the Chat2Sales Affiliate Program and promote AI-powered chatbots to your audience. Share on social media, blogs, YouTube, or tech forums, and earn up to 30% recurring commission for life on every license you help sell.",
     cta: "Contact Us To Know More",
     perks: [
       {
         title: "Up to 30% recurring",
-        body: "Earn up to 30% recurring commission — for life — on every license you help sell.",
+        body: "Earn up to 30% recurring commission, for life, on every license you help sell.",
       },
       {
         title: "Promote anywhere",
-        body: "Share on social media, blogs, YouTube, or tech forums — wherever your audience lives.",
+        body: "Share on social media, blogs, YouTube, or tech forums. Wherever your audience lives.",
       },
       {
         title: "Product built to convert",
-        body: "AI-powered chatbots that customers already want — sell the future of conversation.",
+        body: "AI-powered chatbots that customers already want. Sell the future of conversation.",
       },
       {
         title: "Dedicated support",

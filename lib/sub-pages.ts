@@ -33,11 +33,11 @@ const BOT_FAQ_EN: SubPageContent["faq"] = [
   },
   {
     q: "Does it support my language?",
-    a: "Yes — 50+ languages including English, Mandarin, Bahasa Malaysia, and Cantonese.",
+    a: "Yes, 50+ languages including English, Mandarin, Bahasa Malaysia, and Cantonese.",
   },
   {
     q: "Can I hand off to a human agent?",
-    a: "Absolutely. You can jump in at any time — the AI pauses automatically when you reply.",
+    a: "Absolutely. You can jump in at any time, the AI pauses automatically when you reply.",
   },
 ];
 
@@ -52,7 +52,7 @@ const BOT_FAQ_ZH: SubPageContent["faq"] = [
   },
   {
     q: "可以交给真人客服接手吗？",
-    a: "当然可以。你可以随时接管对话——一旦你回复，AI 会自动暂停。",
+    a: "当然可以。你可以随时接管对话，一旦你回复，AI 会自动暂停。",
   },
 ];
 
@@ -137,7 +137,7 @@ export const AI_BOTS: Record<string, SubPage> = {
           },
           {
             title: "Extend With 80+ Integrations",
-            body: "Connect WhatsApp Chatbot with over 80 platforms and apps — CRMs, marketing tools, automation workflows.",
+            body: "Connect WhatsApp Chatbot with over 80 platforms and apps, CRMs, marketing tools, automation workflows.",
           },
         ],
         faq: BOT_FAQ_EN,
@@ -153,7 +153,7 @@ export const AI_BOTS: Record<string, SubPage> = {
           { title: "客户支持", body: "AI WhatsApp 机器人即时响应客户问题，并支持在线人工。" },
           { title: "预约时间", body: "客户可直接在对话中预约会议或课程，并自动同步到日历。" },
           { title: "AI 驱动的聊天机器人", body: "为你的业务量身打造专属 AI WhatsApp 机器人。" },
-          { title: "对接 80+ 应用", body: "与 80 多个平台无缝对接——CRM、营销工具、自动化流程。" },
+          { title: "对接 80+ 应用", body: "与 80 多个平台无缝对接，CRM、营销工具、自动化流程。" },
         ],
         faq: BOT_FAQ_ZH,
       },
@@ -205,7 +205,7 @@ export const AI_BOTS: Record<string, SubPage> = {
         eyebrow: "AI Chatbot For Websites",
         title: "Turn Website Visitors into Customers with an AI Chatbot",
         subtitle:
-          "Provide 24/7 assistance on your website. Let your AI chatbot handle FAQs, appointment bookings, product inquiries, and purchases — launched without coding and trained on your content for accurate answers.",
+          "Provide 24/7 assistance on your website. Let your AI chatbot handle FAQs, appointment bookings, product inquiries, and purchases, launched without coding and trained on your content for accurate answers.",
         features: [
           { title: "Train Your AI Chatbot", body: "Power it with FAQs, website content, and your knowledge base." },
           { title: "Get Qualified Leads", body: "Collect contact details and sync them directly to your CRM." },
@@ -220,7 +220,7 @@ export const AI_BOTS: Record<string, SubPage> = {
         eyebrow: "网站 AI 聊天机器人",
         title: "用 AI 聊天机器人，把网站访客变成客户",
         subtitle:
-          "在你的网站上提供 7×24 小时服务。让 AI 聊天机器人处理常见问题、预约、产品咨询和下单——零代码部署，基于你自己的内容训练，答案准确可靠。",
+          "在你的网站上提供 7×24 小时服务。让 AI 聊天机器人处理常见问题、预约、产品咨询和下单，零代码部署，基于你自己的内容训练，答案准确可靠。",
         features: [
           { title: "训练你的 AI 聊天机器人", body: "用常见问题、网站内容和知识库让它更聪明。" },
           { title: "获取高质量线索", body: "收集联系方式，直接同步到你的 CRM。" },
@@ -316,7 +316,7 @@ export const AI_BOTS: Record<string, SubPage> = {
         eyebrow: "AI Chatbot For Telegram",
         title: "Automate Your Telegram Chats and Boost Engagement",
         subtitle:
-          "Connect instantly, nurture leads, and offer 24/7 support with Chat2Sales AI on Telegram — powering every part of your business.",
+          "Connect instantly, nurture leads, and offer 24/7 support with Chat2Sales AI on Telegram, powering every part of your business.",
         features: [
           { title: "Provide Customer Support", body: "24/7 instant responses across chats, groups, and channels." },
           { title: "Marketing Automation", body: "Segment audiences and send updates or promotions." },
@@ -331,7 +331,7 @@ export const AI_BOTS: Record<string, SubPage> = {
         eyebrow: "Telegram AI 聊天机器人",
         title: "自动化你的 Telegram 对话，持续拉升互动",
         subtitle:
-          "用 Chat2Sales AI 在 Telegram 上即时接触客户、养熟线索、提供 7×24 小时服务——驱动业务的每一个环节。",
+          "用 Chat2Sales AI 在 Telegram 上即时接触客户、养熟线索、提供 7×24 小时服务，驱动业务的每一个环节。",
         features: [
           { title: "提供客户支持", body: "7×24 小时即时响应，覆盖私聊、群组与频道。" },
           { title: "营销自动化", body: "对用户分群，发送更新或促销。" },
@@ -356,11 +356,11 @@ export const SOLUTIONS: Record<string, SubPage> = {
         eyebrow: "AI Sales Agent",
         title: "Multiply Sales Conversions with an AI Sales Agent That Works 24/7",
         subtitle:
-          "Empower your team with an AI sales agent that automates lead follow-ups, personalizes conversations, and closes deals faster — while you focus on strategy and growth.",
+          "Empower your team with an AI sales agent that automates lead follow-ups, personalizes conversations, and closes deals faster, while you focus on strategy and growth.",
         explainer: {
           heading: "What is an AI Sales Agent?",
           body:
-            "An AI Sales Agent is your always-on virtual sales assistant that automates lead generation, personalized conversations, and smart follow-ups with human-like precision. Working 24/7, it never misses a lead — qualifying prospects, nurturing relationships, and syncing seamlessly with your CRM to boost efficiency and close deals faster. From small businesses to large enterprises, AI Sales Agents help you scale sales operations, reduce manual workload, and maximize profitability through intelligent automation.",
+            "An AI Sales Agent is your always-on virtual sales assistant that automates lead generation, personalized conversations, and smart follow-ups with human-like precision. Working 24/7, it never misses a lead, qualifying prospects, nurturing relationships, and syncing seamlessly with your CRM to boost efficiency and close deals faster. From small businesses to large enterprises, AI Sales Agents help you scale sales operations, reduce manual workload, and maximize profitability through intelligent automation.",
         },
         features: [
           { title: "24/7 Availability", body: "Continuous support for your customers across all timezones." },
@@ -375,11 +375,11 @@ export const SOLUTIONS: Record<string, SubPage> = {
         eyebrow: "AI 销售助理",
         title: "用 7×24 小时在线的 AI 销售助理，数倍提升成交",
         subtitle:
-          "让 AI 销售助理帮团队自动化跟进线索、个性化对话、更快完成成交——你专心做战略与增长。",
+          "让 AI 销售助理帮团队自动化跟进线索、个性化对话、更快完成成交，你专心做战略与增长。",
         explainer: {
           heading: "什么是 AI 销售助理？",
           body:
-            "AI 销售助理是你永不下线的虚拟销售助手，以接近真人的精准度，自动化获客、个性化对话和智能跟进。它 7×24 小时在岗，绝不漏掉任何一条线索——筛选客户、养熟关系、无缝同步到你的 CRM，让效率更高、成交更快。无论是中小企业还是大型企业，AI 销售助理都能帮你扩大销售运营、减少人工、用智能自动化最大化利润。",
+            "AI 销售助理是你永不下线的虚拟销售助手，以接近真人的精准度，自动化获客、个性化对话和智能跟进。它 7×24 小时在岗，绝不漏掉任何一条线索，筛选客户、养熟关系、无缝同步到你的 CRM，让效率更高、成交更快。无论是中小企业还是大型企业，AI 销售助理都能帮你扩大销售运营、减少人工、用智能自动化最大化利润。",
         },
         features: [
           { title: "7×24 小时在线", body: "跨时区持续为客户提供支持。" },
@@ -401,7 +401,7 @@ export const SOLUTIONS: Record<string, SubPage> = {
         eyebrow: "AI Marketing Agent",
         title: "Supercharge Your Marketing with an AI Marketing Agent",
         subtitle:
-          "Leverage AI-driven automation, personalization, and seamless integration to optimize every campaign — smarter execution, faster decisions, higher ROI.",
+          "Leverage AI-driven automation, personalization, and seamless integration to optimize every campaign, smarter execution, faster decisions, higher ROI.",
         explainer: {
           heading: "What is an AI Marketing Agent?",
           body:
@@ -422,7 +422,7 @@ export const SOLUTIONS: Record<string, SubPage> = {
         eyebrow: "AI 营销助理",
         title: "用 AI 营销助理，把你的营销推上新高度",
         subtitle:
-          "用 AI 驱动的自动化、个性化和无缝集成，优化每一场营销活动——更聪明的执行、更快的决策、更高的 ROI。",
+          "用 AI 驱动的自动化、个性化和无缝集成，优化每一场营销活动，更聪明的执行、更快的决策、更高的 ROI。",
         explainer: {
           heading: "什么是 AI 营销助理？",
           body:
@@ -450,7 +450,7 @@ export const SOLUTIONS: Record<string, SubPage> = {
         eyebrow: "Chatbot for Marketing",
         title: "Turn Your Leads Into Paying Customers",
         subtitle:
-          "You drive the traffic — Chat2Sales AI does the heavy lifting. Smart chatbots engage, qualify, and nurture every lead across WhatsApp, Instagram, and your website.",
+          "You drive the traffic, Chat2Sales AI does the heavy lifting. Smart chatbots engage, qualify, and nurture every lead across WhatsApp, Instagram, and your website.",
         features: [
           { title: "Align the Chatbot with Your Marketing Goals", body: "Identify key touchpoints and align chatbot objectives with marketing outcomes." },
           { title: "Design an Engaging Conversational Experience", body: "Engage leads 24/7 with human-like interactions." },
@@ -462,7 +462,7 @@ export const SOLUTIONS: Record<string, SubPage> = {
         eyebrow: "营销聊天机器人",
         title: "把你的线索变成付费客户",
         subtitle:
-          "你负责把流量引进来——Chat2Sales AI 负责搞定剩下的。智能聊天机器人在 WhatsApp、Instagram 和你的网站上互动、筛选、养熟每一条线索。",
+          "你负责把流量引进来，Chat2Sales AI 负责搞定剩下的。智能聊天机器人在 WhatsApp、Instagram 和你的网站上互动、筛选、养熟每一条线索。",
         features: [
           { title: "让聊天机器人配合营销目标", body: "识别关键触点，把机器人目标与营销结果对齐。" },
           { title: "设计有吸引力的对话体验", body: "7×24 小时像真人一样互动，让线索持续参与。" },
@@ -485,7 +485,7 @@ export const SOLUTIONS: Record<string, SubPage> = {
         explainer: {
           heading: "What is an AI Sales Agent?",
           body:
-            "An AI Sales Agent is your always-on virtual sales assistant that automates lead generation, personalized conversations, and smart follow-ups with human-like precision. Working 24/7, it never misses a lead — qualifying prospects, nurturing relationships, and syncing seamlessly with your CRM to boost efficiency and close deals faster. From small businesses to large enterprises, AI Sales Agents help you scale sales operations, reduce manual workload, and maximize profitability through intelligent automation.",
+            "An AI Sales Agent is your always-on virtual sales assistant that automates lead generation, personalized conversations, and smart follow-ups with human-like precision. Working 24/7, it never misses a lead, qualifying prospects, nurturing relationships, and syncing seamlessly with your CRM to boost efficiency and close deals faster. From small businesses to large enterprises, AI Sales Agents help you scale sales operations, reduce manual workload, and maximize profitability through intelligent automation.",
         },
         features: [
           { title: "Align the Chatbot with Your Sales Strategy", body: "Identify key touchpoints and align with your sales process." },
@@ -502,7 +502,7 @@ export const SOLUTIONS: Record<string, SubPage> = {
         explainer: {
           heading: "什么是 AI 销售助理？",
           body:
-            "AI 销售助理是你永不下线的虚拟销售助手，以接近真人的精准度，自动化获客、个性化对话和智能跟进。它 7×24 小时在岗，绝不漏掉任何一条线索——筛选客户、养熟关系、无缝同步到你的 CRM，让效率更高、成交更快。无论是中小企业还是大型企业，AI 销售助理都能帮你扩大销售运营、减少人工、用智能自动化最大化利润。",
+            "AI 销售助理是你永不下线的虚拟销售助手，以接近真人的精准度，自动化获客、个性化对话和智能跟进。它 7×24 小时在岗，绝不漏掉任何一条线索，筛选客户、养熟关系、无缝同步到你的 CRM，让效率更高、成交更快。无论是中小企业还是大型企业，AI 销售助理都能帮你扩大销售运营、减少人工、用智能自动化最大化利润。",
         },
         features: [
           { title: "让机器人匹配你的销售策略", body: "识别关键触点，把机器人流程和销售流程对齐。" },
@@ -522,7 +522,7 @@ export const SOLUTIONS: Record<string, SubPage> = {
         eyebrow: "Chatbot for Lead Generation",
         title: "Automate Tedious Tasks and Focus on Closing More Deals",
         subtitle:
-          "Say goodbye to boring forms and high drop-offs. Turn conversations into conversions by collecting data and opt-ins via your website or WhatsApp — make every interaction smooth, personal, and engaging.",
+          "Say goodbye to boring forms and high drop-offs. Turn conversations into conversions by collecting data and opt-ins via your website or WhatsApp, make every interaction smooth, personal, and engaging.",
         features: [
           { title: "Conversational Lead Capture", body: "Collect data and opt-ins via your website or WhatsApp instead of static forms." },
           { title: "Identify High-Intent Leads", body: "Custom conditions and pre-built blocks score leads automatically." },
@@ -533,7 +533,7 @@ export const SOLUTIONS: Record<string, SubPage> = {
         eyebrow: "获客聊天机器人",
         title: "告别枯燥表单，让对话自动带来订单",
         subtitle:
-          "不用再担心表单太长、流失太多。用网站或 WhatsApp 上的对话式获客，收集信息与授权——让每一次互动都自然、贴心又有吸引力。",
+          "不用再担心表单太长、流失太多。用网站或 WhatsApp 上的对话式获客，收集信息与授权，让每一次互动都自然、贴心又有吸引力。",
         features: [
           { title: "对话式线索获取", body: "用网站或 WhatsApp 的对话代替静态表单收集信息与授权。" },
           { title: "识别高意向客户", body: "自定义规则与预置模块自动为客户打分。" },
@@ -562,7 +562,7 @@ export const SOLUTIONS: Record<string, SubPage> = {
         eyebrow: "用户互动聊天机器人",
         title: "用互动式 AI 对话，持续留住你的用户",
         subtitle:
-          "Chat2Sales AI 在用户旅程的每一个环节都与客户保持连接——即时回复、提醒、产品推荐和互动体验，持续增强品牌忠诚度。",
+          "Chat2Sales AI 在用户旅程的每一个环节都与客户保持连接，即时回复、提醒、产品推荐和互动体验，持续增强品牌忠诚度。",
         features: [
           { title: "提升产品采用与发现", body: "通过网页与移动端的日常沟通，持续教育新用户。" },
           { title: "智能通知", body: "自动发送服务更新、提醒和通知，减少客户咨询。" },
@@ -580,7 +580,7 @@ export const SOLUTIONS: Record<string, SubPage> = {
         eyebrow: "Chatbot for Customer Support",
         title: "Deliver 5-Star Support and Build Stronger Customer Relationships",
         subtitle:
-          "Use AI chatbots to automate customer service, save time, and deliver personalized support — on every channel your customers already use.",
+          "Use AI chatbots to automate customer service, save time, and deliver personalized support, on every channel your customers already use.",
         features: [
           { title: "Help Customers 24/7", body: "Empower customers to solve their own questions with automated FAQs, smart replies, and proactive notifications." },
           { title: "Shared Team Inbox", body: "Human takeover, automation tools, and shortcuts to manage complex queries in one place." },
@@ -591,7 +591,7 @@ export const SOLUTIONS: Record<string, SubPage> = {
         eyebrow: "客服聊天机器人",
         title: "提供五星级客服，建立更强客户关系",
         subtitle:
-          "用 AI 聊天机器人自动化客服、节省时间、提供个性化支持——出现在客户本来就用的每一个渠道。",
+          "用 AI 聊天机器人自动化客服、节省时间、提供个性化支持，出现在客户本来就用的每一个渠道。",
         features: [
           { title: "7×24 小时响应客户", body: "通过自动常见问题、智能回复、主动通知，让客户自助解决大多数问题。" },
           { title: "团队共享收件箱", body: "真人接手、自动化工具和快捷语集中管理复杂咨询。" },

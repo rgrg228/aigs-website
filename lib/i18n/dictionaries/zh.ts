@@ -53,7 +53,7 @@ const dict: Dictionary = {
     titleLine1: "让每一次对话",
     titleHighlight: "都变成成交。",
     subtitle:
-      "覆盖 WhatsApp、Facebook、Instagram、网站、Telegram 等渠道的 AI 聊天机器人。以极低成本雇用你的第一位 AI 员工——Chat2Sales 会像你最得力的员工一样回复客户、跟进线索、预约客户，不同的是它从不下班。",
+      "覆盖 WhatsApp、Facebook、Instagram、网站、Telegram 等渠道的 AI 聊天机器人。以极低成本雇用你的第一位 AI 员工，Chat2Sales 会像你最得力的员工一样回复客户、跟进线索、预约客户，不同的是它从不下班。",
     primaryCta: "预约演示",
     secondaryCta: "看它能做什么",
     stats: [
@@ -70,17 +70,17 @@ const dict: Dictionary = {
     eyebrow: "为什么选择 Chat2Sales",
     title: "以极低成本，雇用你的第一位 AI 员工。",
     subtitle:
-      "Chat2Sales 回复客户、跟进线索、预约客户——就像你最得力的员工，但从不停歇。",
+      "Chat2Sales 回复客户、跟进线索、预约客户，就像你最得力的员工，但从不停歇。",
     items: [
       {
         title: "永远不漏掉一条消息",
         body:
-          "每一条私信、评论和网站对话，1 秒内都会收到回复——哪怕是凌晨三点。",
+          "每一条私信、评论和网站对话，1 秒内都会收到回复，哪怕是凌晨三点。",
       },
       {
         title: "睡觉时也在成交",
         body:
-          "AI 自动筛选意向、回答价格问题、直接帮你预约——完全不用真人参与。",
+          "AI 自动筛选意向、回答价格问题、直接帮你预约，完全不用真人参与。",
       },
       {
         title: "客服时间砍掉 80%",
@@ -90,7 +90,7 @@ const dict: Dictionary = {
       {
         title: "一个收件箱，所有渠道",
         body:
-          "WhatsApp、Facebook、Instagram、LINE、你的网站，所有回复集中在一个地方——告别到处切换。",
+          "WhatsApp、Facebook、Instagram、LINE、你的网站，所有回复集中在一个地方，告别到处切换。",
       },
     ],
   },
@@ -104,13 +104,13 @@ const dict: Dictionary = {
         tag: "销售 💰",
         title: "AI 销售助理",
         body:
-          "你的全天候虚拟销售助理——自动获客、个性化对话、智能跟进，和真人一样精准，7×24 小时在线。",
+          "你的全天候虚拟销售助理，自动获客、个性化对话、智能跟进，和真人一样精准，7×24 小时在线。",
       },
       {
         tag: "营销 🚀",
         title: "AI 营销助理",
         body:
-          "你的全天候数字营销员——自动管理活动、个性化沟通、数据驱动优化，持续提升 ROI。",
+          "你的全天候数字营销员，自动管理活动、个性化沟通、数据驱动优化，持续提升 ROI。",
       },
       {
         tag: "客户服务 💬",
@@ -122,24 +122,24 @@ const dict: Dictionary = {
   },
   channels: {
     eyebrow: "全平台更聪明地成交",
-    title: "WhatsApp、Facebook、LINE——一个 AI，全部渠道。",
+    title: "WhatsApp、Facebook、LINE，一个 AI，全部渠道。",
     subtitle:
-      "Chat2Sales 帮你自动回复、跟进、成交——一个平台搞定全部。把 AI 聊天机器人加到网站、在线客服、Messenger 或 Slack，7×24 小时处理每一次对话。",
+      "Chat2Sales 帮你自动回复、跟进、成交，一个平台搞定全部。把 AI 聊天机器人加到网站、在线客服、Messenger 或 Slack，7×24 小时处理每一次对话。",
     items: [
       {
         name: "WhatsApp",
         body:
-          "自动回复、筛选线索、完成成交——全部通过个性化、像真人的对话完成。",
+          "自动回复、筛选线索、完成成交，全部通过个性化、像真人的对话完成。",
       },
       {
         name: "Instagram",
         body:
-          "即时回复、跟进线索、驱动转化——让你专心做内容。",
+          "即时回复、跟进线索、驱动转化，让你专心做内容。",
       },
       {
         name: "Facebook Messenger",
         body:
-          "即时互动、回答常见问题、7×24 小时预约——提升转化率和客户信任度。",
+          "即时互动、回答常见问题、7×24 小时预约，提升转化率和客户信任度。",
       },
       {
         name: "网站嵌入",
@@ -154,7 +154,7 @@ const dict: Dictionary = {
       {
         name: "WeChat",
         body:
-          "连接、互动、成交——每一个触点都提供个性化体验。",
+          "连接、互动、成交，每一个触点都提供个性化体验。",
       },
     ],
     multichannelAlt: "Chat2Sales 把每一次对话分配到合适的工具",
@@ -162,7 +162,7 @@ const dict: Dictionary = {
   faq: {
     eyebrow: "常见问题",
     title: "常见问题",
-    subtitle: "还有疑问？我们会亲自回复——通常几小时内。",
+    subtitle: "还有疑问？我们会亲自回复，通常几小时内。",
     contactLink: "联系我们 →",
     items: [
       {
@@ -183,7 +183,7 @@ const dict: Dictionary = {
       },
       {
         q: "我想自己回复时可以吗？",
-        a: "当然可以。你可以随时接管对话——AI 会自动暂停。",
+        a: "当然可以。你可以随时接管对话，AI 会自动暂停。",
       },
       {
         q: "AI 聊天机器人和普通聊天机器人有什么区别？",
@@ -195,7 +195,7 @@ const dict: Dictionary = {
     titleLine1: "用 AI 自动化",
     titleHighlight: "轻松提升营收。",
     subtitle:
-      "免费预约一次专家演示与咨询。我们帮你把第一个 AI 助理设置好——零代码、零麻烦，直接看到结果。",
+      "免费预约一次专家演示与咨询。我们帮你把第一个 AI 助理设置好，零代码、零麻烦，直接看到结果。",
     primaryCta: "预约演示",
     reassurance: "按年付费享 2 个月免费 · 零设置费 · 由我们帮你设置",
   },
@@ -298,7 +298,7 @@ const dict: Dictionary = {
     ],
     form: {
       heading: "取得联系",
-      subtext: "30 秒就能填完。我们通常几小时内就会回复你——多半直接在 WhatsApp 上。",
+      subtext: "30 秒就能填完。我们通常几小时内就会回复你，多半直接在 WhatsApp 上。",
       nameLabel: "姓名",
       namePlaceholder: "王小明",
       phoneLabel: "电话或 WhatsApp",
@@ -317,7 +317,7 @@ const dict: Dictionary = {
       messagePlaceholder: "告诉我们你的使用场景…",
       submit: "预约演示",
       submitting: "发送中…",
-      success: "收到了——我们会在 24 小时内回复你。",
+      success: "收到了，我们会在 24 小时内回复你。",
       errorDefault:
         "出错了，请发送邮件至 hello@chat2sales.ai。",
       consentBefore: "提交即表示你同意我们的",
@@ -353,7 +353,7 @@ const dict: Dictionary = {
     title:
       "加入 Chat2Sales 联盟计划，赚取高达 30% 的终身复利佣金。",
     subtitle:
-      "加入 Chat2Sales 联盟计划，把 AI 聊天机器人推荐给你的观众。通过社交媒体、博客、YouTube 或科技论坛分享——每卖出一份授权，你就能终身赚取高达 30% 的复利佣金。",
+      "加入 Chat2Sales 联盟计划，把 AI 聊天机器人推荐给你的观众。通过社交媒体、博客、YouTube 或科技论坛分享，每卖出一份授权，你就能终身赚取高达 30% 的复利佣金。",
     cta: "联系我们了解更多",
     perks: [
       {
@@ -362,11 +362,11 @@ const dict: Dictionary = {
       },
       {
         title: "任意渠道推广",
-        body: "在社交媒体、博客、YouTube、科技论坛——观众在哪里都可以。",
+        body: "在社交媒体、博客、YouTube、科技论坛，观众在哪里都可以。",
       },
       {
         title: "天然好卖的产品",
-        body: "客户本来就在寻找的 AI 聊天机器人——你卖的是未来的沟通方式。",
+        body: "客户本来就在寻找的 AI 聊天机器人，你卖的是未来的沟通方式。",
       },
       {
         title: "专属支持",

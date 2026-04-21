@@ -27,7 +27,7 @@ const post: BlogPost = {
             A basic sales or support rep in Malaysia starts around{" "}
             <strong>RM3,000–RM4,500/month</strong>. Add EPF, SOCSO, leave
             cover, and tools. Add the first 2–3 months where they&apos;re
-            learning and not yet productive. Add the risk that they leave —
+            learning and not yet productive. Add the risk that they leave ,
             turnover is brutal in this role.
           </p>
           <p>
@@ -38,25 +38,25 @@ const post: BlogPost = {
 
           <h2>What the same money gets you in AI</h2>
           <p>
-            An AI sales agent costs a fraction of that — and runs 24/7 across
+            An AI sales agent costs a fraction of that, and runs 24/7 across
             every channel you use. No leave, no training churn, no burnout.
           </p>
           <ul>
             <li>Replies to every WhatsApp, Instagram, and Facebook DM in under a second</li>
-            <li>Handles hundreds of conversations at once — without quality dropping</li>
+            <li>Handles hundreds of conversations at once, without quality dropping</li>
             <li>Speaks 50+ languages natively, including Mandarin and Bahasa</li>
             <li>Books appointments, qualifies leads, and hands you the hot ones</li>
           </ul>
           <p>
             It&apos;s not that AI replaces your team. It&apos;s that it handles
-            the 80% of messages that don&apos;t need a human — so your actual
+            the 80% of messages that don&apos;t need a human, so your actual
             humans only work on the deals that matter.
           </p>
 
           <h2>The smart way to think about it</h2>
           <p>
             Hire AI first for the repetitive stuff. Then hire a human for
-            everything AI can&apos;t do — strategy, relationships, complex
+            everything AI can&apos;t do, strategy, relationships, complex
             sales. That&apos;s how the best operators are growing in 2026.
           </p>
 
@@ -87,11 +87,11 @@ const post: BlogPost = {
           <h2>招一个真人究竟要花多少钱</h2>
           <p>
             马来西亚基础销售或客服起薪大约{" "}
-            <strong>RM3,000–RM4,500/月</strong>，再加公积金、社险、顶班费用、工具。再加前 2–3 个月还在学习、产出不高。再加对方离职的风险——这个岗位的流失率非常高。
+            <strong>RM3,000–RM4,500/月</strong>，再加公积金、社险、顶班费用、工具。再加前 2–3 个月还在学习、产出不高。再加对方离职的风险，这个岗位的流失率非常高。
           </p>
           <p>
             全部加起来，一年 <strong>RM60,000
-            起跳</strong>——换来的是一位每天工作 8 小时、周末休息、晚上 6 点下班的同事。
+            起跳</strong>，换来的是一位每天工作 8 小时、周末休息、晚上 6 点下班的同事。
           </p>
 
           <h2>同样的钱，用 AI 能换到什么</h2>
@@ -103,12 +103,12 @@ const post: BlogPost = {
             <li>自动预约、筛选意向客户、把高质量线索交到你手上</li>
           </ul>
           <p>
-            并不是 AI 取代你的团队，而是它处理 80% 不需要真人的消息——让你真正的员工只做真正重要的事。
+            并不是 AI 取代你的团队，而是它处理 80% 不需要真人的消息，让你真正的员工只做真正重要的事。
           </p>
 
           <h2>正确的打法</h2>
           <p>
-            先用 AI 把重复劳动接手，然后再招真人做 AI 做不到的事——策略、客户关系、复杂销售。这是 2026 年那些跑得最快的老板正在做的事。
+            先用 AI 把重复劳动接手，然后再招真人做 AI 做不到的事，策略、客户关系、复杂销售。这是 2026 年那些跑得最快的老板正在做的事。
           </p>
 
           <h2>Chat2Sales 如何帮你落地</h2>
