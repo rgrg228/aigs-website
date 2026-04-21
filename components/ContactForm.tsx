@@ -7,6 +7,26 @@ import { localeHref } from "@/lib/i18n/href";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+    fbq?: (...args: unknown[]) => void;
+  }
+}
+
+function trackConversion() {
+  if (typeof window === "undefined") return;
+  try {
+    window.gtag?.("event", "generate_lead", {
+      event_category: "engagement",
+      event_label: "contact_form",
+    });
+    window.fbq?.("track", "Lead");
+  } catch {
+    /* ignore analytics errors */
+  }
+}
+
 export default function ContactForm({
   dict,
   locale,
@@ -33,6 +53,7 @@ export default function ContactForm({
       });
       const json = await res.json();
       if (!res.ok || !json.ok) throw new Error(json.error || "Something went wrong");
+      trackConversion();
       setStatus("success");
       form.reset();
     } catch (err) {
