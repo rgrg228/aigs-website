@@ -73,23 +73,23 @@ const dict: Dictionary = {
       "Chat2Sales replies to customers, follows up leads, and books appointments — just like your best staff, but works non-stop.",
     items: [
       {
-        title: "Generate 10x more leads",
+        title: "Never miss a message again",
         body:
-          "Engage prospects instantly with smart AI chats that capture more leads — without extra ad spend.",
+          "Every DM, comment, and website chat gets a reply in under 1 second — even at 3am.",
       },
       {
-        title: "Book 10x more appointments",
-        body: "Qualify leads and auto-book meetings — even while you sleep.",
+        title: "Close sales while you sleep",
+        body: "AI qualifies the lead, answers price questions, and auto-books the meeting — no human needed.",
       },
       {
-        title: "Provide 24/7 instant support",
+        title: "Cut customer service time by 80%",
         body:
-          "Combines AI and your team to respond instantly, solve problems, and boost satisfaction around the clock.",
+          "AI handles the boring repeat questions so your team only jumps in when it really matters.",
       },
       {
-        title: "Sell smarter on every platform",
+        title: "One inbox, every channel",
         body:
-          "From WhatsApp to Facebook to LINE, Chat2Sales helps you reply, follow up, and sell — automatically, all in one place.",
+          "Reply on WhatsApp, Facebook, Instagram, LINE, and your website from one place. No more app-hopping.",
       },
     ],
   },
