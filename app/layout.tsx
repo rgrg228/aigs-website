@@ -30,8 +30,16 @@ export const metadata: Metadata = {
     description:
       "Turning every conversation into sales. AI chatbot for WhatsApp, Instagram, Website & more.",
   },
+  manifest: "/site.webmanifest",
   icons: {
-    icon: "/images/logo.webp",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/apple-icon.png",
+  },
+  other: {
+    "msapplication-TileColor": "#1f4cf5",
   },
 };
 
